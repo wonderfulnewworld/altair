@@ -3,9 +3,10 @@
     "title": "Altair",
     "description": "A system made by shinsekai for the TCZ Server.",
     "author": "shinsekai",
-    "version": 0.01,
+    "version": 0.02,
     "minimumCoreVersion": 9,
     "compatibleCoreVersion": 9,
+	"url": "https://github.com/wonderfulnewworld/altair",
     "esmodules": [
         "altair.js"
     ],
