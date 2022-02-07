@@ -1,0 +1,93 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "altair.characterInfo.level"}}</th>
+                <th>{{localize "altair.characterInfo.health"}}</th>
+                <th>{{localize "altair.characterInfo.stamina"}}</th>
+                <th>{{localize "altair.characterInfo.focus"}}</th>
+                <th>{{localize "altair.characterInfo.drive"}}</th>
+                <th>{{localize "altair.characterInfo.speed"}}</th>
+                <th>{{localize "altair.characterInfo.experience"}}</th>
+                <th>{{localize "altair.characterInfo.element"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="data.level" type="text" value="{{data.level}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.health.value" type="text" value="{{data.health.value}}" data-dtype="Number"/>
+                    <input name="data.health.max" type="text" value="{{data.health.max}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.stamina.value" type="text" value="{{data.stamina.value}}" data-dtype="Number"/>
+                    <input name="data.stamina.max" type="text" value="{{data.stamina.max}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.focus.value" type="text" value="{{data.focus.value}}" data-dtype="Number"/>
+                    <input name="data.focus.max" type="text" value="{{data.focus.max}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.drive.value" type="text" value="{{data.drive.value}}" data-dtype="Number"/>
+                    <input name="data.drive.max" type="text" value="{{data.drive.max}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.speed" type="text" value="{{data.speed}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.experience.value" type="text" value="{{data.experience.value}}" data-dtype="Number"/>
+                    <input name="data.experience.max" type="text" value="{{data.experience.max}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <select name = "data.element">
+                        {{#select data.element}}
+                        {{#each playerElements as |name element|}}
+                        <option value="{{element}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>{{localize "altair.characterInfo.title"}}</th>
+                <th>{{localize "altair.characterInfo.healthRegen"}}</th>
+                <th>{{localize "altair.characterInfo.staminaRegen"}}</th>
+                <th>{{localize "altair.characterInfo.focusRegen"}}</th>
+                <th>{{localize "altair.characterInfo.purity"}}</th>
+                <th>{{localize "altair.characterInfo.movement"}}</th>
+                <th>{{localize "altair.characterInfo.lifetimeExperience"}}</th>
+                <th>{{localize "altair.characterInfo.money"}}</th>
+            </tr>
+                <td>
+                    <textarea name="data.title">{{data.title}}</textarea>
+                </td>
+                <td>
+                    <input name="data.healthRegen" type="text" value="{{data.healthRegen}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.staminaRegen" type="text" value="{{data.staminaRegen}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.focusRegen" type="text" value="{{data.focusRegen}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.purity.value" type="text" value="{{data.purity.value}}" data-dtype="Number"/>
+                    <input name="data.purity.max" type="text" value="{{data.purity.max}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.movement" type="text" value="{{data.movement}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.lifetimeExperience" type="text" value="{{data.lifetimeExperience}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.money" type="text" value="{{data.money}}" data-dtype="Number"/>
+                </td>
+        </table>
+        <textarea name="data.bio">{{data.bio}}</textarea>
+    </div>
+</form>

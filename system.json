@@ -1,0 +1,29 @@
+{
+    "name": "altair",
+    "title": "Altair",
+    "description": "A system made by shinsekai for the TCZ Server.",
+    "author": "shinsekai",
+    "version": 0.01,
+    "minimumCoreVersion": 9,
+    "compatibleCoreVersion": 9,
+    "esmodules": [
+        "altair.js"
+    ],
+    "styles":[
+        "altair.css"
+    ],
+    "packs": [
+
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "gridDistance": 5,
+    "gridUnits": "spaces",
+    "primaryTokenAttribute": "wounds",
+    "initiative": "@speed"
+}

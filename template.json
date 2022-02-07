@@ -1,0 +1,125 @@
+{
+    "Actor": {
+        "types": [
+            "player",
+            "npc",
+            "enemy"
+        ],
+        "templates": {
+            "common": {
+                "name": "",
+                "health": {
+                    "value": 15,
+                    "max": 15
+                },
+                "experience": {
+                    "value": 0,
+                    "max": 100
+                },
+                "movement": 18,
+                "speed": 5,
+                "element": "fire",
+                "money": 50,
+                "size": 1,
+                "bio": "",
+                "title": "",
+                "personalSkill": "",
+                "actionCap": 1,
+                "actionRegen": 1
+            },
+            "personCommon": {
+                "drive": {
+                    "value": 5,
+                    "max": 5
+                },
+                "purity": {
+                    "value": 5,
+                    "max": 5
+                },
+                "lifetimeExperience": 0,
+                "level": 1
+            },
+            "nonPlayerCommon": {
+                "drop": ""
+            }
+        },
+        "player": {
+            "templates": [
+                "common",
+                "personCommon"
+            ],
+            "stamina": {
+                "value": 10,
+                "max": 10
+            },
+            "focus": {
+                "value": 10,
+                "max": 10
+            },
+            "healthRegen": 4,
+            "staminaRegen": 2,
+            "focusRegen": 2,
+            "strength": 0,
+            "magic": 0,
+            "defense": 0,
+            "spirit": 0,
+            "skill": 0,
+            "charm": 0
+        },
+        "npc": {
+            "templates": [
+                "common",
+                "personCommon",
+                "nonPlayerCommon"
+            ]
+        },
+        "enemy": {
+            "templates": [
+                "common",
+                "nonPlayerCommon"
+            ],
+            "break": {
+                "value": 5,
+                "max": 5
+            }
+        }
+    },
+    "Item": {
+        "types": [
+            "weapon",
+            "skill",
+            "part",
+            "armor"
+        ],
+        "templates": {
+            "itemDescription": {
+                "description": ""
+            }
+        },
+        "weapon": {
+            "templates": [
+                "itemDescription"
+            ],
+            "damage": 0,
+            "type": "all",
+            "range": 0,
+            "speed": 0,
+            "pierce": 0,
+            "splash": 0,
+            "knockback": 0,
+            "element": 0,
+            "antielement": 0,
+            "flying": 0,
+            "movement": 0
+        },
+        "skill": {
+            "placeholder": 1
+        },
+        "part": {
+            "placeholder": 1
+        },
+        "armor": {
+            "placeholder": 1
+        }
+    }
+}
