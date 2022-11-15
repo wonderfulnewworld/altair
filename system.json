@@ -35,6 +35,6 @@
     "gridDistance": 5,
     "gridUnits": "spaces",
     "primaryTokenAttribute": "wounds",
-    "initiative": "1d20"
+    "initiative": "1d20",
 	"manifest": "https://raw.githubusercontent.com/wonderfulnewworld/altair/main/system.json"
 }
