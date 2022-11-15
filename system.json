@@ -2,16 +2,25 @@
     "name": "altair",
     "title": "Altair",
     "description": "A system made by shinsekai for the TCZ Server.",
-    "author": "shinsekai",
+    "authors": [
+    {
+      "name": "shinsekai",
+      "url": "",
+      "flags": {}
+    }
+  ],
     "version": 0.02,
-    "minimumCoreVersion": 9,
-    "compatibleCoreVersion": 9,
+    "compatibility": {
+    "minimum": "9",
+    "verified": "10.288",
+    "maximum": "10"
+	},
 	"url": "https://github.com/wonderfulnewworld/altair",
     "esmodules": [
-        "altair.js"
+        "module/config.js"
     ],
     "styles":[
-        "altair.css"
+        "styles/altair.css"
     ],
     "packs": [
 
@@ -26,5 +35,5 @@
     "gridDistance": 5,
     "gridUnits": "spaces",
     "primaryTokenAttribute": "wounds",
-    "initiative": "@speed"
+    "initiative": "1d20"
 }
