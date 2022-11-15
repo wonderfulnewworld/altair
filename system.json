@@ -1,21 +1,21 @@
 {
     "name": "altair",
     "title": "Altair",
+	"url": "https://github.com/wonderfulnewworld/altair",
     "description": "A system made by shinsekai for the TCZ Server.",
     "authors": [
     {
       "name": "shinsekai",
-      "url": "",
+      "url": "https://github.com/wonderfulnewworld/altair",
       "flags": {}
     }
   ],
-    "version": 0.02,
+    "version": 0.03,
     "compatibility": {
     "minimum": "9",
     "verified": "10.288",
     "maximum": "10"
 	},
-	"url": "https://github.com/wonderfulnewworld/altair",
     "esmodules": [
         "module/config.js"
     ],
