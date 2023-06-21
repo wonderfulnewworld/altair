@@ -3,12 +3,14 @@ export default class AltairPlayerSheet extends ActorSheet {
     get template() {
         const path = "systems/altair/templates/sheets";
         //return `${path}/item-sheet.html`;
-        return `${path}/${this.actor.data.type}-sheet.hbs`;
-        //return 'systems/altair/templates/sheets/$(this.item.data.type}-sheet.html';
+        //console.log(`${path}/${this.actor.type}-sheet.hbs`)
+        return `${path}/${this.actor.type}-sheet.hbs`;
+        //return 'systems/altair/templates/sheets/$(this.item.type}-sheet.html';
     }
 
-    getData() {
-        const baseData = super.getData();
+    async getData(options) {
+        //console.log("test")
+        const baseData =  await super.getData(options);
         const playerElements = Object.fromEntries(Object.entries(CONFIG.altair.elements).slice(0,5));
         let sheetData = {
             name: this.actor.name,
@@ -16,7 +18,7 @@ export default class AltairPlayerSheet extends ActorSheet {
             owner: this.actor.isOwner,
             editable: this.isEditable,
             items: baseData.items,
-            data: baseData.actor.data.data,
+            system: baseData.actor.system,
             config: CONFIG.altair,
             playerElements
         };

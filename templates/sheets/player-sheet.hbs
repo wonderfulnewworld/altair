@@ -17,34 +17,34 @@
             </tr>
             <tr>
                 <td>
-                    <input name="data.level" type="text" value="{{data.level}}" data-dtype="Number"/>
+                    <input name="system.level" type="text" value="{{system.level}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.health.value" type="text" value="{{data.health.value}}" data-dtype="Number"/>
-                    <input name="data.health.max" type="text" value="{{data.health.max}}" data-dtype="Number"/>
+                    <input name="system.health.value" type="text" value="{{system.health.value}}" data-dtype="Number"/>
+                    <input name="system.health.max" type="text" value="{{system.health.max}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.stamina.value" type="text" value="{{data.stamina.value}}" data-dtype="Number"/>
-                    <input name="data.stamina.max" type="text" value="{{data.stamina.max}}" data-dtype="Number"/>
+                    <input name="system.stamina.value" type="text" value="{{system.stamina.value}}" data-dtype="Number"/>
+                    <input name="system.stamina.max" type="text" value="{{system.stamina.max}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.focus.value" type="text" value="{{data.focus.value}}" data-dtype="Number"/>
-                    <input name="data.focus.max" type="text" value="{{data.focus.max}}" data-dtype="Number"/>
+                    <input name="system.focus.value" type="text" value="{{system.focus.value}}" data-dtype="Number"/>
+                    <input name="system.focus.max" type="text" value="{{system.focus.max}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.drive.value" type="text" value="{{data.drive.value}}" data-dtype="Number"/>
-                    <input name="data.drive.max" type="text" value="{{data.drive.max}}" data-dtype="Number"/>
+                    <input name="system.drive.value" type="text" value="{{system.drive.value}}" data-dtype="Number"/>
+                    <input name="system.drive.max" type="text" value="{{system.drive.max}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.speed" type="text" value="{{data.speed}}" data-dtype="Number"/>
+                    <input name="system.speed" type="text" value="{{system.speed}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.experience.value" type="text" value="{{data.experience.value}}" data-dtype="Number"/>
-                    <input name="data.experience.max" type="text" value="{{data.experience.max}}" data-dtype="Number"/>
+                    <input name="system.experience.value" type="text" value="{{system.experience.value}}" data-dtype="Number"/>
+                    <input name="system.experience.max" type="text" value="{{system.experience.max}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <select name = "data.element">
-                        {{#select data.element}}
+                    <select name = "system.element">
+                        {{#select system.element}}
                         {{#each playerElements as |name element|}}
                         <option value="{{element}}">{{localize name}}</option>
                         {{/each}}
@@ -63,31 +63,31 @@
                 <th>{{localize "altair.characterInfo.money"}}</th>
             </tr>
                 <td>
-                    <textarea name="data.title">{{data.title}}</textarea>
+                    <textarea name="system.title">{{system.title}}</textarea>
                 </td>
                 <td>
-                    <input name="data.healthRegen" type="text" value="{{data.healthRegen}}" data-dtype="Number"/>
+                    <input name="system.healthRegen" type="text" value="{{system.healthRegen}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.staminaRegen" type="text" value="{{data.staminaRegen}}" data-dtype="Number"/>
+                    <input name="system.staminaRegen" type="text" value="{{system.staminaRegen}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.focusRegen" type="text" value="{{data.focusRegen}}" data-dtype="Number"/>
+                    <input name="system.focusRegen" type="text" value="{{system.focusRegen}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.purity.value" type="text" value="{{data.purity.value}}" data-dtype="Number"/>
-                    <input name="data.purity.max" type="text" value="{{data.purity.max}}" data-dtype="Number"/>
+                    <input name="system.purity.value" type="text" value="{{system.purity.value}}" data-dtype="Number"/>
+                    <input name="system.purity.max" type="text" value="{{system.purity.max}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.movement" type="text" value="{{data.movement}}" data-dtype="Number"/>
+                    <input name="system.movement" type="text" value="{{system.movement}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.lifetimeExperience" type="text" value="{{data.lifetimeExperience}}" data-dtype="Number"/>
+                    <input name="system.lifetimeExperience" type="text" value="{{system.lifetimeExperience}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.money" type="text" value="{{data.money}}" data-dtype="Number"/>
+                    <input name="system.money" type="text" value="{{system.money}}" data-dtype="Number"/>
                 </td>
         </table>
-        <textarea name="data.bio">{{data.bio}}</textarea>
+        <textarea name="system.bio">{{system.bio}}</textarea>
     </div>
 </form>

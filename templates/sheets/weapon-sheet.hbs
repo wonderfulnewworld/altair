@@ -20,8 +20,8 @@
             </tr>
             <tr>
                 <td>
-                    <select name = "data.type">
-                        {{#select data.type}}
+                    <select name = "system.type">
+                        {{#select system.type}}
                         {{#each config.attackTypes as |name type|}}
                         <option value="{{type}}">{{localize name}}</option>
                         {{/each}}
@@ -29,37 +29,37 @@
                     </select>
                 </td>
                 <td>
-                    <input name="data.damage" type="text" value="{{data.damage}}" data-dtype="Number"/>
+                    <input name="system.damage" type="text" value="{{system.damage}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.range" type="text" value="{{data.range}}" data-dtype="Number"/>
+                    <input name="system.range" type="text" value="{{system.range}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.speed" type="text" value="{{data.speed}}" data-dtype="Number"/>
+                    <input name="system.speed" type="text" value="{{system.speed}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.pierce" type="text" value="{{data.pierce}}" data-dtype="Number"/>
+                    <input name="system.pierce" type="text" value="{{system.pierce}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.splash" type="text" value="{{data.splash}}" data-dtype="Number"/>
+                    <input name="system.splash" type="text" value="{{system.splash}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.knockback" type="text" value="{{data.knockback}}" data-dtype="Number"/>
+                    <input name="system.knockback" type="text" value="{{system.knockback}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.element" type="text" value="{{data.element}}" data-dtype="Number"/>
+                    <input name="system.element" type="text" value="{{system.element}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.antielement" type="text" value="{{data.antielement}}" data-dtype="Number"/>
+                    <input name="system.antielement" type="text" value="{{system.antielement}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.flying" type="text" value="{{data.flying}}" data-dtype="Number"/>
+                    <input name="system.flying" type="text" value="{{system.flying}}" data-dtype="Number"/>
                 </td>
                 <td>
-                    <input name="data.movement" type="text" value="{{data.movement}}" data-dtype="Number"/>
+                    <input name="system.movement" type="text" value="{{system.movement}}" data-dtype="Number"/>
                 </td>
             </tr>
         </table>
-        <textarea name="data.description">{{data.description}}</textarea>
+        <textarea name="system.description">{{system.description}}</textarea>
     </div>
 </form>

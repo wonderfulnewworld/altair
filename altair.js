@@ -2,7 +2,7 @@ import { altair } from "./module/config.js";
 import AltairItemSheet from "./module/sheets/AltairItemSheet.js";
 import AltairPlayerSheet from "./module/sheets/AltairPlayerSheet.js"
 
-Hooks.once("init", function() {
+Hooks.once("init", async function() {
     console.log("altair | Initializing Altair System");
 
     CONFIG.altair = altair;

@@ -3,17 +3,17 @@ export default class AltairItemSheet extends ItemSheet {
     get template() {
         const path = "systems/altair/templates/sheets";
         //return `${path}/item-sheet.html`;
-        return `${path}/${this.item.data.type}-sheet.hbs`;
-        //return 'systems/altair/templates/sheets/$(this.item.data.type}-sheet.html';
+        return `${path}/${this.item.type}-sheet.hbs`;
+        //return 'systems/altair/templates/sheets/$(this.item.type}-sheet.html';
     }
 
-    getData() {
-        const baseData = super.getData();
+    async getData(options) {
+        const baseData = await super.getData(options);
         let sheetData = {
             owner: this.item.isOwner,
             editable: this.isEditable,
             item: baseData.item,
-            data: baseData.item.data.data,
+            system: baseData.item.system,
             config: CONFIG.altair
         };
         return sheetData;
