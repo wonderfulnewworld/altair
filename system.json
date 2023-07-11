@@ -10,10 +10,10 @@
       "flags": {}
     }
   ],
-    "version": 0.1,
+    "version": 0.1.1,
     "compatibility": {
     "minimum": "9",
-    "verified": "11.299",
+    "verified": "11.304",
     "maximum": "11"
 	},
     "esmodules": [
