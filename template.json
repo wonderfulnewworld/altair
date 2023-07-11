@@ -9,17 +9,17 @@
             "common": {
                 "name": "",
                 "health": {
-                    "value": 15,
-                    "max": 15
+                    "value": 10,
+                    "max": 10
                 },
                 "experience": {
                     "value": 0,
-                    "max": 100
+                    "max": 20
                 },
-                "movement": 18,
+                "movement": 12,
                 "speed": 5,
                 "element": "fire",
-                "money": 50,
+                "money": 150,
                 "size": 1,
                 "bio": "",
                 "title": "",
@@ -29,12 +29,12 @@
             },
             "personCommon": {
                 "drive": {
-                    "value": 5,
-                    "max": 5
+                    "value": 3,
+                    "max": 3
                 },
                 "purity": {
-                    "value": 5,
-                    "max": 5
+                    "value": 3,
+                    "max": 3
                 },
                 "lifetimeExperience": 0,
                 "level": 1
@@ -49,16 +49,16 @@
                 "personCommon"
             ],
             "stamina": {
-                "value": 10,
-                "max": 10
+                "value": 2,
+                "max": 2
             },
             "focus": {
-                "value": 10,
-                "max": 10
+                "value": 2,
+                "max": 2
             },
-            "healthRegen": 4,
-            "staminaRegen": 2,
-            "focusRegen": 2,
+            "healthRegen": 3,
+            "staminaRegen": 0.5,
+            "focusRegen": 0.5,
             "strength": 0,
             "magic": 0,
             "defense": 0,
@@ -79,8 +79,8 @@
                 "nonPlayerCommon"
             ],
             "break": {
-                "value": 5,
-                "max": 5
+                "value": 10,
+                "max": 10
             }
         }
     },
