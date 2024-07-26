@@ -44,11 +44,7 @@
                 </td>
                 <td>
                     <select name = "system.element">
-                        {{#select system.element}}
-                        {{#each playerElements as |name element|}}
-                        <option value="{{element}}">{{localize name}}</option>
-                        {{/each}}
-                        {{/select}}
+                        {{selectOptions playerElements selected=system.element localize=true}}
                     </select>
                 </td>
             </tr>

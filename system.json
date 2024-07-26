@@ -1,41 +1,41 @@
 {
-    "id": "altair",
-    "title": "Altair",
-	"url": "https://github.com/wonderfulnewworld/altair",
-    "description": "A system made by shinsekai for the TCZ Server.",
-    "authors": [
+  "id": "altair",
+  "title": "Altair",
+  "url": "https://github.com/wonderfulnewworld/altair",
+  "description": "A system made by shinsekai for the TCZ Server.",
+  "authors": [
     {
       "name": "shinsekai",
       "url": "https://github.com/wonderfulnewworld/altair",
       "flags": {}
     }
   ],
-    "version": 0.11,
-    "compatibility": {
+  "version": "0.12",
+  "compatibility": {
     "minimum": "9",
-    "verified": "11.304",
-    "maximum": "11"
-	},
-    "esmodules": [
-        "altair.js"
-    ],
-    "styles":[
-        "styles/altair.css"
-    ],
-    "packs": [
-
-    ],
-    "languages": [
-        {
-            "lang": "en",
-            "name": "English",
-            "path": "lang/en.json"
-        }
-    ],
-    "gridDistance": 5,
-    "gridUnits": "spaces",
-    "primaryTokenAttribute": "wounds",
-    "initiative": "1d20",
-	"manifest": "https://raw.githubusercontent.com/wonderfulnewworld/altair/main/system.json",
-	"download": "https://github.com/wonderfulnewworld/altair/archive/refs/tags/alpha-01-1.zip"
+    "verified": "12.330",
+    "maximum": "12"
+  },
+  "esmodules": [
+    "altair.js"
+  ],
+  "styles": [
+    "styles/altair.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "primaryTokenAttribute": "wounds",
+  "initiative": "1d20",
+  "manifest": "https://raw.githubusercontent.com/wonderfulnewworld/altair/main/system.json",
+  "download": "https://github.com/wonderfulnewworld/altair/archive/refs/tags/alpha-01-1.zip",
+  "grid": {
+    "distance": 5,
+    "units": "spaces"
+  }
 }
