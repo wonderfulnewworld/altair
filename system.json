@@ -12,7 +12,7 @@
   ],
   "version": "0.12",
   "compatibility": {
-    "minimum": "9",
+    "minimum": "11",
     "verified": "12.330",
     "maximum": "12"
   },
