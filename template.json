@@ -9,16 +9,24 @@
             "common": {
                 "name": "",
                 "health": {
-                    "value": 10,
-                    "max": 10
+                    "value": 20,
+                    "max": 20
+                },
+                "shield":{
+                    "value": 0,
+                    "max": 0
                 },
                 "experience": {
                     "value": 0,
                     "max": 20
                 },
-                "movement": 12,
+                "movement": 8,
                 "speed": 5,
                 "element": "fire",
+                "weakness": "ground",
+                "resistance": "ice",
+                "semiWeakness": "melee",
+                "semiResistance": "projectile",
                 "money": 150,
                 "size": 1,
                 "bio": "",
@@ -39,6 +47,20 @@
                 "lifetimeExperience": 0,
                 "level": 1
             },
+            "enemyCommon": {
+                "break": {
+                    "value": 10,
+                    "max": 10
+                },
+                "burst": {
+                    "value": 5,
+                    "max": 5
+                },
+                "bleed": 3,
+                "drain": 2,
+                "intensity": 0,
+                "level": 1
+            },
             "nonPlayerCommon": {
                 "drop": ""
             }
@@ -49,16 +71,16 @@
                 "personCommon"
             ],
             "stamina": {
-                "value": 2,
-                "max": 2
+                "value": 3,
+                "max": 3
             },
             "focus": {
-                "value": 2,
-                "max": 2
+                "value": 3,
+                "max": 3
             },
             "healthRegen": 3,
-            "staminaRegen": 0.5,
-            "focusRegen": 0.5,
+            "staminaRegen": 1,
+            "focusRegen": 1,
             "strength": 0,
             "magic": 0,
             "defense": 0,
@@ -76,7 +98,7 @@
         "enemy": {
             "templates": [
                 "common",
-                "nonPlayerCommon"
+                "enemyCommon"
             ],
             "break": {
                 "value": 10,

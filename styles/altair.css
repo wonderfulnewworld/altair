@@ -1,0 +1,52 @@
+.container-divider {
+    justify-content: space-between;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.altair-resources {
+    justify-content: flex-start;
+    flex-grow: 0;
+}
+
+#altair-main-resources {
+    border: 1px black solid;
+}
+
+#altair-level-title {
+    justify-content: flex-start;
+}
+
+.altair-single-resource {
+    flex-basis: 20%;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+#altair-break-level {
+    flex-basis: 20%;
+    height: 0;
+}
+/* Target the main input area for multiple selections */
+.choices[data-type*="select-multiple"] .choices__inner {
+    background-color: transparent !important;
+    /* Optionally also adjust or remove the border if you like */
+    border-color: transparent; /* or 'transparent', etc. */
+  }
+  
+  /* Target the individual selected item tags */
+  .choices[data-type*="select-multiple"] .choices__list--multiple .choices__item {
+    background-color: rgba(255,255,255,0.1) !important;
+    border-color: black;
+    color: black;
+    /* Or fully transparent if you prefer */
+    /* background-color: transparent !important; */
+  }
+  #semiResistance{
+    width:150px;   
+   }

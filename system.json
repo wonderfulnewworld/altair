@@ -17,10 +17,12 @@
     "maximum": "12"
   },
   "esmodules": [
-    "altair.js"
+    "altair.js",
+    "scripts/choices.min.js"
   ],
   "styles": [
-    "styles/altair.css"
+    "styles/altair.css",
+    "styles/choices.min.css"
   ],
   "languages": [
     {

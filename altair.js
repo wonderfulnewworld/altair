@@ -12,4 +12,5 @@ Hooks.once("init", async function() {
 
     Actors.unregisterSheet("core", ActorSheet);
     Actors.registerSheet("altair", AltairPlayerSheet, { makeDefault: true });
+    Actors.registerSheet("altair", AltairEnemySheet, { makeDefault: false });
 });
