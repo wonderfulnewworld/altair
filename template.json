@@ -22,6 +22,17 @@
                 },
                 "movement": 8,
                 "speed": 5,
+                "roleType": "noRole",
+                "guardType": "noGuard",
+                "shieldType": "noShield",
+                "species": "person",
+                "standardArmor": 0,
+                "prismaticArmor": 0,
+                "abnormalArmor": 0,
+                "toughness": 0,
+                "armorIgnore": 0,
+                "criticalChance": 0,
+                "criticalDamage": 0,
                 "element": "fire",
                 "weakness": "ground",
                 "resistance": "ice",
@@ -33,7 +44,8 @@
                 "title": "",
                 "personalSkill": "",
                 "actionCap": 1,
-                "actionRegen": 1
+                "actionRegen": 1,
+                "level": 1
             },
             "personCommon": {
                 "drive": {
@@ -44,8 +56,7 @@
                     "value": 3,
                     "max": 3
                 },
-                "lifetimeExperience": 0,
-                "level": 1
+                "lifetimeExperience": 0
             },
             "enemyCommon": {
                 "break": {
@@ -58,8 +69,20 @@
                 },
                 "bleed": 3,
                 "drain": 2,
-                "intensity": 0,
-                "level": 1
+                "intensity": 0
+            },
+            "enemyCommonBS": {
+                "burst": {
+                    "value": 10,
+                    "max": 10
+                },
+                "blast": {
+                    "value": 5,
+                    "max": 5
+                },
+                "bleed": 3,
+                "daze": 2,
+                "intensity": 0
             },
             "nonPlayerCommon": {
                 "drop": ""

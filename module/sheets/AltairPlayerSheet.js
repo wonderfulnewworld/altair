@@ -12,6 +12,11 @@ export default class AltairPlayerSheet extends ActorSheet {
         //console.log("test")
         const baseData = await super.getData(options);
         const playerElements = Object.fromEntries(Object.entries(CONFIG.altair.elements));
+        const playerAffinities = Object.fromEntries(Object.entries(CONFIG.altair.affinities));
+        const playerRoles = Object.fromEntries(Object.entries(CONFIG.altair.roleTypes));
+        const playerGuards = Object.fromEntries(Object.entries(CONFIG.altair.guardTypes));
+        const playerShields = Object.fromEntries(Object.entries(CONFIG.altair.shieldTypes));
+        const playerSpecies = Object.fromEntries(Object.entries(CONFIG.altair.speciesTypes));
         let sheetData = {
             name: this.actor.name,
             actor: baseData.actor,
@@ -20,7 +25,12 @@ export default class AltairPlayerSheet extends ActorSheet {
             items: baseData.items,
             system: baseData.actor.system,
             config: CONFIG.altair,
-            playerElements
+            playerElements,
+            playerAffinities,
+            playerRoles,
+            playerGuards,
+            playerShields,
+            playerSpecies
         };
         return sheetData;
     }

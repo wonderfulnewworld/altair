@@ -4,17 +4,33 @@
             "name": "Name",
             "level": "Level",
             "health": "Health",
-            "healthRegen": "H.Regen",
+            "healthRegen": "Health Regen",
             "stamina": "Stamina",
-            "staminaRegen": "S.Regen",
+            "staminaRegen": "Stamina Regen",
             "focus": "Focus",
-            "focusRegen": "F.Regen",
+            "focusRegen": "Focus Regen",
             "drive": "Drive",
             "purity": "Purity",
             "shield": "Shield",
+            "species": "Species",
+            "roleType": "Role Type",
+            "guardType": "Guard Type",
+            "shieldType": "Shield Type",
+            "standardArmor": "Standard Armor",
+            "prismaticArmor": "Prismatic Armor",
+            "abnormalArmor": "Abnormal Armor",
+            "toughness": "Toughness",
+            "armorIgnore": "Armor Ignore",
+            "criticalChance": "Critical Chance",
+            "criticalDamage": "Critical Damage",
             "actionCap": "FP Cap",
             "actionRegen": "FP per Turn",
             "break": "Break Health",
+            "burst": "Burst Health",
+            "blast": "Blast Health",
+            "bleed": "Bleed Damage",
+            "drain": "Drain Damage",
+            "daze": "Daze Damage",
             "experience": "Exp",
             "lifetimeExperience": "Lifetime Exp",
             "movement": "Movement",
@@ -49,7 +65,34 @@
             "water": "Water",
             "wood": "Wood",
             "neutral": "Neutral",
-            "abnormal": "Abnormal"
+            "abnormal": "Abnormal (Element)"
+        },
+        "affinities": {
+            "fireElementAffinity": "Fire",
+            "iceElementAffinity": "Ice",
+            "thunderElementAffinity": "Thunder",
+            "airElementAffinity": "Air",
+            "groundElementAffinity": "Ground",
+            "lightElementAffinity": "Light",
+            "darkElementAffinity": "Dark",
+            "holyElementAffinity": "Holy",
+            "waterElementAffinity": "Water",
+            "woodElementAffinity": "Wood",
+            "neutralElementAffinity": "Neutral",
+            "abnormalElementAffinity": "Abnormal (Element)",
+            "meleeDamageAffinity": "Melee",
+            "martialDamageAffinity": "Martial",
+            "projectileDamageAffinity": "Projectile",
+            "firearmDamageAffinity": "Firearm",
+            "magicDamageAffinity": "Magic",
+            "monsterDamageAffinity": "Monster",
+            "abnormalDamageAffinity": "Abnormal (Damage)",
+            "noneDamageAffinity": "None",
+            "allDamageAffinity": "All",
+            "beastslayerEffectiveAffinity": "Beastslayer",
+            "antiFlierEffectiveAffinity": "Anti-Flier",
+            "antiDemonicEffectiveAffinity": "Anti-Demonic",
+            "antiVampiricEffectiveAffinity": "Anti-Vampiric"
         },
         "speciesTypes": {
             "person": "Person",
@@ -65,36 +108,27 @@
             "outsider": "Outsider",
             "other": "Other"
         },
-        "attackTypes": {
-            "none": "None",
-            "all": "All",
-            "melee": "Melee",
-            "martial": "Martial",
-            "projectile": "Projectile",
-            "firearm": "Firearm",
-            "magic": "Magic",
-            "monster": "Monster",
-            "abnormal": "Abnormal"
-        },
-        "roleTypes":{
+        "roleTypes": {
             "attacker": "Attacker",
             "defender": "Defender",
             "supporter": "Supporter",
             "fool": "Fool",
             "noRole": "None"
         },
-        "guardTypes":{
+        "guardTypes": {
             "braceShield": "Shield",
             "braceProvoke": "Provoke",
             "braceCounter": "Brace Counter",
             "restCounter": "Rest Counter",
-            "restTaunt": "Taunt"
+            "restTaunt": "Taunt",
+            "noGuard": "None"
         },
-        "shieldTypes":{
+        "shieldTypes": {
             "shieldHealth": "Shield Health",
             "overshield": "Overshield",
             "auraShield": "Aura Shield",
-            "lingeringDeath": "Lingering Death"
+            "lingeringDeath": "Lingering Death",
+            "noShield": "None"
         },
         "weapon": {
             "damage": "Damage",

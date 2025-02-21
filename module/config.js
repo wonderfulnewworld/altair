@@ -10,11 +10,24 @@ altair.characterInfo = {
     focus: "altair.characterInfo.focus",
     focusRegen: "altair.characterInfo.focusRegen",
     shield: "altair.characterInfo.shield",
+    species: "altair.characterInfo.species",
     drive: "altair.characterInfo.drive",
     purity: "altair.characterInfo.purity",
+    standardArmor: "altair.characterInfo.standardArmor",
+    prismaticArmor: "altair.characterInfo.prismaticArmor",
+    abnormalArmor: "altair.characterInfo.abnormalArmor",
+    toughness: "altair.characterInfo.toughness",
+    armorIgnore: "altair.characterInfo.armorIgnore",
+    criticalChance: "altair.characterInfo.criticalChance",
+    criticalDamage: "altair.characterInfo.criticalDamage",
     actionCap: "altair.characterInfo.actionCap",
     actionRegen: "altair.characterInfo.actionRegen",
     break: "altair.characterInfo.break",
+    burst: "altair.characterInfo.burst",
+    blast: "altair.characterInfo.blast",
+    bleed: "altair.characterInfo.bleed",
+    drain: "altair.characterInfo.drain",
+    daze: "altair.characterInfo.daze",
     exp: "altair.characterInfo.exp",
     lifetimeExperience: "altair.characterInfo.lifetimeExperience",
     movement: "altair.characterInfo.movement",
@@ -49,6 +62,35 @@ altair.elements = {
     abnormal: "altair.elements.abnormal"
 }
 
+altair.affinities = {
+    fireElementAffinity: "altair.affinities.fireElementAffinity",
+    iceElementAffinity: "altair.affinities.iceElementAffinity",
+    thunderElementAffinity: "altair.affinities.thunderElementAffinity",
+    airElementAffinity: "altair.affinities.airElementAffinity",
+    groundElementAffinity: "altair.affinities.groundElementAffinity",
+    lightElementAffinity: "altair.affinities.lightElementAffinity",
+    darkElementAffinity: "altair.affinities.darkElementAffinity",
+    holyElementAffinity: "altair.affinities.holyElementAffinity",
+    waterElementAffinity: "altair.affinities.waterElementAffinity",
+    woodElementAffinity: "altair.affinities.woodElementAffinity",
+    neutralElementAffinity: "altair.affinities.neutralElementAffinity",
+    abnormalElementAffinity: "altair.affinities.abnormalElementAffinity",
+    meleeDamageAffinity: "altair.affinities.meleeDamageAffinity",
+    martialDamageAffinity: "altair.affinities.martialDamageAffinity",
+    projectileDamageAffinity: "altair.affinities.projectileDamageAffinity",
+    firearmDamageAffinity: "altair.affinities.firearmDamageAffinity",
+    magicDamageAffinity: "altair.affinities.magicDamageAffinity",
+    monsterDamageAffinity: "altair.affinities.monsterDamageAffinity",
+    abnormalDamageAffinity: "altair.affinities.abnormalDamageAffinity",
+    noneDamageAffinity: "altair.affinities.noneDamageAffinity",
+    allDamageAffinity: "altair.affinities.allDamageAffinity",
+    beastslayerEffectiveAffinity: "altair.affinities.beastslayerEffectiveAffinity",
+    antiFlierEffectiveAffinity: "altair.affinities.antiFlierEffectiveAffinity",
+    antiDemonicEffectiveAffinity: "altair.affinities.antiDemonicEffectiveAffinity",
+    antiVampiricEffectiveAffinity: "altair.affinities.antiVampiricEffectiveAffinity"
+}
+
+
 altair.speciesTypes = {
     person: "altair.speciesTypes.person",
     dormant: "altair.speciesTypes.dormant",
@@ -64,24 +106,14 @@ altair.speciesTypes = {
     other: "altair.speciesTypes.other"
 }
 
-altair.attackTypes = {
-    none: "altair.attackTypes.none",
-    all: "altair.attackTypes.all",
-    melee: "altair.attackTypes.melee",
-    martial: "altair.attackTypes.martial",
-    projectile: "altair.attackTypes.projectile",
-    firearm: "altair.attackTypes.firearm",
-    magic: "altair.attackTypes.magic",
-    monster: "altair.attackTypes.monster",
-    abnormal: "altair.attackTypes.abnormal"
-}
+
 
 altair.roleTypes = {
     attacker: "altair.roleTypes.attacker",
     defender: "altair.roleTypes.defender",
     supporter: "altair.roleTypes.supporter",
     fool: "altair.roleTypes.fool",
-    noRole: "altair.roleTypes.none"
+    noRole: "altair.roleTypes.noRole"
 }
 
 altair.guardTypes = {
@@ -89,12 +121,14 @@ altair.guardTypes = {
     braceProvoke: "altair.guardTypes.braceProvoke",
     braceCounter: "altair.guardTypes.braceCounter",
     restCounter: "altair.guardTypes.restCounter",
-    restTaunt: "altair.guardTypes.restTaunt"
+    restTaunt: "altair.guardTypes.restTaunt",
+    noGuard: "altair.guardTypes.noGuard"
 }
 
 altair.shieldTypes = {
     shieldHealth: "altair.shieldTypes.shieldHealth",
     overshield: "altair.shieldTypes.overshield",
     auraShield: "altair.shieldTypes.auraShield",
-    lingeringDeath: "altair.shieldTypes.lingeringDeath"
+    lingeringDeath: "altair.shieldTypes.lingeringDeath",
+    noShield: "altair.shieldTypes.noShield"
 }
