@@ -67,6 +67,22 @@
                     "value": 5,
                     "max": 5
                 },
+                "health2": {
+                    "value": 10,
+                    "max": 10
+                },
+                "health3": {
+                    "value": 5,
+                    "max": 5
+                },
+                "health4": {
+                    "value": 5,
+                    "max": 5
+                },
+                "health5": {
+                    "value": 5,
+                    "max": 5
+                },
                 "bleed": 3,
                 "drain": 2,
                 "intensity": 0
@@ -77,6 +93,22 @@
                     "max": 10
                 },
                 "blast": {
+                    "value": 5,
+                    "max": 5
+                },
+                "health2": {
+                    "value": 10,
+                    "max": 10
+                },
+                "health3": {
+                    "value": 5,
+                    "max": 5
+                },
+                "health4": {
+                    "value": 5,
+                    "max": 5
+                },
+                "health5": {
                     "value": 5,
                     "max": 5
                 },
@@ -122,11 +154,7 @@
             "templates": [
                 "common",
                 "enemyCommon"
-            ],
-            "break": {
-                "value": 10,
-                "max": 10
-            }
+            ]
         }
     },
     "Item": {

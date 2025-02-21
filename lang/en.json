@@ -31,6 +31,10 @@
             "bleed": "Bleed Damage",
             "drain": "Drain Damage",
             "daze": "Daze Damage",
+            "health2": "H. Bar 2",
+            "health3": "H. Bar 3",
+            "health4": "H. Bar 4",
+            "health5": "H. Bar 5",
             "experience": "Exp",
             "lifetimeExperience": "Lifetime Exp",
             "movement": "Movement",
@@ -142,6 +146,8 @@
             "antielement": "Anti-Element Skill Penalty",
             "flying": "Flying Effectivity",
             "movement": "Movement Modifier"
-        }
+        },
+        "AltairPlayerSheet": "Player",
+        "AltairEnemySheet": "Enemy"
     }
 }

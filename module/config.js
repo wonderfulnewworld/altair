@@ -28,6 +28,10 @@ altair.characterInfo = {
     bleed: "altair.characterInfo.bleed",
     drain: "altair.characterInfo.drain",
     daze: "altair.characterInfo.daze",
+    health2: "altair.characterInfo.health2",
+    health3: "altair.characterInfo.health3",
+    health4: "altair.characterInfo.health4",
+    health5: "altair.characterInfo.health5",
     exp: "altair.characterInfo.exp",
     lifetimeExperience: "altair.characterInfo.lifetimeExperience",
     movement: "altair.characterInfo.movement",
@@ -132,3 +136,6 @@ altair.shieldTypes = {
     lingeringDeath: "altair.shieldTypes.lingeringDeath",
     noShield: "altair.shieldTypes.noShield"
 }
+
+altair.AltairPlayerSheet= "altair.AltairPlayerSheet",
+altair.AltairEnemySheet= "altair.AltairEnemySheet"

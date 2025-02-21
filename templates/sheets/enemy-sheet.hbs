@@ -1,89 +1,320 @@
 <form class="{{cssClass}}" autocomplete="off">
-    <header class="sheet-header">
-        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
-        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+
+    <!-- Header with image and name -->
+    <header class="sheet-header flexrow">
+        <img src="{{actor.img}}" data-edit="img" alt="{{actor.name}}" title="{{actor.name}}" height="64" width="64" />
+        <h1>
+            <label for="actor-name" class="sr-only">{{ localize 'Name' }}</label>
+            <input id="actor-name" name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}" />
+        </h1>
     </header>
-    <div>
-        <table>
-            <tr>
-                <th>{{localize "altair.characterInfo.level"}}</th>
-                <th>{{localize "altair.characterInfo.health"}}</th>
-                <th>{{localize "altair.characterInfo.stamina"}}</th>
-                <th>{{localize "altair.characterInfo.focus"}}</th>
-                <th>{{localize "altair.characterInfo.drive"}}</th>
-                <th>{{localize "altair.characterInfo.speed"}}</th>
-                <th>{{localize "altair.characterInfo.experience"}}</th>
-                <th>{{localize "altair.characterInfo.element"}}</th>
-            </tr>
-            <tr>
-                <td>
-                    <input name="system.level" type="text" value="{{system.level}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.health.value" type="text" value="{{system.health.value}}" data-dtype="Number"/>
-                    <input name="system.health.max" type="text" value="{{system.health.max}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.stamina.value" type="text" value="{{system.stamina.value}}" data-dtype="Number"/>
-                    <input name="system.stamina.max" type="text" value="{{system.stamina.max}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.focus.value" type="text" value="{{system.focus.value}}" data-dtype="Number"/>
-                    <input name="system.focus.max" type="text" value="{{system.focus.max}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.drive.value" type="text" value="{{system.drive.value}}" data-dtype="Number"/>
-                    <input name="system.drive.max" type="text" value="{{system.drive.max}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.speed" type="text" value="{{system.speed}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.experience.value" type="text" value="{{system.experience.value}}" data-dtype="Number"/>
-                    <input name="system.experience.max" type="text" value="{{system.experience.max}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <select name = "system.element">
-                        {{selectOptions playerElements selected=system.element localize=true}}
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th>{{localize "altair.characterInfo.title"}}</th>
-                <th>{{localize "altair.characterInfo.healthRegen"}}</th>
-                <th>{{localize "altair.characterInfo.staminaRegen"}}</th>
-                <th>{{localize "altair.characterInfo.focusRegen"}}</th>
-                <th>{{localize "altair.characterInfo.purity"}}</th>
-                <th>{{localize "altair.characterInfo.movement"}}</th>
-                <th>{{localize "altair.characterInfo.lifetimeExperience"}}</th>
-                <th>{{localize "altair.characterInfo.money"}}</th>
-            </tr>
-                <td>
-                    <textarea name="system.title">{{system.title}}</textarea>
-                </td>
-                <td>
-                    <input name="system.healthRegen" type="text" value="{{system.healthRegen}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.staminaRegen" type="text" value="{{system.staminaRegen}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.focusRegen" type="text" value="{{system.focusRegen}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.purity.value" type="text" value="{{system.purity.value}}" data-dtype="Number"/>
-                    <input name="system.purity.max" type="text" value="{{system.purity.max}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.movement" type="text" value="{{system.movement}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.lifetimeExperience" type="text" value="{{system.lifetimeExperience}}" data-dtype="Number"/>
-                </td>
-                <td>
-                    <input name="system.money" type="text" value="{{system.money}}" data-dtype="Number"/>
-                </td>
-        </table>
-        <textarea name="system.bio">{{system.bio}}</textarea>
+
+    <!-- First row of stats -->
+    <div id="altair-level-title" class="flexbox">
+        <div class="flexcol">
+            <div class="form-group">
+                <label for="level">{{localize "altair.characterInfo.level"}}</label>
+                <input id="level" name="system.level" type="number" data-dtype="Number" value="{{system.level}}">
+            </div>
+
+            <div class="form-group">
+                <label for="title">{{localize "altair.characterInfo.title"}}</label>
+                <input id="title" name="system.title" type="text" value="{{system.title}}"
+                    placeholder="{{ localize 'Title' }}" />
+            </div>
+            <section class="flexrow">
+                <label for="roleType">{{localize "altair.characterInfo.roleType"}}</label>
+                <select id="roleType" name="system.roleType">
+                    {{selectOptions enemyRoles selected=system.roleType localize=true}}
+                </select>
+            </section>
+        </div>
     </div>
+
+    <div class="extra-container">
+        <div class="extra-container flexrow">
+            <div class="form-group">
+
+                <div class="container">
+                    <label>{{localize "altair.characterInfo.experience"}}</label>
+                    <input name="system.experience.value" type="number" data-dtype="Number"
+                        value="{{system.experience.value}}" style="width: 3em;">
+                    <span class="separator">/</span>
+                    <input name="system.experience.max" type="number" data-dtype="Number"
+                        value="{{system.experience.max}}" style="width: 3em;">
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="container">
+                    <label for="lifetimeExperience">{{localize "altair.characterInfo.lifetimeExperience"}}</label>
+                    <input id="lifetimeExperience" name="system.lifetimeExperience" type="number" data-dtype="Number"
+                        style="width: 3em;" value="{{system.lifetimeExperience}}">
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="container">
+                    <label for="money">{{localize "altair.characterInfo.money"}}</label>
+                    <input id="money" name="system.money" type="number" data-dtype="Number" style="width: 3em;"
+                        value="{{system.money}}">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-divider">
+        <div class="outer-container"> <!-- divider for the main resources and non-main resources -->
+            <div id="altair-main-resources" class="outer-container"> <!--- divider for hsf/dp -->
+                <section class="flexrow altair-resources">
+                    <div class="flexbox">
+                        <label>{{localize "altair.characterInfo.health"}}</label>
+                        <div class="form-group">
+                            <input name="system.health.value" type="number" data-dtype="Number"
+                                value="{{system.health.value}}" style="width: 3em;">
+
+                            <input name="system.health.max" type="number" data-dtype="Number"
+                                value="{{system.health.max}}" style="width: 3em;">
+                        </div>
+
+                        <label for="healthRegen">{{localize "altair.characterInfo.healthRegen"}}</label>
+                        <div class="form-group">
+                            <input id="healthRegen" name="system.healthRegen" type="number" data-dtype="Number"
+                                value="{{system.healthRegen}}" style="width: 3em;">
+                        </div>
+                    </div>
+                    <div class="break"></div>
+
+                    <div class="flexbox">
+                        <label>{{localize "altair.characterInfo.break"}}</label>
+                        <div class="form-group">
+                            <input name="system.break.value" type="number" data-dtype="Number"
+                                value="{{system.break.value}}" style="width: 3em;">
+
+                            <input name="system.break.max" type="number" data-dtype="Number"
+                                value="{{system.break.max}}" style="width: 3em;">
+                        </div>
+
+                        <label for="bleed">{{localize "altair.characterInfo.bleed"}}</label>
+                        <div class="form-group">
+                            <input id="bleed" name="system.bleed" type="number" data-dtype="Number"
+                                value="{{system.bleed}}" style="width: 3em;">
+                        </div>
+                    </div>
+                    <div class="break"></div>
+
+                    <div class="flexbox">
+                        <label>{{localize "altair.characterInfo.burst"}}</label>
+                        <div class="form-group">
+                            <input name="system.burst.value" type="number" data-dtype="Number"
+                                value="{{system.burst.value}}" style="width: 3em;">
+
+                            <input name="system.burst.max" type="number" data-dtype="Number"
+                                value="{{system.burst.max}}" style="width: 3em;">
+                        </div>
+
+                        <label for="drain">{{localize "altair.characterInfo.drain"}}</label>
+                        <div class="form-group">
+                            <input id="drain" name="system.drain" type="number" data-dtype="Number"
+                                value="{{system.drain}}" style="width: 3em;">
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+                <div class="outer-container flexrow"> <!-- shield, drive, and purity -->
+
+                    <section class="flexbox">
+
+                        <label>{{localize "altair.characterInfo.shield"}}</label>
+                        <div class="form-group">
+                            <input name="system.shield.value" type="number" data-dtype="Number"
+                                value="{{system.shield.value}}" style="width: 3em;">
+                            <input name="system.shield.max" type="number" data-dtype="Number"
+                                value="{{system.shield.max}}" style="width: 3em;">
+                        </div><br>
+
+
+
+                        <label>{{localize "altair.characterInfo.health2"}}</label>
+                        <div class="form-group">
+                            <input name="system.health2.value" type="number" data-dtype="Number"
+                                value="{{system.health2.value}}" style="width: 3em;">
+                            <input name="system.health2.max" type="number" data-dtype="Number"
+                                value="{{system.health2.max}}" style="width: 3em;">
+                        </div><br>
+
+
+                        <label>{{localize "altair.characterInfo.health3"}}</label>
+                        <div class="form-group">
+                            <input name="system.health3.value" type="number" data-dtype="Number"
+                                value="{{system.health3.value}}" style="width: 3em;">
+                            <input name="system.health3.max" type="number" data-dtype="Number"
+                                value="{{system.health3.max}}" style="width: 3em;">
+                        </div><br>
+
+
+                        <label>{{localize "altair.characterInfo.health4"}}</label>
+                        <div class="form-group">
+                            <input name="system.health4.value" type="number" data-dtype="Number"
+                                value="{{system.health4.value}}" style="width: 3em;">
+                            <input name="system.health4.max" type="number" data-dtype="Number"
+                                value="{{system.health4.max}}" style="width: 3em;">
+                        </div><br>
+
+
+                        <label>{{localize "altair.characterInfo.health5"}}</label>
+                        <div class="form-group">
+                            <input name="system.health5.value" type="number" data-dtype="Number"
+                                value="{{system.health5.value}}" style="width: 3em;">
+                            <input name="system.health5.max" type="number" data-dtype="Number"
+                                value="{{system.health5.max}}" style="width: 3em;">
+                        </div>
+                    </section>
+
+
+                </div>
+
+            </div>
+
+
+            <section id="altair-static-resources" class="outer-container">
+                <div class="outer-container flexrow"> <!--- divider for resources and non-resources -->
+
+                    <section class="flexbox">
+                        <label for="standardArmor">{{localize "altair.characterInfo.standardArmor"}}</label>
+                        <div class="form-group">
+                            <input id="standardArmor" name="system.standardArmor" type="number" data-dtype="Number"
+                                style="width: 3em;" value="{{system.standardArmor}}">
+                        </div><br>
+                        <label for="prismaticArmor">{{localize "altair.characterInfo.prismaticArmor"}}</label>
+                        <div class="form-group">
+                            <input id="prismaticArmor" name="system.prismaticArmor" type="number" data-dtype="Number"
+                                style="width: 3em;" value="{{system.prismaticArmor}}">
+                        </div><br>
+                        <label for="abnormalArmor">{{localize "altair.characterInfo.abnormalArmor"}}</label>
+                        <div class="form-group">
+                            <input id="abnormalArmor" name="system.abnormalArmor" type="number" data-dtype="Number"
+                                style="width: 3em;" value="{{system.abnormalArmor}}">
+                        </div><br>
+                        <label for="toughness">{{localize "altair.characterInfo.toughness"}}</label>
+                        <div class="form-group">
+                            <input id="toughness" name="system.toughness" type="number" data-dtype="Number"
+                                style="width: 3em;" value="{{system.toughness}}">
+                        </div><br>
+
+
+                        <label for="guardType">{{localize "altair.characterInfo.guardType"}}</label>
+                        <select id="guardType" name="system.guardType">
+                            {{selectOptions enemyGuards selected=system.guardType localize=true}}
+                        </select><br><br>
+                        <label for="shieldType">{{localize "altair.characterInfo.shieldType"}}</label>
+                        <select id="shieldType" name="system.shieldType">
+                            {{selectOptions enemyShields selected=system.shieldType localize=true}}
+                        </select>
+
+                    </section>
+                </div>
+                <div class="outer-container flexrow">
+                    <section class="flexbox">
+                        <label for="armorIgnore">{{localize "altair.characterInfo.armorIgnore"}}</label>
+                        <div class="form-group">
+                            <input id="armorIgnore" name="system.armorIgnore" type="number" data-dtype="Number"
+                                style="width: 3em;" value="{{system.armorIgnore}}">
+                        </div><br>
+
+                        <label for="criticalChance">{{localize "altair.characterInfo.criticalChance"}}</label>
+                        <div class="form-group">
+                            <input id="criticalChance" name="system.criticalChance" type="number" data-dtype="Number"
+                                style="width: 3em;" value="{{system.criticalChance}}">
+                        </div><br>
+
+                        <label for="criticalDamage">{{localize "altair.characterInfo.criticalDamage"}}</label>
+                        <div class="form-group">
+                            <input id="criticalDamage" name="system.criticalDamage" type="number" data-dtype="Number"
+                                style="width: 3em;" value="{{system.criticalDamage}}">
+                        </div><br>
+
+                        <label for="movement">{{localize "altair.characterInfo.movement"}}</label>
+                        <div class="form-group">
+                            <input id="movement" name="system.movement" type="number" data-dtype="Number"
+                                style="width: 3em;" value="{{system.movement}}">
+                        </div><br>
+
+                        <label for="speed">{{localize "altair.characterInfo.speed"}}</label>
+                        <div class="form-group">
+                            <input id="speed" name="system.speed" type="number" data-dtype="Number" style="width: 3em;"
+                                value="{{system.speed}}">
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="affinity-container-divider">
+        <div class="affinity-bottom-container">
+            <div class="affinity-bottom-inner-container flexrow">
+                <div class="affinity-inner-container">
+                    <label for="element">{{localize "altair.characterInfo.element"}}</label><br>
+                    <select class="choice-selector" id="element" name="system.element" multiple>
+                        {{selectOptions enemyElements selected=system.element localize=true}}
+                    </select>
+                </div>
+
+                <div class="affinity-inner-container">
+                    <label for="species">{{localize "altair.characterInfo.species"}}</label><br>
+                    <select class="choice-selector" id="species" name="system.species" multiple>
+                        {{selectOptions enemySpecies selected=system.species localize=true}}
+                    </select>
+                </div>
+            </div>
+            <div class="affinity-bottom-inner-container flexrow">
+                <div class="affinity-inner-container">
+                    <label for="semiResistance">{{localize "altair.characterInfo.semiResistance"}}</label><br>
+                    <select class="choice-selector" id="semiResistance" name="system.semiResistance" multiple>
+                        {{selectOptions enemyAffinities selected=system.semiResistance localize=true}}
+                    </select>
+                </div>
+
+                <div class="affinity-inner-container">
+                    <label for="resistance">{{localize "altair.characterInfo.resistance"}}</label><br>
+                    <select class="choice-selector" id="resistance" name="system.resistance" multiple>
+                        {{selectOptions enemyAffinities selected=system.resistance localize=true}}
+                    </select>
+                </div>
+
+            </div>
+            <div class="affinity-inner-container flexrow">
+                <div class="affinity-inner-container">
+                    <label for="semiWeakness">{{localize "altair.characterInfo.semiWeakness"}}</label><br>
+                    <select class="choice-selector" id="semiWeakness" name="system.semiWeakness" multiple>
+                        {{selectOptions enemyAffinities selected=system.semiWeakness localize=true}}
+                    </select>
+                </div>
+
+                <div class="affinity-inner-container">
+                    <label for="weakness">{{localize "altair.characterInfo.weakness"}}</label><br>
+                    <select class="choice-selector" id="weakness" name="system.weakness" multiple>
+                        {{selectOptions enemyAffinities selected=system.weakness localize=true}}
+                    </select>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Bio or description -->
+    <label for="bio">{{localize "altair.characterInfo.bio"}}</label>
+    <section class="form-group altair-bio">
+        <textarea id="bio" name="system.bio">{{system.bio}}</textarea>
+    </section>
+
 </form>
