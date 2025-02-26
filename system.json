@@ -17,7 +17,7 @@
     "maximum": "12"
   },
   "esmodules": [
-    "altair.js",
+    "altair.mjs",
     "scripts/choices.min.js"
   ],
   "styles": [
