@@ -8,6 +8,24 @@ export default class AltairPlayerSheet extends ActorSheet {
         //return 'systems/altair/templates/sheets/$(this.item.type}-sheet.html';
     }
 
+    /** @override */
+    static get defaultOptions() {
+        console.log(super.defaultOptions);
+        return foundry.utils.mergeObject(super.defaultOptions, {
+            classes: ['altair', 'sheet', 'actor'],
+            width: 1000,
+            height: 700,
+            scrollY: [".altair-sheet"],
+            tabs: [
+                {
+                    navSelector: '.sheet-tabs',
+                    contentSelector: '.sheet-body',
+                    initial: 'features',
+                },
+            ],
+        });
+    }
+
     async getData(options) {
         //console.log("test")
         const baseData = await super.getData(options);
@@ -39,7 +57,7 @@ export default class AltairPlayerSheet extends ActorSheet {
     activateListeners(html) {
         super.activateListeners(html);
 
-        // Locate the <select> by its id or a unique selector
+        // locates the choice by its id
         const selects = html.find('.choice-selector');
         selects.each((i, sel) => {
             new Choices(sel, { // initialize Choices on each selector

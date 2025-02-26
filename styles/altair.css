@@ -1,185 +1,191 @@
 .container-divider {
-    justify-content: space-between;
-    display: flex;
+  justify-content: space-between;
+  display: flex;
 }
 
 .outer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .altair-resources {
-    justify-content: flex-start;
-    flex-grow: 1;
-    padding-left: 3px;
-    padding-right: 3px;
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 #altair-main-resources {
-    border: 1px black solid;
-    display: flex;
+  border: 1px black solid;
+  display: flex;
 }
 
 #altair-static-resources {
-    border: 1px black solid;
-    display: flex;
+  border: 1px black solid;
+  display: flex;
 }
 
 #altair-skills-outline {
-    display: flex;
+  display: flex;
 }
 
 #altair-level-title {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .altair-single-resource {
-    flex-basis: 20%;
+  flex-basis: 20%;
 }
 
-.resource-container{
-    display: flex;
+.resource-container {
+  display: flex;
 }
 
 .break {
-    flex-basis: 100%;
-    height: 0;
+  flex-basis: 100%;
+  height: 0;
 }
 
 #altair-break-level {
-    flex-basis: 20%;
-    height: 0;
+  flex-basis: 20%;
+  height: 0;
 }
 
 /* Target the main input area for multiple selections */
 .choices[data-type*="select-multiple"] .choices__inner {
-    background-color: transparent !important;
-    border-color: transparent;
-    width: auto !important;
-    display: inline-block !important;
+  background-color: transparent !important;
+  border-color: transparent;
+  width: auto !important;
+  display: inline-block !important;
 }
 
-/* Target the individual selected item tags */
+/* Targets the individual selected item tags */
 .choices[data-type*="select-multiple"] .choices__list--multiple .choices__item {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    border-color: black;
-    color: black;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: black;
+  color: black;
 }
 
-/* Make sure the .choices container doesn't stretch horizontally */
+/* Making sure the .choices container doesn't stretch horizontally */
 .choices {
-    width: auto !important;
-    display: inline-block !important;
-    flex: 0 0 auto !important;
+  width: auto !important;
+  display: inline-block !important;
+  flex: 0 0 auto !important;
 }
 
 #affinity-container-divider {
-    border: 1px black solid;
+  border: 1px black solid;
 }
 
 #affinity-top-container {
-    text-align: center;
+  text-align: center;
 }
 
 .affinity-inner-container {
-    text-align: center;
+  text-align: center;
 }
 
-.extra-container{
-    text-align: center;
+.extra-container {
+  text-align: center;
 }
 
 .altair-skills {
-    border: 1px black solid;
+  border: 1px black solid;
 }
 
-#altair-reserve-skills {
-    overflow-anchor: none;
+.altair-skill-type {
+  overflow-anchor: auto;
 }
 
-.altair-Effect-Desc{
-  /* Prevent user resizing */
-  resize: none;
-  
-  /* Mimic the height of a single-line input */
+.altair-Effect-Desc {
+  resize: vertical;
   height: 1em;
-  min-height: 1.5rem;
-  
-  /* Optionally, match fonts, border, etc., to typical input styling */
+  min-height: 2.5rem;
   font-family: inherit;
-  /* And so on... */
 }
 
 .two-column-wrap {
-  display: flex;       /* Activate flexbox */
-  flex-wrap: wrap;     /* Allow items to wrap to a new row if needed */
+  display: flex;
+  /* Activate flexbox */
+  flex-wrap: wrap;
+  /* Allow items to wrap to a new row if needed */
   align-items: flex-start;
 }
 
 .two-column-wrap section {
   /* Let each section be flexible in width */
-  flex: 1 1 500px;     /* “grow, shrink, min-width” = 300px ensures it wraps if narrower than 600px total */
+  flex: 1 1 500px;
+  /* i want the tables next to each other*/
   box-sizing: border-box;
 }
 
 /* Reserve Skills Table */
 .reserve-skills-table {
-    width: 100%;               /* Fill the available width */
-    border-collapse: collapse; /* Merge borders for a cleaner look */
-    table-layout: auto;        /* Let columns auto-size for flexibility */
-  }
-  
-  .reserve-skills-table th,
-  .reserve-skills-table td {
-    padding: 0.4em;
-    vertical-align: middle;
-    word-wrap: break-word;     /* Allows text to wrap if it’s too long */
-    overflow-wrap: break-word; /* Another option for modern browsers */
-  }
-  
-  .reserve-skills-table th {
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  /* Column widths */
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.reserve-skills-table th,
+.reserve-skills-table td {
+  padding: 0.4em;
+  vertical-align: middle;
+  word-wrap: break-word; /* Allows text to wrap if it’s too long */
+  overflow-wrap: break-word;
+}
+
+.reserve-skills-table th {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Reserve Skills */
 .reserve-skills-table col.col-skillName {
-    width: 20%;
-  }
-  .reserve-skills-table col.col-skillEffect {
-    width: 60%;
-  }
-  .reserve-skills-table col.col-skillCooldown {
-    width: 15%;
-  }
-  .reserve-skills-table col.col-onCooldown {
-    width: 5%;
-  }
+  width: 20%;
+}
 
-    /* Column widths */
+.reserve-skills-table col.col-skillEffect {
+  width: 60%;
+}
+
+.reserve-skills-table col.col-skillCooldown {
+  width: 15%;
+}
+
+.reserve-skills-table col.col-onCooldown {
+  width: 5%;
+}
+
+/* Combat arts */
 .reserve-skills-table col.col-combatArtsName {
-    width: 30%;
-  }
-  .reserve-skills-table col.col-combatArtsEffect {
-    width: 60%;
-  }
-  .reserve-skills-table col.col-combatArtsDuration {
-    width: 10%;
-  }
-  .reserve-skills-table col.col-combatArtsOnCooldown {
-    width: 10%;
-  }
+  width: 30%;
+}
 
-  .reserve-skills-table col.col-ammoCoatingsName {
-    width: 30%;
-  }
-  .reserve-skills-table col.col-ammoCoatingsEffect {
-    width: 65%;
-  }
-  .reserve-skills-table col.col-ammoCoatingsStock {
-    width: 5%;
-  }
+.reserve-skills-table col.col-combatArtsEffect {
+  width: 60%;
+}
+
+.reserve-skills-table col.col-combatArtsDuration {
+  width: 10%;
+}
+
+.reserve-skills-table col.col-combatArtsOnCooldown {
+  width: 10%;
+}
+
+/* Ammo/Coatings */
+.reserve-skills-table col.col-ammoCoatingsName {
+  width: 30%;
+}
+
+.reserve-skills-table col.col-ammoCoatingsEffect {
+  width: 65%;
+}
+
+.reserve-skills-table col.col-ammoCoatingsStock {
+  width: 5%;
+}

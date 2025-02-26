@@ -1,4 +1,4 @@
-<form class="{{cssClass}}" autocomplete="off">
+<form class="{{cssClass}} altair-sheet" autocomplete="off">
 
     <!-- Header with image and name -->
     <header class="sheet-header flexrow">
@@ -294,16 +294,15 @@
 
     </div>
     <br>
-    <div class="two-column-wrap">
+
+    <section class="two-column-wrap">
         <!-- Combat Art Section -->
-        <section id="altair-reserve-skills" class="outer-container">
+        <section class="altair-skill-type outer-container">
             <h2>{{localize "altair.ammoCoatingArts.combatArts"}}</h2>
             <table class="reserve-skills-table">
-                <!-- Define column widths via colgroup -->
+                <!-- for width -->
                 <colgroup>
-                    <!-- Make the skillName column occupy about half -->
                     <col class="col-combatArtsName" />
-                    <!-- Smaller columns for the cooldowns -->
                     <col class="col-combatArtsEffect" />
                     <col class="col-combatArtsDuration" />
                     <col class="col-combatArtsOnCooldown" />
@@ -328,8 +327,8 @@
                                 value="{{system.combatArts.combatArt1.cArtEffect}}">
                         </td>
                         <td>
-                            <input name="system.combatArts.combatArt1.cArtCdownDuration" type="text" inputmode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.combatArts.combatArt1.cArtCdownDuration}}">
+                            <input name="system.combatArts.combatArt1.cArtCdownDuration" type="number"
+                                data-dtype="Number" value="{{system.combatArts.combatArt1.cArtCdownDuration}}">
                         </td>
                         <td style="text-align: center;">
                             <input name="system.combatArts.combatArt1.cArtOnCooldown" type="checkbox" {{#if
@@ -347,8 +346,8 @@
                                 value="{{system.combatArts.combatArt2.cArtEffect}}">
                         </td>
                         <td>
-                            <input name="system.combatArts.combatArt2.cArtCdownDuration" type="text" inputmode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.combatArts.combatArt2.cArtCdownDuration}}">
+                            <input name="system.combatArts.combatArt2.cArtCdownDuration" type="number"
+                                data-dtype="Number" value="{{system.combatArts.combatArt2.cArtCdownDuration}}">
                         </td>
                         <td style="text-align: center;">
                             <input name="system.combatArts.combatArt2.cArtOnCooldown" type="checkbox" {{#if
@@ -366,8 +365,8 @@
                                 value="{{system.combatArts.combatArt3.cArtEffect}}">
                         </td>
                         <td>
-                            <input name="system.combatArts.combatArt3.cArtCdownDuration" type="text" inputmode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.combatArts.combatArt3.cArtCdownDuration}}">
+                            <input name="system.combatArts.combatArt3.cArtCdownDuration" type="number"
+                                data-dtype="Number" value="{{system.combatArts.combatArt3.cArtCdownDuration}}">
                         </td>
                         <td style="text-align: center;">
                             <input name="system.combatArts.combatArt3.cArtOnCooldown" type="checkbox" {{#if
@@ -378,14 +377,12 @@
             </table>
         </section>
         <!-- Ammo/Coating Section -->
-        <section id="altair-reserve-skills" class="outer-container">
+        <section class="altair-skill-type outer-container">
             <h2>{{localize "altair.ammoCoatingArts.ammoCoatings"}}</h2>
             <table class="reserve-skills-table">
-                <!-- Define column widths via colgroup -->
+                <!-- for width -->
                 <colgroup>
-                    <!-- Make the skillName column occupy about half -->
                     <col class="col-ammoCoatingsName" />
-                    <!-- Smaller columns for the cooldowns -->
                     <col class="col-ammoCoatingsEffect" />
                     <col class="col-ammoCoatingsStock" />
                 </colgroup>
@@ -404,15 +401,14 @@
                                 value="{{system.ammoCoatings.ammoCoating1.ammoName}}">
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating1.ammoEffect" type="text"
-                                value="{{system.ammoCoatings.ammoCoating1.ammoEffect}}">
+                            <textarea class="altair-Effect-Desc"
+                                name="system.ammoCoatings.ammoCoating1.ammoEffect">{{system.ammoCoatings.ammoCoating1.ammoEffect}}</textarea>
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating1.ammoStock.value" type="text"
-                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
-                                value="{{system.ammoCoatings.ammoCoating1.ammoStock.value}}">
-                            <input name="system.ammoCoatings.ammoCoating1.ammoStock.max" type="text" inputmode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating1.ammoStock.max}}">
+                            <input name="system.ammoCoatings.ammoCoating1.ammoStock.value" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating1.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating1.ammoStock.max" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating1.ammoStock.max}}">
                         </td>
                     </tr>
                     <!-- Ammo/Coating #2 -->
@@ -422,15 +418,14 @@
                                 value="{{system.ammoCoatings.ammoCoating2.ammoName}}">
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating2.ammoEffect" type="text"
-                                value="{{system.ammoCoatings.ammoCoating2.ammoEffect}}">
+                            <textarea class="altair-Effect-Desc"
+                                name="system.ammoCoatings.ammoCoating2.ammoEffect">{{system.ammoCoatings.ammoCoating2.ammoEffect}}</textarea>
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating2.ammoStock.value" type="text"
-                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
-                                value="{{system.ammoCoatings.ammoCoating2.ammoStock.value}}">
-                            <input name="system.ammoCoatings.ammoCoating2.ammoStock.max" type="text" inputmode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating2.ammoStock.max}}">
+                            <input name="system.ammoCoatings.ammoCoating2.ammoStock.value" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating2.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating2.ammoStock.max" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating2.ammoStock.max}}">
                         </td>
                     </tr>
                     <!-- Ammo/Coating #3 -->
@@ -440,15 +435,14 @@
                                 value="{{system.ammoCoatings.ammoCoating3.ammoName}}">
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating3.ammoEffect" type="text"
-                                value="{{system.ammoCoatings.ammoCoating3.ammoEffect}}">
+                            <textarea class="altair-Effect-Desc"
+                                name="system.ammoCoatings.ammoCoating3.ammoEffect">{{system.ammoCoatings.ammoCoating3.ammoEffect}}</textarea>
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating3.ammoStock.value" type="text"
-                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
-                                value="{{system.ammoCoatings.ammoCoating3.ammoStock.value}}">
-                            <input name="system.ammoCoatings.ammoCoating3.ammoStock.max" type="text" inputmode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating3.ammoStock.max}}">
+                            <input name="system.ammoCoatings.ammoCoating3.ammoStock.value" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating3.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating3.ammoStock.max" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating3.ammoStock.max}}">
                         </td>
                     </tr>
                     <!-- Ammo/Coating #4 -->
@@ -458,15 +452,14 @@
                                 value="{{system.ammoCoatings.ammoCoating4.ammoName}}">
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating4.ammoEffect" type="text"
-                                value="{{system.ammoCoatings.ammoCoating4.ammoEffect}}">
+                            <textarea class="altair-Effect-Desc"
+                                name="system.ammoCoatings.ammoCoating4.ammoEffect">{{system.ammoCoatings.ammoCoating4.ammoEffect}}</textarea>
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating4.ammoStock.value" type="text"
-                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
-                                value="{{system.ammoCoatings.ammoCoating4.ammoStock.value}}">
-                            <input name="system.ammoCoatings.ammoCoating4.ammoStock.max" type="text" inputmode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating4.ammoStock.max}}">
+                            <input name="system.ammoCoatings.ammoCoating4.ammoStock.value" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating4.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating4.ammoStock.max" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating4.ammoStock.max}}">
                         </td>
                     </tr>
                     <!-- Ammo/Coating #5 -->
@@ -476,32 +469,29 @@
                                 value="{{system.ammoCoatings.ammoCoating5.ammoName}}">
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating5.ammoEffect" type="text"
-                                value="{{system.ammoCoatings.ammoCoating5.ammoEffect}}">
+                            <textarea class="altair-Effect-Desc"
+                                name="system.ammoCoatings.ammoCoating5.ammoEffect">{{system.ammoCoatings.ammoCoating5.ammoEffect}}</textarea>
                         </td>
                         <td>
-                            <input name="system.ammoCoatings.ammoCoating5.ammoStock.value" type="text"
-                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
-                                value="{{system.ammoCoatings.ammoCoating5.ammoStock.value}}">
-                            <input name="system.ammoCoatings.ammoCoating5.ammoStock.max" type="text" inputmode="decimal"
-                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating5.ammoStock.max}}">
+                            <input name="system.ammoCoatings.ammoCoating5.ammoStock.value" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating5.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating5.ammoStock.max" type="number"
+                                data-dtype="Number" value="{{system.ammoCoatings.ammoCoating5.ammoStock.max}}">
                         </td>
                     </tr>
                 </tbody>
             </table>
         </section>
-    </div>
+    </section>
     <br>
     <!-- Reserve Skills Section -->
-    <section id="altair-reserve-skills" class="outer-container">
+    <section class="altair-skill-type outer-container">
         <h2>{{localize "altair.reserveSkills.reserveSkills"}}</h2>
         <table class="reserve-skills-table">
-            <!-- Define column widths via colgroup -->
+            <!-- for width -->
             <colgroup>
-                <!-- Make the skillName column occupy about half -->
                 <col class="col-skillName" />
                 <col class="col-skillEffect" />
-                <!-- Smaller columns for the cooldowns -->
                 <col class="col-skillCooldown" />
                 <col class="col-onCooldown" />
             </colgroup>
@@ -521,15 +511,13 @@
                             value="{{system.reserveSkill.reserveSkill1.skillName}}">
                     </td>
                     <td>
-                        <input name="system.reserveSkill.reserveSkill1.skillEffect" type="text"
-                            value="{{system.reserveSkill.reserveSkill1.skillEffect}}">
+                        <textarea class="altair-Effect-Desc"
+                            name="system.reserveSkill.reserveSkill1.skillEffect">{{system.reserveSkill.reserveSkill1.skillEffect}}</textarea>
                     </td>
                     <td>
                         <input name="system.reserveSkill.reserveSkill1.skillRoundCooldown" type="text"
-                            inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
                             value="{{system.reserveSkill.reserveSkill1.skillRoundCooldown}}">
                         <input name="system.reserveSkill.reserveSkill1.skillTimeCooldown" type="text"
-                            inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
                             value="{{system.reserveSkill.reserveSkill1.skillTimeCooldown}}">
                     </td>
                     <td style="text-align: center;">
@@ -544,8 +532,8 @@
                             value="{{system.reserveSkill.reserveSkill2.skillName}}">
                     </td>
                     <td>
-                        <input name="system.reserveSkill.reserveSkill2.skillEffect" type="text"
-                            value="{{system.reserveSkill.reserveSkill2.skillEffect}}">
+                        <textarea class="altair-Effect-Desc"
+                            name="system.reserveSkill.reserveSkill2.skillEffect">{{system.reserveSkill.reserveSkill2.skillEffect}}</textarea>
                     </td>
                     <td>
                         <input name="system.reserveSkill.reserveSkill2.skillRoundCooldown" type="text"
@@ -565,8 +553,8 @@
                             value="{{system.reserveSkill.reserveSkill3.skillName}}">
                     </td>
                     <td>
-                        <input name="system.reserveSkill.reserveSkill3.skillEffect" type="text"
-                            value="{{system.reserveSkill.reserveSkill3.skillEffect}}">
+                        <textarea class="altair-Effect-Desc"
+                            name="system.reserveSkill.reserveSkill3.skillEffect">{{system.reserveSkill.reserveSkill3.skillEffect}}</textarea>
                     </td>
                     <td>
                         <input name="system.reserveSkill.reserveSkill3.skillRoundCooldown" type="text"
@@ -586,8 +574,8 @@
                             value="{{system.reserveSkill.reserveSkill4.skillName}}">
                     </td>
                     <td>
-                        <input name="system.reserveSkill.reserveSkill4.skillEffect" type="text"
-                            value="{{system.reserveSkill.reserveSkill4.skillEffect}}">
+                        <textarea class="altair-Effect-Desc"
+                            name="system.reserveSkill.reserveSkill4.skillEffect">{{system.reserveSkill.reserveSkill4.skillEffect}}</textarea>
                     </td>
                     <td>
                         <input name="system.reserveSkill.reserveSkill4.skillRoundCooldown" type="text"
@@ -607,8 +595,8 @@
                             value="{{system.reserveSkill.reserveSkill5.skillName}}">
                     </td>
                     <td>
-                        <input name="system.reserveSkill.reserveSkill5.skillEffect" type="text"
-                            value="{{system.reserveSkill.reserveSkill5.skillEffect}}">
+                        <textarea class="altair-Effect-Desc"
+                            name="system.reserveSkill.reserveSkill5.skillEffect">{{system.reserveSkill.reserveSkill5.skillEffect}}</textarea>
                     </td>
                     <td>
                         <input name="system.reserveSkill.reserveSkill5.skillRoundCooldown" type="text"
@@ -627,7 +615,7 @@
     <br>
 
 
-    <!-- Bio or description -->
+    <!-- we never really used this lol -->
     <label for="bio">{{localize "altair.characterInfo.bio"}}</label>
     <section class="form-group altair-bio">
         <textarea id="bio" name="system.bio">{{system.bio}}</textarea>
