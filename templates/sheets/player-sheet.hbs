@@ -1,4 +1,4 @@
-<form class="{{cssClass}} altair-sheet" autocomplete="off">
+<section class="{{cssClass}} scrollable altair-sheet" autocomplete="off">
 
     <!-- Header with image and name -->
     <header class="sheet-header flexrow">
@@ -244,47 +244,47 @@
             <div class="affinity-bottom-inner-container flexrow">
                 <div class="affinity-inner-container">
                     <label for="element">{{localize "altair.characterInfo.element"}}</label><br>
-                    <select class="choice-selector" id="element" name="system.element" multiple>
+                    <multi-select class="choice-selector" id="element" name="system.element">
                         {{selectOptions playerElements selected=system.element localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
                 <div class="affinity-inner-container">
                     <label for="species">{{localize "altair.characterInfo.species"}}</label><br>
-                    <select class="choice-selector" id="species" name="system.species" multiple>
+                    <multi-select class="choice-selector" id="species" name="system.species" multiple>
                         {{selectOptions playerSpecies selected=system.species localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
             </div>
             <div class="affinity-bottom-inner-container flexrow">
                 <div class="affinity-inner-container">
                     <label for="semiResistance">{{localize "altair.characterInfo.semiResistance"}}</label><br>
-                    <select class="choice-selector" id="semiResistance" name="system.semiResistance" multiple>
+                    <multi-select class="choice-selector" id="semiResistance" name="system.semiResistance" multiple>
                         {{selectOptions playerAffinities selected=system.semiResistance localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
                 <div class="affinity-inner-container">
                     <label for="resistance">{{localize "altair.characterInfo.resistance"}}</label><br>
-                    <select class="choice-selector" id="resistance" name="system.resistance" multiple>
+                    <multi-select class="choice-selector" id="resistance" name="system.resistance" multiple>
                         {{selectOptions playerAffinities selected=system.resistance localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
             </div>
             <div class="affinity-inner-container flexrow">
                 <div class="affinity-inner-container">
                     <label for="semiWeakness">{{localize "altair.characterInfo.semiWeakness"}}</label><br>
-                    <select class="choice-selector" id="semiWeakness" name="system.semiWeakness" multiple>
+                    <multi-select class="choice-selector" id="semiWeakness" name="system.semiWeakness" multiple>
                         {{selectOptions playerAffinities selected=system.semiWeakness localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
                 <div class="affinity-inner-container">
                     <label for="weakness">{{localize "altair.characterInfo.weakness"}}</label><br>
-                    <select class="choice-selector" id="weakness" name="system.weakness" multiple>
+                    <multi-select class="choice-selector" id="weakness" name="system.weakness" multiple>
                         {{selectOptions playerAffinities selected=system.weakness localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
             </div>
@@ -621,4 +621,4 @@
         <textarea id="bio" name="system.bio">{{system.bio}}</textarea>
     </section>
 
-</form>
+</section>
