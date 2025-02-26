@@ -170,5 +170,11 @@
         },
         "AltairPlayerSheet": "Player",
         "AltairEnemySheet": "Enemy"
+    },
+    "TYPES": {
+        "Actor": {
+            "player": "Player",
+            "enemy": "Enemy"
+        }
     }
 }

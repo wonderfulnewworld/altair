@@ -67,7 +67,7 @@
     <div class="container-divider">
         <div class="outer-container"> <!-- divider for the main resources and non-main resources -->
             <div id="altair-main-resources" class="outer-container"> <!--- divider for hsf/dp -->
-                <section class="flexrow altair-resources">
+                <section class="flexbox altair-resources">
                     <div class="flexbox">
                         <label>{{localize "altair.characterInfo.health"}}</label>
                         <div class="form-group">
@@ -84,7 +84,7 @@
                                 value="{{system.healthRegen}}" style="width: 3em;">
                         </div>
                     </div>
-                    <div class="break"></div>
+                    <br>
 
                     <div class="flexbox">
                         <label>{{localize "altair.characterInfo.stamina"}}</label>
@@ -102,7 +102,7 @@
                                 value="{{system.staminaRegen}}" style="width: 3em;">
                         </div>
                     </div>
-                    <div class="break"></div>
+                    <br>
 
                     <div class="flexbox">
                         <label>{{localize "altair.characterInfo.focus"}}</label>
@@ -251,7 +251,7 @@
 
                 <div class="affinity-inner-container">
                     <label for="species">{{localize "altair.characterInfo.species"}}</label><br>
-                    <multi-select class="choice-selector" id="species" name="system.species" multiple>
+                    <multi-select class="choice-selector" id="species" name="system.species">
                         {{selectOptions playerSpecies selected=system.species localize=true}}
                     </multi-select>
                 </div>
@@ -259,14 +259,14 @@
             <div class="affinity-bottom-inner-container flexrow">
                 <div class="affinity-inner-container">
                     <label for="semiResistance">{{localize "altair.characterInfo.semiResistance"}}</label><br>
-                    <multi-select class="choice-selector" id="semiResistance" name="system.semiResistance" multiple>
+                    <multi-select class="choice-selector" id="semiResistance" name="system.semiResistance">
                         {{selectOptions playerAffinities selected=system.semiResistance localize=true}}
                     </multi-select>
                 </div>
 
                 <div class="affinity-inner-container">
                     <label for="resistance">{{localize "altair.characterInfo.resistance"}}</label><br>
-                    <multi-select class="choice-selector" id="resistance" name="system.resistance" multiple>
+                    <multi-select class="choice-selector" id="resistance" name="system.resistance">
                         {{selectOptions playerAffinities selected=system.resistance localize=true}}
                     </multi-select>
                 </div>
@@ -275,14 +275,14 @@
             <div class="affinity-inner-container flexrow">
                 <div class="affinity-inner-container">
                     <label for="semiWeakness">{{localize "altair.characterInfo.semiWeakness"}}</label><br>
-                    <multi-select class="choice-selector" id="semiWeakness" name="system.semiWeakness" multiple>
+                    <multi-select class="choice-selector" id="semiWeakness" name="system.semiWeakness">
                         {{selectOptions playerAffinities selected=system.semiWeakness localize=true}}
                     </multi-select>
                 </div>
 
                 <div class="affinity-inner-container">
                     <label for="weakness">{{localize "altair.characterInfo.weakness"}}</label><br>
-                    <multi-select class="choice-selector" id="weakness" name="system.weakness" multiple>
+                    <multi-select class="choice-selector" id="weakness" name="system.weakness">
                         {{selectOptions playerAffinities selected=system.weakness localize=true}}
                     </multi-select>
                 </div>

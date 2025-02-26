@@ -68,13 +68,14 @@ export default class AltairPlayerSheet extends api.HandlebarsApplicationMixin(
     }
 
     // choices JS stuff
-    //I'll try fixing this after..
-    /*_onRender(context,options) {
-        const html = $(this.element)
+    /* Doesn't work, breaks scrollbar.
+    _onRender(context,options) {
+        const hbs = this.element;
 
         // locates the choice by its id
-        const selects = html.find('.choice-selector');
-        selects.each((i, sel) => {
+        const selects = hbs.querySelectorAll('.choice-selector');
+        console.log(selects);
+        selects.forEach((sel, i) => {
             new Choices(sel, { // initialize Choices on each selector
                 removeItemButton: true,
                 placeholderValue: "Select elements...",
@@ -82,6 +83,5 @@ export default class AltairPlayerSheet extends api.HandlebarsApplicationMixin(
                 shouldSortItems: false,
             });
         });
-
     }*/
 }

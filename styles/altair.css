@@ -55,6 +55,16 @@
   height: 0;
 }
 
+.choice-selector {
+  align-items: end;
+  
+}
+
+.choice-selector select {
+  width: 25% !important;
+  
+}
+
 /* Target the main input area for multiple selections */
 .choices[data-type*="select-multiple"] .choices__inner {
   background-color: transparent !important;
@@ -134,7 +144,8 @@
 .reserve-skills-table td {
   padding: 0.4em;
   vertical-align: middle;
-  word-wrap: break-word; /* Allows text to wrap if it’s too long */
+  word-wrap: break-word;
+  /* Allows text to wrap if it’s too long */
   overflow-wrap: break-word;
 }
 
