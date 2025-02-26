@@ -34,6 +34,7 @@ altair.characterInfo = {
     health5: "altair.characterInfo.health5",
     exp: "altair.characterInfo.exp",
     lifetimeExperience: "altair.characterInfo.lifetimeExperience",
+    defeatExperience: "altair.characterInfo.defeatExperience",
     movement: "altair.characterInfo.movement",
     speed: "altair.characterInfo.speed",
     money: "altair.characterInfo.money",
@@ -49,6 +50,28 @@ altair.characterInfo = {
     spirit: "altair.characterInfo.spirit",
     skill: "altair.characterInfo.skill",
     charm: "altair.characterInfo.charm"
+}
+
+altair.general = {
+    onCooldown: "altair.general.onCooldown",
+    skillName: "altair.general.skillName",
+    effect: "altair.general.effect",
+    roundCooldown: "altair.general.roundCooldown",
+    timeCooldown: "altair.general.timeCooldown",
+    dualCooldown: "altair.general.dualCooldown",
+    affinities: "altair.general.affinities",
+    battleResources: "altair.general.battleResources",
+    staticResources: "altair.general.staticResources"
+}
+
+altair.ammoCoatingArts = {
+    combatArts: "altair.ammoCoatingArts.combatArts",
+    ammoCoatings: "altair.ammoCoatingArts.ammoCoatings",
+    ammoCoatingArtStock: "altair.ammoCoatingArts.ammoCoatingArtStock"
+}
+
+altair.reserveSkills = {
+    reserveSkills: "altair.reserveSkills",
 }
 
 altair.elements = {

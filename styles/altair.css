@@ -29,6 +29,10 @@
     display: flex;
 }
 
+#altair-skills-outline {
+    display: flex;
+}
+
 #altair-level-title {
     justify-content: flex-start;
 }
@@ -88,3 +92,94 @@
 .extra-container{
     text-align: center;
 }
+
+.altair-skills {
+    border: 1px black solid;
+}
+
+#altair-reserve-skills {
+    overflow-anchor: none;
+}
+
+.altair-Effect-Desc{
+  /* Prevent user resizing */
+  resize: none;
+  
+  /* Mimic the height of a single-line input */
+  height: 1em;
+  min-height: 1.5rem;
+  
+  /* Optionally, match fonts, border, etc., to typical input styling */
+  font-family: inherit;
+  /* And so on... */
+}
+
+.two-column-wrap {
+  display: flex;       /* Activate flexbox */
+  flex-wrap: wrap;     /* Allow items to wrap to a new row if needed */
+  align-items: flex-start;
+}
+
+.two-column-wrap section {
+  /* Let each section be flexible in width */
+  flex: 1 1 500px;     /* “grow, shrink, min-width” = 300px ensures it wraps if narrower than 600px total */
+  box-sizing: border-box;
+}
+
+/* Reserve Skills Table */
+.reserve-skills-table {
+    width: 100%;               /* Fill the available width */
+    border-collapse: collapse; /* Merge borders for a cleaner look */
+    table-layout: auto;        /* Let columns auto-size for flexibility */
+  }
+  
+  .reserve-skills-table th,
+  .reserve-skills-table td {
+    padding: 0.4em;
+    vertical-align: middle;
+    word-wrap: break-word;     /* Allows text to wrap if it’s too long */
+    overflow-wrap: break-word; /* Another option for modern browsers */
+  }
+  
+  .reserve-skills-table th {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Column widths */
+.reserve-skills-table col.col-skillName {
+    width: 20%;
+  }
+  .reserve-skills-table col.col-skillEffect {
+    width: 60%;
+  }
+  .reserve-skills-table col.col-skillCooldown {
+    width: 15%;
+  }
+  .reserve-skills-table col.col-onCooldown {
+    width: 5%;
+  }
+
+    /* Column widths */
+.reserve-skills-table col.col-combatArtsName {
+    width: 30%;
+  }
+  .reserve-skills-table col.col-combatArtsEffect {
+    width: 60%;
+  }
+  .reserve-skills-table col.col-combatArtsDuration {
+    width: 10%;
+  }
+  .reserve-skills-table col.col-combatArtsOnCooldown {
+    width: 10%;
+  }
+
+  .reserve-skills-table col.col-ammoCoatingsName {
+    width: 30%;
+  }
+  .reserve-skills-table col.col-ammoCoatingsEffect {
+    width: 65%;
+  }
+  .reserve-skills-table col.col-ammoCoatingsStock {
+    width: 5%;
+  }

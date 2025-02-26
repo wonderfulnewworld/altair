@@ -12,7 +12,7 @@
                     "value": 20,
                     "max": 20
                 },
-                "shield":{
+                "shield": {
                     "value": 0,
                     "max": 0
                 },
@@ -38,7 +38,7 @@
                 "resistance": "ice",
                 "semiWeakness": "melee",
                 "semiResistance": "projectile",
-                "money": 150,
+                "money": 0,
                 "size": 1,
                 "bio": "",
                 "title": "",
@@ -68,24 +68,26 @@
                     "max": 5
                 },
                 "health2": {
-                    "value": 10,
-                    "max": 10
+                    "value": 0,
+                    "max": 0
                 },
                 "health3": {
-                    "value": 5,
-                    "max": 5
+                    "value": 0,
+                    "max": 0
                 },
                 "health4": {
-                    "value": 5,
-                    "max": 5
+                    "value": 0,
+                    "max": 0
                 },
                 "health5": {
-                    "value": 5,
-                    "max": 5
+                    "value": 0,
+                    "max": 0
                 },
                 "bleed": 3,
                 "drain": 2,
-                "intensity": 0
+                "intensity": 0,
+                "defeatExperience": 0,
+                "healthRegen": 3
             },
             "enemyCommonBS": {
                 "burst": {
@@ -97,33 +99,174 @@
                     "max": 5
                 },
                 "health2": {
-                    "value": 10,
-                    "max": 10
+                    "value": 0,
+                    "max": 0
                 },
                 "health3": {
-                    "value": 5,
-                    "max": 5
+                    "value": 0,
+                    "max": 0
                 },
                 "health4": {
-                    "value": 5,
-                    "max": 5
+                    "value": 0,
+                    "max": 0
                 },
                 "health5": {
-                    "value": 5,
-                    "max": 5
+                    "value": 0,
+                    "max": 0
                 },
                 "bleed": 3,
                 "daze": 2,
-                "intensity": 0
+                "intensity": 0,
+                "defeatExperience": 0,
+                "healthRegen": 3
             },
             "nonPlayerCommon": {
                 "drop": ""
+            },
+            "combatArts": {
+                "combatArt1": {
+                    "cArtName": "",
+                    "cArtEffect": "",
+                    "cArtCdownDuration": "",
+                    "cArtOnCooldown": ""
+                },
+                "combatArt2": {
+                    "cArtName": "",
+                    "cArtEffect": "",
+                    "cArtCdownDuration": "",
+                    "cArtOnCooldown": ""
+                },
+                "combatArt3": {
+                    "cArtName": "",
+                    "cArtEffect": "",
+                    "cArtCdownDuration": "",
+                    "cArtOnCooldown": ""
+                }
+            },
+            "ammoCoatings": {
+                "ammoCoating1": {
+                    "ammoName": "",
+                    "ammoEffect": "",
+                    "ammoStock": {
+                        "value": "",
+                        "max": ""
+                    }
+                },
+                "ammoCoating2": {
+                    "ammoName": "",
+                    "ammoEffect": "",
+                    "ammoStock": {
+                        "value": "",
+                        "max": ""
+                    }
+                },
+                "ammoCoating3": {
+                    "ammoName": "",
+                    "ammoEffect": "",
+                    "ammoStock": {
+                        "value": "",
+                        "max": ""
+                    }
+                },
+                "ammoCoating4": {
+                    "ammoName": "",
+                    "ammoEffect": "",
+                    "ammoStock": {
+                        "value": "",
+                        "max": ""
+                    }
+                },
+                "ammoCoating5": {
+                    "ammoName": "",
+                    "ammoEffect": "",
+                    "ammoStock": {
+                        "value": "",
+                        "max": ""
+                    }
+                }
+            },
+            "reserveSkill": {
+                "reserveSkill1": {
+                    "skillName": "",
+                    "skillEffect": "",
+                    "skillRoundCooldown": "",
+                    "skillTimeCooldown": "",
+                    "onCooldown": false
+                },
+                "reserveSkill2": {
+                    "skillName": "",
+                    "skillEffect": "",
+                    "skillRoundCooldown": "",
+                    "skillTimeCooldown": "",
+                    "onCooldown": false
+                },
+                "reserveSkill3": {
+                    "skillName": "",
+                    "skillEffect": "",
+                    "skillRoundCooldown": "",
+                    "skillTimeCooldown": "",
+                    "onCooldown": false
+                },
+                "reserveSkill4": {
+                    "skillName": "",
+                    "skillEffect": "",
+                    "skillRoundCooldown": "",
+                    "skillTimeCooldown": "",
+                    "onCooldown": false
+                },
+                "reserveSkill5": {
+                    "skillName": "",
+                    "skillEffect": "",
+                    "skillRoundCooldown": "",
+                    "skillTimeCooldown": "",
+                    "onCooldown": false
+                }
+            },
+            "skillEnemy": {
+                "skill1": {
+                    "skillName": "",
+                    "skillCooldown": "",
+                    "isReaved": false
+                },
+                "skill2": {
+                    "skillName": "",
+                    "skillCooldown": "",
+                    "isReaved": false
+                },
+                "skill3": {
+                    "skillName": "",
+                    "skillCooldown": "",
+                    "isReaved": false
+                },
+                "skill4": {
+                    "skillName": "",
+                    "skillCooldown": "",
+                    "isReaved": false
+                },
+                "skill5": {
+                    "skillName": "",
+                    "skillCooldown": "",
+                    "isReaved": false
+                },
+                "heavy1": {
+                    "skillName": "",
+                    "skillCooldown": "",
+                    "isReaved": false
+                },
+                "heavy2": {
+                    "skillName": "",
+                    "skillCooldown": "",
+                    "isReaved": false
+                }
             }
         },
         "player": {
             "templates": [
                 "common",
-                "personCommon"
+                "personCommon",
+                "combatArts",
+                "ammoCoatings",
+                "reserveSkill"
             ],
             "stamina": {
                 "value": 3,
@@ -153,7 +296,8 @@
         "enemy": {
             "templates": [
                 "common",
-                "enemyCommon"
+                "enemyCommon",
+                "skillEnemy"
             ]
         }
     },

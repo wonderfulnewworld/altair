@@ -35,17 +35,15 @@ export default class AltairPlayerSheet extends ActorSheet {
         return sheetData;
     }
 
-    /** 
-   * After the sheet's HTML is rendered, set up our Choices.js instance 
-   */
+    // choices JS stuff
     activateListeners(html) {
         super.activateListeners(html);
 
         // Locate the <select> by its id or a unique selector
         const selects = html.find('.choice-selector');
         selects.each((i, sel) => {
-            new Choices(sel, { // Initialize Choices on each selector
-                removeItemButton: true,    // adds little 'x' next to each selected item
+            new Choices(sel, { // initialize Choices on each selector
+                removeItemButton: true,
                 placeholderValue: "Select elements...",
                 shouldSort: false, // I don't want it to be alphabetical
                 shouldSortItems: false,

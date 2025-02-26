@@ -237,7 +237,8 @@
             </section>
         </div>
     </div>
-
+    <br>
+    <h2>{{localize "altair.general.affinities"}}</h2>
     <div id="affinity-container-divider">
         <div class="affinity-bottom-container">
             <div class="affinity-bottom-inner-container flexrow">
@@ -292,6 +293,339 @@
 
 
     </div>
+    <br>
+    <div class="two-column-wrap">
+        <!-- Combat Art Section -->
+        <section id="altair-reserve-skills" class="outer-container">
+            <h2>{{localize "altair.ammoCoatingArts.combatArts"}}</h2>
+            <table class="reserve-skills-table">
+                <!-- Define column widths via colgroup -->
+                <colgroup>
+                    <!-- Make the skillName column occupy about half -->
+                    <col class="col-combatArtsName" />
+                    <!-- Smaller columns for the cooldowns -->
+                    <col class="col-combatArtsEffect" />
+                    <col class="col-combatArtsDuration" />
+                    <col class="col-combatArtsOnCooldown" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>{{localize "altair.general.skillName"}}</th>
+                        <th>{{localize "altair.general.effect"}}</th>
+                        <th>{{localize "altair.general.roundCooldown"}}</th>
+                        <th>{{localize "altair.general.onCooldown"}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Combat Art #1 -->
+                    <tr>
+                        <td>
+                            <input name="system.combatArts.combatArt1.cArtName" type="text"
+                                value="{{system.combatArts.combatArt1.cArtName}}">
+                        </td>
+                        <td>
+                            <input name="system.combatArts.combatArt1.cArtEffect" type="text"
+                                value="{{system.combatArts.combatArt1.cArtEffect}}">
+                        </td>
+                        <td>
+                            <input name="system.combatArts.combatArt1.cArtCdownDuration" type="text" inputmode="decimal"
+                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.combatArts.combatArt1.cArtCdownDuration}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.combatArts.combatArt1.cArtOnCooldown" type="checkbox" {{#if
+                                system.combatArts.combatArt1.cArtOnCooldown}}checked{{/if}}>
+                        </td>
+                    </tr>
+                    <!-- Combat Art #2 -->
+                    <tr>
+                        <td>
+                            <input name="system.combatArts.combatArt2.cArtName" type="text"
+                                value="{{system.combatArts.combatArt2.cArtName}}">
+                        </td>
+                        <td>
+                            <input name="system.combatArts.combatArt2.cArtEffect" type="text"
+                                value="{{system.combatArts.combatArt2.cArtEffect}}">
+                        </td>
+                        <td>
+                            <input name="system.combatArts.combatArt2.cArtCdownDuration" type="text" inputmode="decimal"
+                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.combatArts.combatArt2.cArtCdownDuration}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.combatArts.combatArt2.cArtOnCooldown" type="checkbox" {{#if
+                                system.combatArts.combatArt2.cArtOnCooldown}}checked{{/if}}>
+                        </td>
+                    </tr>
+                    <!-- Combat Art #3 -->
+                    <tr>
+                        <td>
+                            <input name="system.combatArts.combatArt3.cArtName" type="text"
+                                value="{{system.combatArts.combatArt3.cArtName}}">
+                        </td>
+                        <td>
+                            <input name="system.combatArts.combatArt3.cArtEffect" type="text"
+                                value="{{system.combatArts.combatArt3.cArtEffect}}">
+                        </td>
+                        <td>
+                            <input name="system.combatArts.combatArt3.cArtCdownDuration" type="text" inputmode="decimal"
+                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.combatArts.combatArt3.cArtCdownDuration}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.combatArts.combatArt3.cArtOnCooldown" type="checkbox" {{#if
+                                system.combatArts.combatArt3.cArtOnCooldown}}checked{{/if}}>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Ammo/Coating Section -->
+        <section id="altair-reserve-skills" class="outer-container">
+            <h2>{{localize "altair.ammoCoatingArts.ammoCoatings"}}</h2>
+            <table class="reserve-skills-table">
+                <!-- Define column widths via colgroup -->
+                <colgroup>
+                    <!-- Make the skillName column occupy about half -->
+                    <col class="col-ammoCoatingsName" />
+                    <!-- Smaller columns for the cooldowns -->
+                    <col class="col-ammoCoatingsEffect" />
+                    <col class="col-ammoCoatingsStock" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>{{localize "altair.general.skillName"}}</th>
+                        <th>{{localize "altair.general.effect"}}</th>
+                        <th>{{localize "altair.ammoCoatingArts.ammoCoatingArtStock"}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ammo/Coating #1 -->
+                    <tr>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating1.ammoName" type="text"
+                                value="{{system.ammoCoatings.ammoCoating1.ammoName}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating1.ammoEffect" type="text"
+                                value="{{system.ammoCoatings.ammoCoating1.ammoEffect}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating1.ammoStock.value" type="text"
+                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
+                                value="{{system.ammoCoatings.ammoCoating1.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating1.ammoStock.max" type="text" inputmode="decimal"
+                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating1.ammoStock.max}}">
+                        </td>
+                    </tr>
+                    <!-- Ammo/Coating #2 -->
+                    <tr>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating2.ammoName" type="text"
+                                value="{{system.ammoCoatings.ammoCoating2.ammoName}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating2.ammoEffect" type="text"
+                                value="{{system.ammoCoatings.ammoCoating2.ammoEffect}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating2.ammoStock.value" type="text"
+                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
+                                value="{{system.ammoCoatings.ammoCoating2.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating2.ammoStock.max" type="text" inputmode="decimal"
+                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating2.ammoStock.max}}">
+                        </td>
+                    </tr>
+                    <!-- Ammo/Coating #3 -->
+                    <tr>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating3.ammoName" type="text"
+                                value="{{system.ammoCoatings.ammoCoating3.ammoName}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating3.ammoEffect" type="text"
+                                value="{{system.ammoCoatings.ammoCoating3.ammoEffect}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating3.ammoStock.value" type="text"
+                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
+                                value="{{system.ammoCoatings.ammoCoating3.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating3.ammoStock.max" type="text" inputmode="decimal"
+                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating3.ammoStock.max}}">
+                        </td>
+                    </tr>
+                    <!-- Ammo/Coating #4 -->
+                    <tr>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating4.ammoName" type="text"
+                                value="{{system.ammoCoatings.ammoCoating4.ammoName}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating4.ammoEffect" type="text"
+                                value="{{system.ammoCoatings.ammoCoating4.ammoEffect}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating4.ammoStock.value" type="text"
+                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
+                                value="{{system.ammoCoatings.ammoCoating4.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating4.ammoStock.max" type="text" inputmode="decimal"
+                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating4.ammoStock.max}}">
+                        </td>
+                    </tr>
+                    <!-- Ammo/Coating #5 -->
+                    <tr>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating5.ammoName" type="text"
+                                value="{{system.ammoCoatings.ammoCoating5.ammoName}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating5.ammoEffect" type="text"
+                                value="{{system.ammoCoatings.ammoCoating5.ammoEffect}}">
+                        </td>
+                        <td>
+                            <input name="system.ammoCoatings.ammoCoating5.ammoStock.value" type="text"
+                                inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
+                                value="{{system.ammoCoatings.ammoCoating5.ammoStock.value}}">
+                            <input name="system.ammoCoatings.ammoCoating5.ammoStock.max" type="text" inputmode="decimal"
+                                pattern="[0-9]*[.,]?[0-9]*" value="{{system.ammoCoatings.ammoCoating5.ammoStock.max}}">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <br>
+    <!-- Reserve Skills Section -->
+    <section id="altair-reserve-skills" class="outer-container">
+        <h2>{{localize "altair.reserveSkills.reserveSkills"}}</h2>
+        <table class="reserve-skills-table">
+            <!-- Define column widths via colgroup -->
+            <colgroup>
+                <!-- Make the skillName column occupy about half -->
+                <col class="col-skillName" />
+                <col class="col-skillEffect" />
+                <!-- Smaller columns for the cooldowns -->
+                <col class="col-skillCooldown" />
+                <col class="col-onCooldown" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>{{localize "altair.general.skillName"}}</th>
+                    <th>{{localize "altair.general.effect"}}</th>
+                    <th>{{localize "altair.general.dualCooldown"}}</th>
+                    <th>{{localize "altair.general.onCooldown"}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Skill #1 -->
+                <tr>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill1.skillName" type="text"
+                            value="{{system.reserveSkill.reserveSkill1.skillName}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill1.skillEffect" type="text"
+                            value="{{system.reserveSkill.reserveSkill1.skillEffect}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill1.skillRoundCooldown" type="text"
+                            inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
+                            value="{{system.reserveSkill.reserveSkill1.skillRoundCooldown}}">
+                        <input name="system.reserveSkill.reserveSkill1.skillTimeCooldown" type="text"
+                            inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*"
+                            value="{{system.reserveSkill.reserveSkill1.skillTimeCooldown}}">
+                    </td>
+                    <td style="text-align: center;">
+                        <input name="system.reserveSkill.reserveSkill1.onCooldown" type="checkbox" {{#if
+                            system.reserveSkill.reserveSkill1.onCooldown}}checked{{/if}}>
+                    </td>
+                </tr>
+                <!-- Skill #2 -->
+                <tr>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill2.skillName" type="text"
+                            value="{{system.reserveSkill.reserveSkill2.skillName}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill2.skillEffect" type="text"
+                            value="{{system.reserveSkill.reserveSkill2.skillEffect}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill2.skillRoundCooldown" type="text"
+                            value="{{system.reserveSkill.reserveSkill2.skillRoundCooldown}}">
+                        <input name="system.reserveSkill.reserveSkill2.skillTimeCooldown" type="text"
+                            value="{{system.reserveSkill.reserveSkill2.skillTimeCooldown}}">
+                    </td>
+                    <td style="text-align: center;">
+                        <input name="system.reserveSkill.reserveSkill2.onCooldown" type="checkbox" {{#if
+                            system.reserveSkill.reserveSkill2.onCooldown}}checked{{/if}}>
+                    </td>
+                </tr>
+                <!-- Skill #3 -->
+                <tr>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill3.skillName" type="text"
+                            value="{{system.reserveSkill.reserveSkill3.skillName}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill3.skillEffect" type="text"
+                            value="{{system.reserveSkill.reserveSkill3.skillEffect}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill3.skillRoundCooldown" type="text"
+                            value="{{system.reserveSkill.reserveSkill3.skillRoundCooldown}}">
+                        <input name="system.reserveSkill.reserveSkill3.skillTimeCooldown" type="text"
+                            value="{{system.reserveSkill.reserveSkill3.skillTimeCooldown}}">
+                    </td>
+                    <td style="text-align: center;">
+                        <input name="system.reserveSkill.reserveSkill3.onCooldown" type="checkbox" {{#if
+                            system.reserveSkill.reserveSkill3.onCooldown}}checked{{/if}}>
+                    </td>
+                </tr>
+                <!-- Skill #4 -->
+                <tr>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill4.skillName" type="text"
+                            value="{{system.reserveSkill.reserveSkill4.skillName}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill4.skillEffect" type="text"
+                            value="{{system.reserveSkill.reserveSkill4.skillEffect}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill4.skillRoundCooldown" type="text"
+                            value="{{system.reserveSkill.reserveSkill4.skillRoundCooldown}}">
+                        <input name="system.reserveSkill.reserveSkill4.skillTimeCooldown" type="text"
+                            value="{{system.reserveSkill.reserveSkill4.skillTimeCooldown}}">
+                    </td>
+                    <td style="text-align: center;">
+                        <input name="system.reserveSkill.reserveSkill4.onCooldown" type="checkbox" {{#if
+                            system.reserveSkill.reserveSkill4.onCooldown}}checked{{/if}}>
+                    </td>
+                </tr>
+                <!-- Skill #5 -->
+                <tr>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill5.skillName" type="text"
+                            value="{{system.reserveSkill.reserveSkill5.skillName}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill5.skillEffect" type="text"
+                            value="{{system.reserveSkill.reserveSkill5.skillEffect}}">
+                    </td>
+                    <td>
+                        <input name="system.reserveSkill.reserveSkill5.skillRoundCooldown" type="text"
+                            value="{{system.reserveSkill.reserveSkill5.skillRoundCooldown}}">
+                        <input name="system.reserveSkill.reserveSkill5.skillTimeCooldown" type="text"
+                            value="{{system.reserveSkill.reserveSkill5.skillTimeCooldown}}">
+                    </td>
+                    <td style="text-align: center;">
+                        <input name="system.reserveSkill.reserveSkill5.onCooldown" type="checkbox" {{#if
+                            system.reserveSkill.reserveSkill5.onCooldown}}checked{{/if}}>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+
 
     <!-- Bio or description -->
     <label for="bio">{{localize "altair.characterInfo.bio"}}</label>

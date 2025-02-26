@@ -37,6 +37,7 @@
             "health5": "H. Bar 5",
             "experience": "Exp",
             "lifetimeExperience": "Lifetime Exp",
+            "defeatExperience": "Dropped Exp",
             "movement": "Movement",
             "speed": "Speed",
             "money": "Money",
@@ -134,6 +135,26 @@
             "lingeringDeath": "Lingering Death",
             "noShield": "None"
         },
+        "general": {
+            "onCooldown": "On Cooldown?",
+            "skillName": "Name",
+            "effect": "Effect",
+            "roundCooldown": "Cooldown (Rnds)",
+            "timeCooldown": "Cooldown (Time)",
+            "dualCooldown": "Cooldown (Rnds/Time)",
+            "affinities": "Affinities",
+            "battleResources": "Battle Resources",
+            "staticResources": "Static Resources"
+        },
+        "ammoCoatingArts" : {
+            "combatArts": "Combat Arts",
+            "ammoCoatings": "Ammo/Coatings",
+            "ammoCoatingArtStock": "Stock/Uses"
+        },
+        "reserveSkills" : {
+            "reserveSkills": "Reserve Skills"
+        },
+
         "weapon": {
             "damage": "Damage",
             "type": "Damage Type",
