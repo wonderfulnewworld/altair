@@ -6,7 +6,8 @@
             height="64" width="64" />
         <h1>
             <label for="actor-name" class="sr-only">{{ localize 'Name' }}</label>
-            <input id="actor-name" name="name" type="text" style="font-size: x-large" value="{{actor.name}}" placeholder="{{ localize 'Name' }}" />
+            <input id="actor-name" name="name" type="text" style="font-size: x-large" value="{{actor.name}}"
+                placeholder="{{ localize 'Name' }}" />
         </h1>
     </header>
 
@@ -206,20 +207,20 @@
                     <section class="flexbox">
                         <label for="armorIgnore">{{localize "altair.characterInfo.armorIgnore"}}</label>
                         <div class="form-group">
-                            <input id="armorIgnore" name="system.armorIgnore" type="number" data-dtype="Number"
-                                style="width: 3em;" value="{{system.armorIgnore}}">
+                            <input id="armorIgnore" name="system.armorIgnore" type="text" style="width: 3em;"
+                                value="{{system.armorIgnore}}">
                         </div><br>
 
                         <label for="criticalChance">{{localize "altair.characterInfo.criticalChance"}}</label>
                         <div class="form-group">
-                            <input id="criticalChance" name="system.criticalChance" type="number" data-dtype="Number"
-                                style="width: 3em;" value="{{system.criticalChance}}">
+                            <input id="criticalChance" name="system.criticalChance" type="text" style="width: 3em;"
+                                value="{{system.criticalChance}}">
                         </div><br>
 
                         <label for="criticalDamage">{{localize "altair.characterInfo.criticalDamage"}}</label>
                         <div class="form-group">
-                            <input id="criticalDamage" name="system.criticalDamage" type="number" data-dtype="Number"
-                                style="width: 3em;" value="{{system.criticalDamage}}">
+                            <input id="criticalDamage" name="system.criticalDamage" type="text" style="width: 3em;"
+                                value="{{system.criticalDamage}}">
                         </div><br>
 
                         <label for="movement">{{localize "altair.characterInfo.movement"}}</label>

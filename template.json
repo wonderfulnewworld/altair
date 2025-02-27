@@ -2,7 +2,6 @@
     "Actor": {
         "types": [
             "player",
-            "npc",
             "enemy"
         ],
         "templates": {
@@ -13,26 +12,24 @@
                     "max": 20
                 },
                 "shield": {
-                    "value": 0,
-                    "max": 0
+                    "value": "",
+                    "max": ""
                 },
                 "experience": {
                     "value": 0,
                     "max": 20
                 },
-                "movement": 8,
-                "speed": 5,
                 "roleType": "noRole",
                 "guardType": "noGuard",
                 "shieldType": "noShield",
                 "species": "",
                 "standardArmor": 0,
                 "prismaticArmor": 0,
-                "abnormalArmor": 0,
-                "toughness": 0,
-                "armorIgnore": 0,
-                "criticalChance": 0,
-                "criticalDamage": 0,
+                "abnormalArmor": "",
+                "toughness": "",
+                "armorIgnore": "",
+                "criticalChance": "",
+                "criticalDamage": "",
                 "element": "",
                 "weakness": "",
                 "resistance": "",
@@ -56,6 +53,8 @@
                     "value": 3,
                     "max": 3
                 },
+                "movement": 8,
+                "speed": 5,
                 "lifetimeExperience": 0
             },
             "enemyCommon": {
@@ -68,26 +67,28 @@
                     "max": 5
                 },
                 "health2": {
-                    "value": 0,
-                    "max": 0
+                    "value": "",
+                    "max": ""
                 },
                 "health3": {
-                    "value": 0,
-                    "max": 0
+                    "value": "",
+                    "max": ""
                 },
                 "health4": {
-                    "value": 0,
-                    "max": 0
+                    "value": "",
+                    "max": ""
                 },
                 "health5": {
-                    "value": 0,
-                    "max": 0
+                    "value": "",
+                    "max": ""
                 },
                 "bleed": 3,
                 "drain": 2,
                 "intensity": 0,
-                "defeatExperience": 0,
-                "healthRegen": 3
+                "healthRegen": 3,
+                "movement": 6,
+                "speed": 3,
+                "defeatExperience": 0
             },
             "enemyCommonBS": {
                 "burst": {
@@ -315,13 +316,6 @@
             "spirit": 0,
             "skill": 0,
             "charm": 0
-        },
-        "npc": {
-            "templates": [
-                "common",
-                "personCommon",
-                "nonPlayerCommon"
-            ]
         },
         "enemy": {
             "templates": [
