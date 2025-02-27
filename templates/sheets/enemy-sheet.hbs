@@ -1,8 +1,9 @@
-<form class="{{cssClass}}" autocomplete="off">
+<section class="{{cssClass}} scrollable altair-sheet" autocomplete="off">
 
     <!-- Header with image and name -->
     <header class="sheet-header flexrow">
-        <img src="{{actor.img}}" data-edit="img" alt="{{actor.name}}" title="{{actor.name}}" height="64" width="64" />
+        <img src="{{actor.img}}" data-edit="img" data-action="editImage" alt="{{actor.name}}" title="{{actor.name}}"
+            height="64" width="64" />
         <h1>
             <label for="actor-name" class="sr-only">{{ localize 'Name' }}</label>
             <input id="actor-name" name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}" />
@@ -38,25 +39,26 @@
                 <div class="container">
                     <label for="defeatExperience">{{localize "altair.characterInfo.defeatExperience"}}</label>
                     <input id="defeatExperience" name="system.defeatExperience" type="number" data-dtype="Number"
-                        style="width: 3em;" value="{{system.defeatExperience}}">
+                        style="width: 5em;" value="{{system.defeatExperience}}">
                 </div>
             </div>
             <div class="form-group">
 
                 <div class="container">
                     <label for="money">{{localize "altair.characterInfo.money"}}</label>
-                    <input id="money" name="system.money" type="number" data-dtype="Number" style="width: 3em;"
+                    <input id="money" name="system.money" type="number" data-dtype="Number" style="width: 5em;"
                         value="{{system.money}}">
                 </div>
             </div>
 
         </div>
     </div>
-
+    <br>
     <div class="container-divider">
         <div class="outer-container"> <!-- divider for the main resources and non-main resources -->
             <div id="altair-main-resources" class="outer-container"> <!--- divider for hsf/dp -->
-                <section class="flexrow altair-resources">
+                <section class="flexbox altair-resources">
+                    <h4>{{localize "altair.general.battleResources"}}</h4>
                     <div class="flexbox">
                         <label>{{localize "altair.characterInfo.health"}}</label>
                         <div class="form-group">
@@ -73,7 +75,7 @@
                                 value="{{system.healthRegen}}" style="width: 3em;">
                         </div>
                     </div>
-                    <div class="break"></div>
+                    <br>
 
                     <div class="flexbox">
                         <label>{{localize "altair.characterInfo.break"}}</label>
@@ -91,7 +93,7 @@
                                 value="{{system.bleed}}" style="width: 3em;">
                         </div>
                     </div>
-                    <div class="break"></div>
+                    <br>
 
                     <div class="flexbox">
                         <label>{{localize "altair.characterInfo.burst"}}</label>
@@ -174,6 +176,7 @@
                 <div class="outer-container flexrow"> <!--- divider for resources and non-resources -->
 
                     <section class="flexbox">
+                        <h4>{{localize "altair.general.staticResources"}}</h4>
                         <label for="standardArmor">{{localize "altair.characterInfo.standardArmor"}}</label>
                         <div class="form-group">
                             <input id="standardArmor" name="system.standardArmor" type="number" data-dtype="Number"
@@ -244,66 +247,322 @@
             </section>
         </div>
     </div>
-
+    <br>
+    <h2>{{localize "altair.general.affinities"}}</h2>
     <div id="affinity-container-divider">
         <div class="affinity-bottom-container">
             <div class="affinity-bottom-inner-container flexrow">
                 <div class="affinity-inner-container">
                     <label for="element">{{localize "altair.characterInfo.element"}}</label><br>
-                    <select class="choice-selector" id="element" name="system.element" multiple>
+                    <multi-select class="choice-selector" id="element" name="system.element">
                         {{selectOptions enemyElements selected=system.element localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
                 <div class="affinity-inner-container">
                     <label for="species">{{localize "altair.characterInfo.species"}}</label><br>
-                    <select class="choice-selector" id="species" name="system.species" multiple>
+                    <multi-select class="choice-selector" id="species" name="system.species">
                         {{selectOptions enemySpecies selected=system.species localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
             </div>
             <div class="affinity-bottom-inner-container flexrow">
                 <div class="affinity-inner-container">
                     <label for="semiResistance">{{localize "altair.characterInfo.semiResistance"}}</label><br>
-                    <select class="choice-selector" id="semiResistance" name="system.semiResistance" multiple>
+                    <multi-select class="choice-selector" id="semiResistance" name="system.semiResistance">
                         {{selectOptions enemyAffinities selected=system.semiResistance localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
                 <div class="affinity-inner-container">
                     <label for="resistance">{{localize "altair.characterInfo.resistance"}}</label><br>
-                    <select class="choice-selector" id="resistance" name="system.resistance" multiple>
+                    <multi-select class="choice-selector" id="resistance" name="system.resistance">
                         {{selectOptions enemyAffinities selected=system.resistance localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
             </div>
             <div class="affinity-inner-container flexrow">
                 <div class="affinity-inner-container">
                     <label for="semiWeakness">{{localize "altair.characterInfo.semiWeakness"}}</label><br>
-                    <select class="choice-selector" id="semiWeakness" name="system.semiWeakness" multiple>
+                    <multi-select class="choice-selector" id="semiWeakness" name="system.semiWeakness">
                         {{selectOptions enemyAffinities selected=system.semiWeakness localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
                 <div class="affinity-inner-container">
                     <label for="weakness">{{localize "altair.characterInfo.weakness"}}</label><br>
-                    <select class="choice-selector" id="weakness" name="system.weakness" multiple>
+                    <multi-select class="choice-selector" id="weakness" name="system.weakness">
                         {{selectOptions enemyAffinities selected=system.weakness localize=true}}
-                    </select>
+                    </multi-select>
                 </div>
 
             </div>
 
         </div>
 
-
     </div>
 
-    <!-- Bio or description -->
+    <section class="two-column-wrap-enemy">
+        <!-- Skill Section -->
+        <section class="altair-skill-type outer-container">
+            <h2>{{localize "altair.general.skills"}}</h2>
+            <table class="reserve-skills-table">
+                <!-- for width -->
+                <colgroup>
+                    <col class="col-skillName" />
+                    <col class="col-skillDuration" />
+                    <col class="col-skillIsReaved" />
+                    <col class="col-skillOnCooldown" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>{{localize "altair.general.skillName"}}</th>
+                        <th>{{localize "altair.general.enemyCooldown"}}</th>
+                        <th>{{localize "altair.general.isReaved"}}</th>
+                        <th>{{localize "altair.general.onCooldown"}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Skill #1 -->
+                    <tr>
+                        <td>
+                            <input name="system.skillEnemy.skill1.skillName" type="text"
+                                value="{{system.skillEnemy.skill1.skillName}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <section class="form-group">
+                                <div class="container">
+                                    <input name="system.skillEnemy.skill1.skillCooldown.value" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill1.skillCooldown.value}}">
+                                    <span class="separator">/</span>
+                                    <input name="system.skillEnemy.skill1.skillCooldown.max" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill1.skillCooldown.max}}">
+                                </div>
+                            </section>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill1.isReaved" type="checkbox" {{checked
+                                system.skillEnemy.skill1.isReaved}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill1.onCooldown" type="checkbox" {{checked
+                                system.skillEnemy.skill1.onCooldown}}>
+                        </td>
+                    </tr>
+                    <!-- Skill #2 -->
+                    <tr>
+                        <td>
+                            <input name="system.skillEnemy.skill2.skillName" type="text"
+                                value="{{system.skillEnemy.skill2.skillName}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <section class="form-group">
+                                <div class="container">
+                                    <input name="system.skillEnemy.skill2.skillCooldown.value" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill2.skillCooldown.value}}">
+                                    <span class="separator">/</span>
+                                    <input name="system.skillEnemy.skill2.skillCooldown.max" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill2.skillCooldown.max}}">
+                                </div>
+                            </section>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill2.isReaved" type="checkbox" {{checked
+                                system.skillEnemy.skill2.isReaved}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill2.onCooldown" type="checkbox" {{checked
+                                system.skillEnemy.skill2.onCooldown}}>
+                        </td>
+                    </tr>
+                    <!-- Skill #3 -->
+                    <tr>
+                        <td>
+                            <input name="system.skillEnemy.skill3.skillName" type="text"
+                                value="{{system.skillEnemy.skill3.skillName}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <section class="form-group">
+                                <div class="container">
+                                    <input name="system.skillEnemy.skill3.skillCooldown.value" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill3.skillCooldown.value}}">
+                                    <span class="separator">/</span>
+                                    <input name="system.skillEnemy.skill3.skillCooldown.max" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill3.skillCooldown.max}}">
+                                </div>
+                            </section>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill3.isReaved" type="checkbox" {{checked
+                                system.skillEnemy.skill3.isReaved}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill3.onCooldown" type="checkbox" {{checked
+                                system.skillEnemy.skill3.onCooldown}}>
+                        </td>
+                    </tr>
+                    <!-- Skill #4 -->
+                    <tr>
+                        <td>
+                            <input name="system.skillEnemy.skill4.skillName" type="text"
+                                value="{{system.skillEnemy.skill4.skillName}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <section class="form-group">
+                                <div class="container">
+                                    <input name="system.skillEnemy.skill4.skillCooldown.value" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill4.skillCooldown.value}}">
+                                    <span class="separator">/</span>
+                                    <input name="system.skillEnemy.skill4.skillCooldown.max" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill4.skillCooldown.max}}">
+                                </div>
+                            </section>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill4.isReaved" type="checkbox" {{checked
+                                system.skillEnemy.skill4.isReaved}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill4.onCooldown" type="checkbox" {{checked
+                                system.skillEnemy.skill4.onCooldown}}>
+                        </td>
+                    </tr>
+                    <!-- Skill #5 -->
+                    <tr>
+                        <td>
+                            <input name="system.skillEnemy.skill5.skillName" type="text"
+                                value="{{system.skillEnemy.skill5.skillName}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <section class="form-group">
+                                <div class="container">
+                                    <input name="system.skillEnemy.skill5.skillCooldown.value" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill5.skillCooldown.value}}">
+                                    <span class="separator">/</span>
+                                    <input name="system.skillEnemy.skill5.skillCooldown.max" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.skill5.skillCooldown.max}}">
+                                </div>
+                            </section>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill5.isReaved" type="checkbox" {{checked
+                                system.skillEnemy.skill5.isReaved}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.skill5.onCooldown" type="checkbox" {{checked
+                                system.skillEnemy.skill5.onCooldown}}>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Heavy Attack Section -->
+        <section class="altair-skill-type outer-container">
+            <h2>{{localize "altair.general.heavyAttacks"}}</h2>
+            <table class="reserve-skills-table">
+                <!-- for width -->
+                <colgroup>
+                    <col class="col-heavyName" />
+                    <col class="col-heavyDuration" />
+                    <col class="col-heavyBeingPrepared" />
+                    <col class="col-heavyIsReaved" />
+                    <col class="col-heavyOnCooldown" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>{{localize "altair.general.skillName"}}</th>
+                        <th>{{localize "altair.general.enemyCooldown"}}</th>
+                        <th>{{localize "altair.general.beingPrepared"}}</th>
+                        <th>{{localize "altair.general.isReaved"}}</th>
+                        <th>{{localize "altair.general.onCooldown"}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Heavy #1 -->
+                    <tr>
+                        <td>
+                            <input name="system.skillEnemy.heavy1.skillName" type="text"
+                                value="{{system.skillEnemy.heavy1.skillName}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <section class="form-group">
+                                <div class="container">
+                                    <input name="system.skillEnemy.heavy1.skillCooldown.value" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.heavy1.skillCooldown.value}}">
+                                    <span class="separator">/</span>
+                                    <input name="system.skillEnemy.heavy1.skillCooldown.max" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.heavy1.skillCooldown.max}}">
+                                </div>
+                            </section>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.heavy1.beingPrepared" type="checkbox" {{checked
+                                system.skillEnemy.heavy1.beingPrepared}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.heavy1.isReaved" type="checkbox" {{checked
+                                system.skillEnemy.heavy1.isReaved}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.heavy1.onCooldown" type="checkbox" {{checked
+                                system.skillEnemy.heavy1.onCooldown}}>
+                        </td>
+                    </tr>
+                    <!-- Heavy #2 -->
+                    <tr>
+                        <td>
+                            <input name="system.skillEnemy.heavy2.skillName" type="text"
+                                value="{{system.skillEnemy.heavy2.skillName}}">
+                        </td>
+                        <td style="text-align: center;">
+                            <section class="form-group">
+                                <div class="container">
+                                    <input name="system.skillEnemy.heavy2.skillCooldown.value" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.heavy2.skillCooldown.value}}">
+                                    <span class="separator">/</span>
+                                    <input name="system.skillEnemy.heavy2.skillCooldown.max" type="number"
+                                        data-dtype="Number" style="width: 2em;"
+                                        value="{{system.skillEnemy.heavy2.skillCooldown.max}}">
+                                </div>
+                            </section>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.heavy2.beingPrepared" type="checkbox" {{checked
+                                system.skillEnemy.heavy2.beingPrepared}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.heavy2.isReaved" type="checkbox" {{checked
+                                system.skillEnemy.heavy2.isReaved}}>
+                        </td>
+                        <td style="text-align: center;">
+                            <input name="system.skillEnemy.heavy2.onCooldown" type="checkbox" {{checked
+                                system.skillEnemy.heavy2.onCooldown}}>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <br>
+
+    <!-- we never really used this lol -->
     <label for="bio">{{localize "altair.characterInfo.bio"}}</label>
     <section class="form-group altair-bio">
         <textarea id="bio" name="system.bio">{{system.bio}}</textarea>
     </section>
 
-</form>
+</section>

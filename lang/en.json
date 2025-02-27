@@ -137,11 +137,16 @@
         },
         "general": {
             "onCooldown": "On Cooldown?",
+            "isReaved": "Is Reaved?",
+            "beingPrepared": "Being Prepared?",
+            "skills": "Skills",
+            "heavyAttacks": "Heavy Attacks",
             "skillName": "Name",
             "effect": "Effect",
             "roundCooldown": "Cooldown (Rnds)",
             "timeCooldown": "Cooldown (Time)",
             "dualCooldown": "Cooldown (Rnds/Time)",
+            "enemyCooldown": "Cooldown (Rnds/Max)",
             "affinities": "Affinities",
             "battleResources": "Battle Resources",
             "staticResources": "Static Resources"

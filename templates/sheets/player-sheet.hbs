@@ -2,7 +2,8 @@
 
     <!-- Header with image and name -->
     <header class="sheet-header flexrow">
-        <img src="{{actor.img}}" data-edit="img" alt="{{actor.name}}" title="{{actor.name}}" height="64" width="64" />
+        <img src="{{actor.img}}" data-edit="img" data-action="editImage" alt="{{actor.name}}" title="{{actor.name}}"
+            height="64" width="64" />
         <h1>
             <label for="actor-name" class="sr-only">{{ localize 'Name' }}</label>
             <input id="actor-name" name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}" />
@@ -30,7 +31,7 @@
             </section>
         </div>
     </div>
-
+    <br>
     <div class="extra-container">
         <div class="extra-container flexrow">
             <div class="form-group">
@@ -38,10 +39,10 @@
                 <div class="container">
                     <label>{{localize "altair.characterInfo.experience"}}</label>
                     <input name="system.experience.value" type="number" data-dtype="Number"
-                        value="{{system.experience.value}}" style="width: 3em;">
+                        value="{{system.experience.value}}" style="width: 4em;">
                     <span class="separator">/</span>
                     <input name="system.experience.max" type="number" data-dtype="Number"
-                        value="{{system.experience.max}}" style="width: 3em;">
+                        value="{{system.experience.max}}" style="width: 4em;">
                 </div>
             </div>
             <div class="form-group">
@@ -49,25 +50,26 @@
                 <div class="container">
                     <label for="lifetimeExperience">{{localize "altair.characterInfo.lifetimeExperience"}}</label>
                     <input id="lifetimeExperience" name="system.lifetimeExperience" type="number" data-dtype="Number"
-                        style="width: 3em;" value="{{system.lifetimeExperience}}">
+                        style="width: 5em;" value="{{system.lifetimeExperience}}">
                 </div>
             </div>
             <div class="form-group">
 
                 <div class="container">
                     <label for="money">{{localize "altair.characterInfo.money"}}</label>
-                    <input id="money" name="system.money" type="number" data-dtype="Number" style="width: 3em;"
+                    <input id="money" name="system.money" type="number" data-dtype="Number" style="width: 5em;"
                         value="{{system.money}}">
                 </div>
             </div>
 
         </div>
     </div>
-
+    <br>
     <div class="container-divider">
         <div class="outer-container"> <!-- divider for the main resources and non-main resources -->
             <div id="altair-main-resources" class="outer-container"> <!--- divider for hsf/dp -->
                 <section class="flexbox altair-resources">
+                    <h4>{{localize "altair.general.battleResources"}}</h4>
                     <div class="flexbox">
                         <label>{{localize "altair.characterInfo.health"}}</label>
                         <div class="form-group">
@@ -125,7 +127,7 @@
 
 
 
-                <div class="outer-container flexrow"> <!-- shield, drive, and purity -->
+                <div class="outer-container flexrow altair-secondary-resources"> <!-- shield, drive, and purity -->
 
                     <section class="flexbox">
 
@@ -165,8 +167,8 @@
 
             <section id="altair-static-resources" class="outer-container">
                 <div class="outer-container flexrow"> <!--- divider for resources and non-resources -->
-
                     <section class="flexbox">
+                        <h4>{{localize "altair.general.staticResources"}}</h4>
                         <label for="standardArmor">{{localize "altair.characterInfo.standardArmor"}}</label>
                         <div class="form-group">
                             <input id="standardArmor" name="system.standardArmor" type="number" data-dtype="Number"

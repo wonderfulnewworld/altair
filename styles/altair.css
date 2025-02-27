@@ -29,6 +29,10 @@
   display: flex;
 }
 
+.altair-secondary-resources {
+  align-items: flex-start !important;
+}
+
 #altair-skills-outline {
   display: flex;
 }
@@ -57,12 +61,12 @@
 
 .choice-selector {
   align-items: end;
-  
+
 }
 
 .choice-selector select {
   width: 25% !important;
-  
+  height: 50% !important;
 }
 
 /* Target the main input area for multiple selections */
@@ -133,6 +137,21 @@
   box-sizing: border-box;
 }
 
+.two-column-wrap-enemy {
+  display: flex;
+  /* Activate flexbox */
+  flex-wrap: wrap;
+  /* Allow items to wrap to a new row if needed */
+  align-items: flex-start;
+}
+
+.two-column-wrap-enemy section {
+  /* Let each section be flexible in width */
+  flex: 1 1 650px;
+  /* i want the tables next to each other*/
+  box-sizing: border-box;
+}
+
 /* Reserve Skills Table */
 .reserve-skills-table {
   width: 100%;
@@ -198,5 +217,43 @@
 }
 
 .reserve-skills-table col.col-ammoCoatingsStock {
+  width: 5%;
+}
+
+/* Enemy Skills */
+.reserve-skills-table col.col-skillName {
+  width: 55%;
+}
+
+.reserve-skills-table col.col-skillDuration {
+  width: 15%;
+}
+
+.reserve-skills-table col.col-skillIsReaved {
+  width: 10%;
+}
+
+.reserve-skills-table col.col-skillOnCooldown {
+  width: 10%;
+}
+
+/* Enemy Heavy Attacks */
+.reserve-skills-table col.col-heavyName {
+  width: 60%;
+}
+
+.reserve-skills-table col.col-heavyDuration {
+  width: 10%;
+}
+
+.reserve-skills-table col.col-heavyBeingPrepared {
+  width: 5%;
+}
+
+.reserve-skills-table col.col-heavyIsReaved {
+  width: 5%;
+}
+
+.reserve-skills-table col.col-heavyOnCooldown {
   width: 5%;
 }

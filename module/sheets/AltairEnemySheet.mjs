@@ -4,7 +4,7 @@ const { api, sheets } = foundry.applications;
  * AppV2-based sheet for all actor classes
  */
 
-export default class AltairPlayerSheet extends api.HandlebarsApplicationMixin(
+export default class AltairEnemySheet extends api.HandlebarsApplicationMixin(
     sheets.ActorSheetV2
 ) {
 
@@ -17,7 +17,7 @@ export default class AltairPlayerSheet extends api.HandlebarsApplicationMixin(
     }
     static PARTS = {
         body: {
-            template: "systems/altair/templates/sheets/player-sheet.hbs",
+            template: "systems/altair/templates/sheets/enemy-sheet.hbs",
             scrollable: [""]
         }
     }
@@ -39,14 +39,12 @@ export default class AltairPlayerSheet extends api.HandlebarsApplicationMixin(
     }
 
     async _prepareContext(options) {
-        //console.log("test")
-        //const baseData = await super._prepareContext(options);
-        const playerElements = Object.fromEntries(Object.entries(CONFIG.altair.elements));
-        const playerAffinities = Object.fromEntries(Object.entries(CONFIG.altair.affinities));
-        const playerRoles = Object.fromEntries(Object.entries(CONFIG.altair.roleTypes));
-        const playerGuards = Object.fromEntries(Object.entries(CONFIG.altair.guardTypes));
-        const playerShields = Object.fromEntries(Object.entries(CONFIG.altair.shieldTypes));
-        const playerSpecies = Object.fromEntries(Object.entries(CONFIG.altair.speciesTypes));
+        const enemyElements = Object.fromEntries(Object.entries(CONFIG.altair.elements));
+        const enemyAffinities = Object.fromEntries(Object.entries(CONFIG.altair.affinities));
+        const enemyRoles = Object.fromEntries(Object.entries(CONFIG.altair.roleTypes));
+        const enemyGuards = Object.fromEntries(Object.entries(CONFIG.altair.guardTypes));
+        const enemyShields = Object.fromEntries(Object.entries(CONFIG.altair.shieldTypes));
+        const enemySpecies = Object.fromEntries(Object.entries(CONFIG.altair.speciesTypes));
         let sheetData = {
             name: this.actor.name,
             actor: this.actor,
@@ -55,12 +53,12 @@ export default class AltairPlayerSheet extends api.HandlebarsApplicationMixin(
             items: this.items,
             system: this.actor.system,
             config: CONFIG.altair,
-            playerElements,
-            playerAffinities,
-            playerRoles,
-            playerGuards,
-            playerShields,
-            playerSpecies
+            enemyElements,
+            enemyAffinities,
+            enemyRoles,
+            enemyGuards,
+            enemyShields,
+            enemySpecies
         };
         return sheetData;
     }

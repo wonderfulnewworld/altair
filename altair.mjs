@@ -1,7 +1,7 @@
 import { altair } from "./module/config.js";
 import AltairItemSheet from "./module/sheets/AltairItemSheet.js";
 import AltairPlayerSheet from "./module/sheets/AltairPlayerSheet.mjs"
-import AltairEnemySheet from "./module/sheets/AltairEnemySheet.js"
+import AltairEnemySheet from "./module/sheets/AltairEnemySheet.mjs"
 
 Hooks.once("init", async function() {
     console.log("altair | Initializing Altair System");

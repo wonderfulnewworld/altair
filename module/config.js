@@ -54,11 +54,16 @@ altair.characterInfo = {
 
 altair.general = {
     onCooldown: "altair.general.onCooldown",
+    isReaved: "altair.general.isReaved",
+    beingPrepared: "altair.general.beingPrepared",
+    skills: "altair.general.skills",
+    heavyAttacks: "altair.general.heavyAttacks",
     skillName: "altair.general.skillName",
     effect: "altair.general.effect",
     roundCooldown: "altair.general.roundCooldown",
     timeCooldown: "altair.general.timeCooldown",
     dualCooldown: "altair.general.dualCooldown",
+    enemyCooldown: "altair.general.enemyCooldown",
     affinities: "altair.general.affinities",
     battleResources: "altair.general.battleResources",
     staticResources: "altair.general.staticResources"

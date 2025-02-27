@@ -225,38 +225,68 @@
             "skillEnemy": {
                 "skill1": {
                     "skillName": "",
-                    "skillCooldown": "",
-                    "isReaved": false
+                    "skillCooldown": {
+                        "value": "",
+                        "max": ""
+                    },
+                    "isReaved": false,
+                    "onCooldown": false
                 },
                 "skill2": {
                     "skillName": "",
-                    "skillCooldown": "",
-                    "isReaved": false
+                    "skillCooldown": {
+                        "value": "",
+                        "max": ""
+                    },
+                    "isReaved": false,
+                    "onCooldown": false
                 },
                 "skill3": {
                     "skillName": "",
-                    "skillCooldown": "",
-                    "isReaved": false
+                    "skillCooldown": {
+                        "value": "",
+                        "max": ""
+                    },
+                    "isReaved": false,
+                    "onCooldown": false
                 },
                 "skill4": {
                     "skillName": "",
-                    "skillCooldown": "",
-                    "isReaved": false
+                    "skillCooldown": {
+                        "value": "",
+                        "max": ""
+                    },
+                    "isReaved": false,
+                    "onCooldown": false
                 },
                 "skill5": {
                     "skillName": "",
-                    "skillCooldown": "",
-                    "isReaved": false
+                    "skillCooldown": {
+                        "value": "",
+                        "max": ""
+                    },
+                    "isReaved": false,
+                    "onCooldown": false
                 },
                 "heavy1": {
                     "skillName": "",
-                    "skillCooldown": "",
-                    "isReaved": false
+                    "skillCooldown": {
+                        "value": "",
+                        "max": ""
+                    },
+                    "beingPrepared": false,
+                    "isReaved": false,
+                    "onCooldown": false
                 },
                 "heavy2": {
                     "skillName": "",
-                    "skillCooldown": "",
-                    "isReaved": false
+                    "skillCooldown": {
+                        "value": "",
+                        "max": ""
+                    },
+                    "beingPrepared": false,
+                    "isReaved": false,
+                    "onCooldown": false
                 }
             }
         },
