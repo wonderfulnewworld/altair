@@ -1,8 +1,8 @@
 {
   "id": "altair",
-  "title": "Altair",
+  "title": "Altair: Guide to the Skies",
   "url": "https://github.com/wonderfulnewworld/altair",
-  "description": "A system made by shinsekai for the TCZ Server.",
+  "description": "A system made by wonderfulnewworld/shinsekai.",
   "authors": [
     {
       "name": "shinsekai",
@@ -10,7 +10,7 @@
       "flags": {}
     }
   ],
-  "version": "0.2",
+  "version": "0.21",
   "compatibility": {
     "minimum": "12",
     "verified": "12.331",
@@ -33,7 +33,7 @@
   "primaryTokenAttribute": "wounds",
   "initiative": "1d20",
   "manifest": "https://raw.githubusercontent.com/wonderfulnewworld/altair/main/system.json",
-  "download": "https://github.com/wonderfulnewworld/altair/archive/refs/tags/alpha-02.zip",
+  "download": "https://github.com/wonderfulnewworld/altair/archive/refs/tags/alpha-02-1.zip",
   "grid": {
     "distance": 5,
     "units": "spaces"
