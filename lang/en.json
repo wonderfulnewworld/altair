@@ -154,7 +154,7 @@
         "ammoCoatingArts" : {
             "combatArts": "Combat Arts",
             "ammoCoatings": "Ammo/Coatings",
-            "ammoCoatingArtStock": "Stock/Uses"
+            "ammoCoatingArtStock": "Stock/Max"
         },
         "reserveSkills" : {
             "reserveSkills": "Reserve Skills"

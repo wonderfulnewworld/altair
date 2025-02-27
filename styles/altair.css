@@ -69,28 +69,6 @@
   height: 50% !important;
 }
 
-/* Target the main input area for multiple selections */
-.choices[data-type*="select-multiple"] .choices__inner {
-  background-color: transparent !important;
-  border-color: transparent;
-  width: auto !important;
-  display: inline-block !important;
-}
-
-/* Targets the individual selected item tags */
-.choices[data-type*="select-multiple"] .choices__list--multiple .choices__item {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  border-color: black;
-  color: black;
-}
-
-/* Making sure the .choices container doesn't stretch horizontally */
-.choices {
-  width: auto !important;
-  display: inline-block !important;
-  flex: 0 0 auto !important;
-}
-
 #affinity-container-divider {
   border: 1px black solid;
 }
@@ -131,24 +109,19 @@
 }
 
 .two-column-wrap section {
-  /* Let each section be flexible in width */
-  flex: 1 1 500px;
+  flex: 1 1 600px;
   /* i want the tables next to each other*/
   box-sizing: border-box;
 }
 
 .two-column-wrap-enemy {
   display: flex;
-  /* Activate flexbox */
   flex-wrap: wrap;
-  /* Allow items to wrap to a new row if needed */
   align-items: flex-start;
 }
 
 .two-column-wrap-enemy section {
-  /* Let each section be flexible in width */
   flex: 1 1 650px;
-  /* i want the tables next to each other*/
   box-sizing: border-box;
 }
 
@@ -164,7 +137,6 @@
   padding: 0.4em;
   vertical-align: middle;
   word-wrap: break-word;
-  /* Allows text to wrap if it’s too long */
   overflow-wrap: break-word;
 }
 
