@@ -10,10 +10,10 @@
       "flags": {}
     }
   ],
-  "version": "0.12",
+  "version": "0.2",
   "compatibility": {
-    "minimum": "11",
-    "verified": "12.330",
+    "minimum": "12",
+    "verified": "12.331",
     "maximum": "12"
   },
   "esmodules": [
@@ -33,7 +33,7 @@
   "primaryTokenAttribute": "wounds",
   "initiative": "1d20",
   "manifest": "https://raw.githubusercontent.com/wonderfulnewworld/altair/main/system.json",
-  "download": "https://github.com/wonderfulnewworld/altair/archive/refs/tags/alpha-01-2.zip",
+  "download": "https://github.com/wonderfulnewworld/altair/archive/refs/tags/alpha-02.zip",
   "grid": {
     "distance": 5,
     "units": "spaces"
