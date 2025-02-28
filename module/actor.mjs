@@ -1,6 +1,6 @@
 export default class AltairActor extends Actor {
 
-    // Makes tokens 2x2 by default. Thank you ChaosOS!
+    // Makes tokens 2x2 by default.
     async _preCreate(data, options, user) {
         const allowed = await super._preCreate(data, options, user);
         if (allowed === false) return false

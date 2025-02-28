@@ -165,5 +165,5 @@ altair.shieldTypes = {
     noShield: "altair.shieldTypes.noShield"
 }
 
-altair.AltairPlayerSheet= "altair.AltairPlayerSheet",
-altair.AltairEnemySheet= "altair.AltairEnemySheet"
+altair.AltairPlayerSheet = "altair.AltairPlayerSheet",
+    altair.AltairEnemySheet = "altair.AltairEnemySheet"
