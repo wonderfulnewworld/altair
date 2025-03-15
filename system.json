@@ -5,13 +5,13 @@
   "description": "A system made by wonderfulnewworld/shinsekai.",
   "authors": [
     {
-      "name": "Frank G.",
+      "name": "F.G.",
       "url": "https://github.com/wonderfulnewworld/altair",
       "discord": "wonderfulnewworld",
       "flags": {}
     }
   ],
-  "version": "0.231",
+  "version": "0.24",
   "compatibility": {
     "minimum": "12",
     "verified": "12.331",
@@ -34,7 +34,7 @@
   "primaryTokenAttribute": "wounds",
   "initiative": "1d20",
   "manifest": "https://raw.githubusercontent.com/wonderfulnewworld/altair/main/system.json",
-  "download": "https://github.com/wonderfulnewworld/altair/archive/refs/tags/alpha-02-3.zip",
+  "download": "https://github.com/wonderfulnewworld/altair/archive/refs/tags/alpha-02-4.zip",
   "grid": {
     "distance": 1,
     "units": "spaces"

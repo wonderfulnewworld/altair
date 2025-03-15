@@ -5,4 +5,4 @@ A fully original tabletop system built from the ground up, taking inspiration fr
 
 Looking for the Altair System itself? Check out the [latest](https://docs.google.com/document/d/1YhQ1UVClhdySWS7zbcu6wnE5gvUzRKbWiyMK4K41uUU/edit?usp=sharing) version [here](https://docs.google.com/spreadsheets/d/1FQwGtMk7uEkQMh2-tSibECjK566u0qPiD6z4_ygd_SY/edit?usp=drive_link)!
 
-(The system itself, [Altair](https://docs.google.com/document/d/1YhQ1UVClhdySWS7zbcu6wnE5gvUzRKbWiyMK4K41uUU/edit?usp=sharing): [Guide to the Skies](https://docs.google.com/spreadsheets/d/1FQwGtMk7uEkQMh2-tSibECjK566u0qPiD6z4_ygd_SY/edit?usp=drive_link) © 2025 by Frank G. is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1))
+(The system itself, [Altair](https://docs.google.com/document/d/1YhQ1UVClhdySWS7zbcu6wnE5gvUzRKbWiyMK4K41uUU/edit?usp=sharing): [Guide to the Skies](https://docs.google.com/spreadsheets/d/1FQwGtMk7uEkQMh2-tSibECjK566u0qPiD6z4_ygd_SY/edit?usp=drive_link) © 2025 by F.G. is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1))
