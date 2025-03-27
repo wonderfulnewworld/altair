@@ -1,0 +1,5483 @@
+{
+  "system": "altair",
+  "map": [
+    {
+      "id": "altair-core-ebb",
+      "name": "Ebb",
+      "img": "Utility/Statuses/CoreEffects/Ebb.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Ebb",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Ebb.svg",
+        "description": "<p>Stores one Flow Point. Damage Taken -10%.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-flow",
+      "name": "Flow Point",
+      "img": "Utility/Statuses/CoreEffects/FlowPoint.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Flow Point",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/FlowPoint.svg",
+        "description": "<p>Expend Flow Points to take actions. Up to 3 can be stored/used at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-overflow-point",
+      "name": "Overflow Point",
+      "img": "Utility/Statuses/CoreEffects/OverflowPoint.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Overflow Point",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/OverflowPoint.svg",
+        "description": "<p>Generated every time user takes a Reserve Action.</p><p>After 3 are generated, consumes 3 Overflow Points to generate 1 Flow Point.</p><p>Flow Points in the Reserve Party may be given to the Active Party or saved until you enter the Active Party.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-brace",
+      "name": "Brace",
+      "img": "Utility/Statuses/CoreEffects/Brace.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Brace",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Brace.svg",
+        "description": "<p>Damage Taken -50%. Stamina/Focus Regen +25%.</p><p>Halves Armor Ignore.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-rest",
+      "name": "Rest",
+      "img": "Utility/Statuses/CoreEffects/Rest.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Rest",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Rest.svg",
+        "description": "<p>Triggers Health Regen. Stamina/Focus Regen +50%.</p><p>Restores 1 Purity.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-brace-shield",
+      "name": "Brace Shield",
+      "img": "Utility/Statuses/CoreEffects/BraceShield.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Brace Shield",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/BraceShield.svg",
+        "description": "<p>Damage Taken -50%. Stamina/Focus Regen +25%.</p><p>Halves Armor Ignore.</p><p>Protects Adjacent Allies, taking Damage for them. AoE Skills do not pierce beyond user.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-brace-provoke",
+      "name": "Brace Provoke",
+      "img": "Utility/Statuses/CoreEffects/BraceProvoke.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Brace Provoke",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/BraceProvoke.svg",
+        "description": "<p>Damage Taken -50%. Stamina/Focus Regen +25%.</p><p>Halves Armor Ignore.</p><p>Forces a chosen Enemy within 6 Spaces to target user.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-brace-counter",
+      "name": "Brace Counter",
+      "img": "Utility/Statuses/CoreEffects/BraceCounter.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Brace Counter",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/BraceCounter.svg",
+        "description": "<p>Damage Taken -50%. Stamina/Focus Regen +25%.</p><p>Halves Armor Ignore.</p><p>Basic Counterattacks when attacked.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-rest-counter",
+      "name": "Rest Counter",
+      "img": "Utility/Statuses/CoreEffects/RestCounter.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Rest Counter",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/RestCounter.svg",
+        "description": "<p>Triggers Health Regen. Stamina/Focus Regen +50%.</p><p>Restores 1 Purity.</p><p>Skill Counterattacks when attacked.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-rest-taunt",
+      "name": "Rest Taunt",
+      "img": "Utility/Statuses/CoreEffects/RestTaunt.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Rest Taunt",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/RestTaunt.svg",
+        "description": "<p>Triggers Health Regen. Stamina/Focus Regen +50%.</p><p>Restores 1 Purity.</p><p>Draws Aggro from all Enemies within 4 Spaces.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-unconscious",
+      "name": "Unconscious",
+      "img": "Utility/Statuses/CoreEffects/Unconscious.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Unconscious",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Unconscious.svg",
+        "description": "<p>Cannot act. At the start of the round, triggers all Regens.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-death",
+      "name": "Dead",
+      "img": "Utility/Statuses/CoreEffects/Death.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Dead",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Death.svg",
+        "description": "<p>Cannot act.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-broken",
+      "name": "Broken",
+      "img": "Utility/Statuses/CoreEffects/Broken.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Broken",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Broken.svg",
+        "description": "<p>Cannot act. Armor Disabled for a round.</p><p>After expiring, Break Damage Taken -25%, Armor -10% for remainder of encounter.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-break-stack",
+      "name": "Break Stack",
+      "img": "Utility/Statuses/CoreEffects/BreakStack.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Break Stack",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/BreakStack.svg",
+        "description": "<p>Break Damage Taken -[Stack x25]%, Armor -[Stack x10]% for remainder of encounter.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-bursted",
+      "name": "Bursted",
+      "img": "Utility/Statuses/CoreEffects/Bursted.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Bursted",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Bursted.svg",
+        "description": "<p>Disables all Damage and Status immunities/resistances. Suffer an extra Basic Attack per action used on you, regardless of action and range.</p><p>After expiring, Burst Damage Taken -25%, Power -1, and Status Slots +1 for remainder of encounter.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-burst-stack",
+      "name": "Burst Stack",
+      "img": "Utility/Statuses/CoreEffects/BurstStack.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Burst Stack",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/BurstStack.svg",
+        "description": "<p>Burst Damage Taken -[Stack x25]%, Power -[Stack], and Status Slots +[Stack] for remainder of encounter.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-blasted",
+      "name": "Blasted",
+      "img": "Utility/Statuses/CoreEffects/Blasted.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blasted",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Blasted.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-blast-stack",
+      "name": "Blast Stack",
+      "img": "Utility/Statuses/CoreEffects/BlastStack.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blast Stack",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/BlastStack.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-flying",
+      "name": "Flying",
+      "img": "Utility/Statuses/CoreEffects/Flying.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Flying",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Flying.svg",
+        "description": "<p>Counts as Flying.</p><p>Immune to terrain effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-airborne",
+      "name": "Airborne",
+      "img": "Utility/Statuses/CoreEffects/Airborne.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Airborne",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Airborne.svg",
+        "description": "<p>Counts as Flying.</p><p>Immune to terrain effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-launch",
+      "name": "Launch",
+      "img": "Utility/Statuses/CoreEffects/Launch.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Launch",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Launch.svg",
+        "description": "<p>Counts as Flying.</p><p>Cannot have turn passed to, Counter, or React until Launch expires.</p><p>Launch automatically expires on your turn if there is no one else the turn can be passed to.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-health-regen",
+      "name": "Health Regen",
+      "img": "Utility/Statuses/CoreEffects/HealthRegen.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Health Regen",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/HealthRegen.svg",
+        "description": "<p>Health Regen is active.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-overdrive",
+      "name": "Overdrive",
+      "img": "Utility/Statuses/CoreEffects/Overdrive.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Overdrive",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Overdrive.svg",
+        "description": "<p>FP Generation +1, Damage Dealt +25%, Damage Taken -25%.</p><p>Cost/2, Movement x1.25.</p><p>At the end of the round, suffer -1d3 Drive. Return to normal at 0. Die sides increase by 1 for every 5 Maximum Drive.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-antidrive",
+      "name": "Antidrive",
+      "img": "Utility/Statuses/CoreEffects/Antidrive.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Antidrive",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Antidrive.svg",
+        "description": "<p>FP Generation =1d3, Damage Dealt +75%, Damage Taken +25%.</p><p>Cost = 0.</p><p>Instead of targeting normally, targets based on 1d6. [1-2: Ally, 3-4: Enemy, 5: Self, 6: Brace.]</p><p>At the end of the round, suffer -1d3 Drive. Return to normal at 0. Die sides increase by 1 for every 5 Maximum Drive.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-burn-t1",
+      "name": "Burn",
+      "img": "Utility/Statuses/StatusEffects/BurnT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Burn",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/BurnT1.svg",
+        "description": "<p>Deals 3 Fire Damage/round and disables Shield Health.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-burn-t2",
+      "name": "Blaze",
+      "img": "Utility/Statuses/StatusEffects/BurnT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blaze",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/BurnT2.svg",
+        "description": "<p>Deals 6 Fire Damage/round and disables Shield Health.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-burn-t3",
+      "name": "Incinerate",
+      "img": "Utility/Statuses/StatusEffects/BurnT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Incinerate",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/BurnT3.svg",
+        "description": "<p>Deals 9 Fire Damage/round and disables Shield Health.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-burn-t4",
+      "name": "Inferno",
+      "img": "Utility/Statuses/StatusEffects/BurnT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Inferno",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/BurnT4.svg",
+        "description": "<p>Deals 12 Fire Damage/round and disables Shield Health.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-burn-t5",
+      "name": "Sublimate",
+      "img": "Utility/Statuses/StatusEffects/BurnT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Sublimate",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/BurnT5.svg",
+        "description": "<p>Deals 15 Fire Damage/round and disables Shield Health.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frost-t1",
+      "name": "Frostbite",
+      "img": "Utility/Statuses/StatusEffects/FrostT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Frostbite",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrostT1.svg",
+        "description": "<p>Deals 2 Ice Damage/round, lowers Move by 3 and Speed by 2. (Min of 1.)</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frost-t2",
+      "name": "Bitterfrost",
+      "img": "Utility/Statuses/StatusEffects/FrostT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Bitterfrost",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrostT2.svg",
+        "description": "<p>Deals 4 Ice Damage/round, lowers Move by 5 and Speed by 2. (Min of 1.)</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frost-t3",
+      "name": "Permafrost",
+      "img": "Utility/Statuses/StatusEffects/FrostT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Permafrost",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrostT3.svg",
+        "description": "<p>Deals 6 Ice Damage/round, lowers Move by 7 and Speed by 3. (Min of 1.)</p><p>Lasts 4 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frost-t4",
+      "name": "Everfrost",
+      "img": "Utility/Statuses/StatusEffects/FrostT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Everfrost",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrostT4.svg",
+        "description": "<p>Deals 9 Ice Damage/round, lowers Move by 9 and Speed by 4. (Min of 1.)</p><p>Lasts 4 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frost-t5",
+      "name": "Deposition",
+      "img": "Utility/Statuses/StatusEffects/FrostT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Deposition",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrostT5.svg",
+        "description": "<p>Deals 12 Ice Damage/round, sets Move and Speed to 1.</p><p>Lasts 4 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-chill-t1",
+      "name": "Chilled",
+      "img": "Utility/Statuses/StatusEffects/ChillT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Chilled",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/ChillT1.svg",
+        "description": "<p>Increases Fire/Ice Damage Taken by 10% for 3 rounds.</p><p>Prevents actions for 1 round. Can also be cured with any Fire skill.</p><p>Does not increase Fire/Ice Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-chill-t2",
+      "name": "Frozen",
+      "img": "Utility/Statuses/StatusEffects/ChillT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Frozen",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/ChillT2.svg",
+        "description": "<p>Increases Fire/Ice Damage Taken by 20% for 3 rounds.</p><p>Prevents actions for 1 round. Can also be cured with any Fire skill.</p><p>Does not increase Fire/Ice Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-chill-t3",
+      "name": "Hypothermic",
+      "img": "Utility/Statuses/StatusEffects/ChillT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Hypothermic",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/ChillT3.svg",
+        "description": "<p>Deals 10 Ice Damage/round and increases Fire/Ice Damage Taken by 30% for 3 rounds.</p><p>Prevents actions for 1 round. Can also be cured with any Fire skill.</p><p>Does not increase Fire/Ice Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-chill-t4",
+      "name": "Crystalized",
+      "img": "Utility/Statuses/StatusEffects/ChillT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Crystalized",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/ChillT4.svg",
+        "description": "<p>Deals 12 Ice Damage/round and increases Fire/Ice Damage Taken by 40% for 3 rounds.</p><p>Prevents actions for 1 round. Can also be cured with any Tier 2+ Fire skill.</p><p>Does not increase Fire/Ice Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-chill-t5",
+      "name": "Fossilized",
+      "img": "Utility/Statuses/StatusEffects/ChillT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Fossilized",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/ChillT5.svg",
+        "description": "<p>Deals 15 Ice Damage/round and increases Fire/Ice Damage Taken by 50% for 3 rounds.</p><p>Prevents actions for 1 round. Can also be cured with any Tier 2+ Fire skill.</p><p>Does not increase Fire/Ice Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-static-t1",
+      "name": "Static",
+      "img": "Utility/Statuses/StatusEffects/StaticT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Static",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/StaticT1.svg",
+        "description": "<p>Before attack, self and allies within 2 spaces take 3 Thunder Damage.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-static-t2",
+      "name": "Conductive",
+      "img": "Utility/Statuses/StatusEffects/StaticT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Conductive",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/StaticT2.svg",
+        "description": "<p>Before attack, self and allies within 3 spaces take 5 Thunder Damage.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-static-t3",
+      "name": "Electrocuted",
+      "img": "Utility/Statuses/StatusEffects/StaticT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Electrocuted",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/StaticT3.svg",
+        "description": "<p>Before attack, self and allies within 4 spaces take 7 Thunder Damage.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-static-t4",
+      "name": "Discharged",
+      "img": "Utility/Statuses/StatusEffects/StaticT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Discharged",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/StaticT4.svg",
+        "description": "<p>Before attack, self and allies within 5 spaces take 10 Thunder Damage.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-static-t5",
+      "name": "Overloaded",
+      "img": "Utility/Statuses/StatusEffects/StaticT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Overloaded",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/StaticT5.svg",
+        "description": "<p>Before attack, self and allies within 5 spaces take 12 Thunder Damage.</p><p>Lasts 4 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frail-t1",
+      "name": "Frail",
+      "img": "Utility/Statuses/StatusEffects/FrailT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Frail",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrailT1.svg",
+        "description": "<p>Toughness -1. All attacks suffer 25% Recoil Air Damage.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frail-t2",
+      "name": "Deficient",
+      "img": "Utility/Statuses/StatusEffects/FrailT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Deficient",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrailT2.svg",
+        "description": "<p>Toughness -1. All attacks suffer 50% Recoil Air Damage.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frail-t3",
+      "name": "Hollow",
+      "img": "Utility/Statuses/StatusEffects/FrailT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Hollow",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrailT3.svg",
+        "description": "<p>Toughness -2. All attacks suffer 75% Recoil Air Damage.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frail-t4",
+      "name": "Deterioration",
+      "img": "Utility/Statuses/StatusEffects/FrailT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Deterioration",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrailT4.svg",
+        "description": "<p>Toughness -2. All attacks suffer 100% Recoil Air Damage.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-frail-t5",
+      "name": "Distintegration",
+      "img": "Utility/Statuses/StatusEffects/FrailT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Distintegration",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/FrailT5.svg",
+        "description": "<p>Toughness -3. All attacks suffer 150% Recoil Air Damage.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-poison-t1",
+      "name": "Poison",
+      "img": "Utility/Statuses/StatusEffects/PoisonT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Poison",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/PoisonT1.svg",
+        "description": "<p>Deals 20% of current Health (Max 10 against enemies) in Ground Damage per round.</p><p>Will always leave at least 1 Health.</p><p>Quartered and flat against bosses.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-poison-t2",
+      "name": "Toxic",
+      "img": "Utility/Statuses/StatusEffects/PoisonT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Toxic",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/PoisonT2.svg",
+        "description": "<p>Power -1. Deals 20% of current Health (Max 10 against enemies) in Ground Damage per round.</p><p>Will always leave at least 1 Health.</p><p>Quartered and flat against bosses.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-poison-t3",
+      "name": "Venom",
+      "img": "Utility/Statuses/StatusEffects/PoisonT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Venom",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/PoisonT3.svg",
+        "description": "<p>Power -2. Deals 20% of current Health (Max 15 against enemies) in Ground Damage per round.</p><p>Will always leave at least 1 Health.</p><p>Quartered and flat against bosses.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-poison-t4",
+      "name": "Hypertoxin",
+      "img": "Utility/Statuses/StatusEffects/PoisonT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Hypertoxin",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/PoisonT4.svg",
+        "description": "<p>Power -4. Deals 20% of current Health (Max 15 against enemies) in Ground Damage per round.</p><p>Will always leave at least 1 Health.</p><p>Quartered and flat against bosses.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-poison-t5",
+      "name": "Hypervenom",
+      "img": "Utility/Statuses/StatusEffects/PoisonT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Hypervenom",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/PoisonT5.svg",
+        "description": "<p>Power -6. Deals 25% of current Health (Max 20 against enemies) in Ground Damage per round.</p><p>Will always leave at least 1 Health.</p><p>Quartered and flat against bosses.</p><p>Lasts 4 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-acid-t1",
+      "name": "Acid",
+      "img": "Utility/Statuses/StatusEffects/AcidT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Acid",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/AcidT1.svg",
+        "description": "<p>Deals 10% of Max Health in Ground Damage per round, increasing by 5% each round.</p><p>Will always leave at least 1 Health.</p><p>Halved and flat against bosses.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-acid-t2",
+      "name": "Corrosion",
+      "img": "Utility/Statuses/StatusEffects/AcidT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Corrosion",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/AcidT2.svg",
+        "description": "<p>Power -1. Deals 10% of Max Health in Ground Damage per round, increasing by 10% each round.</p><p>Will always leave at least 1 Health.</p><p>Halved and flat against bosses.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-acid-t3",
+      "name": "Erosion",
+      "img": "Utility/Statuses/StatusEffects/AcidT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Erosion",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/AcidT3.svg",
+        "description": "<p>Power -2. Deals 10% of Max Health in Ground Damage per round, increasing by 10% each round.</p><p>Will always leave at least 1 Health.</p><p>Halved and flat against bosses.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-acid-t4",
+      "name": "Dissolve",
+      "img": "Utility/Statuses/StatusEffects/AcidT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Dissolve",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/AcidT4.svg",
+        "description": "<p>Power -4. Deals 10% of Max Health in Ground Damage per round, increasing by 10% each round.</p><p>Will always leave at least 1 Health.</p><p>Halved and flat against bosses.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-acid-t5",
+      "name": "Atomize",
+      "img": "Utility/Statuses/StatusEffects/AcidT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Atomize",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/AcidT5.svg",
+        "description": "<p>Power -6. Deals 10% of Max Health in Ground Damage per round, increasing by 10% each round.</p><p>Will always leave at least 1 Health.</p><p>Halved and flat against bosses.</p><p>Lasts 4 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-charm-t1",
+      "name": "Charmed",
+      "img": "Utility/Statuses/StatusEffects/CharmT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Charmed",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/CharmT1.svg",
+        "description": "<p>33% chance of using skill on ally instead of target, or reverse for recovery skills.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-charm-t2",
+      "name": "Captivated",
+      "img": "Utility/Statuses/StatusEffects/CharmT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Captivated",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/CharmT2.svg",
+        "description": "<p>50% chance of using skill on ally instead of target, or reverse for recovery skills.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-charm-t3",
+      "name": "Enchanted",
+      "img": "Utility/Statuses/StatusEffects/CharmT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Enchanted",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/CharmT3.svg",
+        "description": "<p>GM takes round instead of player.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-charm-t4",
+      "name": "Dominated",
+      "img": "Utility/Statuses/StatusEffects/CharmT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Dominated",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/CharmT4.svg",
+        "description": "<p>GM takes round instead of player.</p><p>Damage Dealt +50% against Allies/other Players.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-effects-charm-t5",
+      "name": "Brainwashed",
+      "img": "Utility/Statuses/StatusEffects/CharmT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Brainwashed",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusEffects/CharmT5.svg",
+        "description": "<p>GM takes round instead of player.</p><p>Damage Dealt +100% against Allies/other Players.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-bleed",
+      "name": "Bleed",
+      "img": "Utility/Statuses/StatusAilments/Bleed.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Bleed",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Bleed.svg",
+        "description": "<p>Prevents healing and deals the higher of Health/10 and Health Regen/2 Damage/round.</p><p>On enemies, prevents healing and drains Health at a fixed rate.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-hemorrhage",
+      "name": "Hemorrhage",
+      "img": "Utility/Statuses/StatusAilments/Hemorrhage.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Hemorrhage",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Hemorrhage.svg",
+        "description": "<p>Prevents healing and deals the higher of [2 + Health/10] and [2 + Health Regen/2] Damage/round.</p><p>On enemies, prevents healing and drains Health at a fixed rate +2.</p><p>Adds Bleed Damage/4 to all Damage Taken from attacks.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-drain",
+      "name": "Drain",
+      "img": "Utility/Statuses/StatusAilments/Drain.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Drain",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Drain.svg",
+        "description": "<p>Inverts Stamina/Focus regen rates. If either falls to 0, drains Health instead of that resource.</p><p>On enemies, drains Health at a different rate than Bleed instead.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-depletion",
+      "name": "Depletion",
+      "img": "Utility/Statuses/StatusAilments/Depletion.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Depletion",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Depletion.svg",
+        "description": "<p>Multiplies Stamina/Focus regen rates by 1.5x, then inverts them. If either falls to 0, drains Health instead of that resource.</p><p>On enemies, drains Health at a different rate +2 than Bleed instead.</p><p>Adds Drain Damage/3 to all Damage Taken from attacks.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-dazed",
+      "name": "Dazed",
+      "img": "Utility/Statuses/StatusAilments/Dazed.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Dazed",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Dazed.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-staggered",
+      "name": "Staggered",
+      "img": "Utility/Statuses/StatusAilments/Staggered.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Staggered",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Staggered.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-crash",
+      "name": "Crash",
+      "img": "Utility/Statuses/StatusAilments/Crash.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Crash",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Crash.svg",
+        "description": "<p>Prevents Drive generation.</p><p>On enemies, deals 10% of Max Break Damage and Burst Damage per round.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-muted",
+      "name": "Muted",
+      "img": "Utility/Statuses/StatusAilments/Muted.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Muted",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Muted.svg",
+        "description": "<p>Nullifies effects of Support Skills.</p><p>Deals 2 Damage/round for every effect nullified on application, and any others applied over Muted duration.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-rupture",
+      "name": "Rupture",
+      "img": "Utility/Statuses/StatusAilments/Rupture.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Rupture",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Rupture.svg",
+        "description": "<p>Applied as stacks.</p><p>Increases Break Damage/Burst Damage Taken by 3.</p><p>[Players, DP] Decreases Drive Gain/increases Purity Loss by 1.</p><p>Lasts 2 rounds.</p><p>[Players] Decreases Stamina/Focus Regen by 1.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-weakened",
+      "name": "Weakened",
+      "img": "Utility/Statuses/StatusAilments/Weakened.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Weakened",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Weakened.svg",
+        "description": "<p>Prevents dealing Elemental and Effective Damage for 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-panic",
+      "name": "Panic",
+      "img": "Utility/Statuses/StatusAilments/Panic.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Panic",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Panic.svg",
+        "description": "<p>Targets nearest ally within Basic Attack range before taking action. (Does not Move user.)</p><p>Increases Speed by 3.</p><p>Cannot Ebb, Brace, Rest, or Heavy Attack.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-ensnare",
+      "name": "Ensnare",
+      "img": "Utility/Statuses/StatusAilments/Ensnare.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Ensnare",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Ensnare.svg",
+        "description": "<p>Disables Movement from Skills/Weapon Skills.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-dizzy",
+      "name": "Dizzy",
+      "img": "Utility/Statuses/StatusAilments/Dizzy.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Dizzy",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Dizzy.svg",
+        "description": "<p>Prevents usage of Skills/Attacks beyond point blank.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-binds",
+      "name": "Binds",
+      "img": "Utility/Statuses/StatusAilments/Binds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Binds.svg",
+        "description": "<p>Applied as stacks. Lowers Move by 2 per stack.</p><p>At 5 Stacks, applies Ensnare.</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-stun",
+      "name": "Stun",
+      "img": "Utility/Statuses/StatusAilments/Stun.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Stun",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Stun.svg",
+        "description": "<p>Cannot act this round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-negative",
+      "name": "Negative",
+      "img": "Utility/Statuses/StatusAilments/Negative.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Negative",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Negative.svg",
+        "description": "<p>Switches party alignment.</p><p>Allies become enemies, enemies become allies.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-blind",
+      "name": "Blind",
+      "img": "Utility/Statuses/StatusAilments/Blind.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blind",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Blind.svg",
+        "description": "<p>Attacks have a 40% chance to graze, suffering Damage Dealt -50%.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-ailments-infection",
+      "name": "Infection",
+      "img": "Utility/Statuses/StatusAilments/Infection.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Infection",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/Infection.svg",
+        "description": "<p>Anyone who melee attacks/gets melee attacked by infectee, passes an adjacent tile/has their adjacent tile passed by infectee receives all Statuses, Buffs, and Debuffs currently on them, including Infection.</p><p>Infection cannot be given to the same person twice.</p><p>Does not take a Status Slot.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-basic-counter",
+      "name": "Basic Counter",
+      "img": "Utility/Statuses/StatusChanges/BasicCounter.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Basic Counter",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/BasicCounter.svg",
+        "description": "<p>Retaliates against all attacks with a basic attack.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-skill-counter",
+      "name": "Skill Counter",
+      "img": "Utility/Statuses/StatusChanges/SkillCounter.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Skill Counter",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/SkillCounter.svg",
+        "description": "<p>Retaliates against all attacks with a skill attack.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-provoke",
+      "name": "Provoke",
+      "img": "Utility/Statuses/StatusChanges/Provoke.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Provoke",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Provoke.svg",
+        "description": "<p>Forces target to attack user and disables Reactive Attacks against other targets.</p><p>Must take shortest path, and must move as close as possible.</p><p>On Players, deals Bleed Damage and applies Panic if they refuse to attack target.</p><p>May fail against certain targets.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-aggro",
+      "name": "Aggro",
+      "img": "Utility/Statuses/StatusChanges/Aggro.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Aggro",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Aggro.svg",
+        "description": "<p>Forces target to attack user, unless another ally targets aggroed enemy.</p><p>Must take shortest path, and must move as close as possible.</p><p>On Players, deals half Bleed Damage and applies Panic if they refuse to attack target.</p><p>If applied to a target that already has Aggro towards the attacker, converts Aggro into Provoke.</p><p>May fail against certain targets.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-deter",
+      "name": "Deter",
+      "img": "Utility/Statuses/StatusChanges/Deter.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Deter",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Deter.svg",
+        "description": "<p>Forces target to not attack user, unless user targets aggroed enemy.</p><p>On Players, deals Drain Damage and applies Muted if they attack target.</p><p>May fail against certain targets.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-challenge",
+      "name": "Challenge",
+      "img": "Utility/Statuses/StatusChanges/Challenge.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Challenge",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Challenge.svg",
+        "description": "<p>Forces user and target to only target each other.</p><p>If an outsider attempts to intervene, triggers a Death Roll on them.</p><p>Can be refused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-overheat",
+      "name": "Overheat",
+      "img": "Utility/Statuses/StatusChanges/Overheat.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Overheat",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Overheat.svg",
+        "description": "<p>Disables Body Parts and Regen.</p><p>Cannot switch out.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-stopped",
+      "name": "Stopped",
+      "img": "Utility/Statuses/StatusChanges/Stopped.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Stopped",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Stopped.svg",
+        "description": "<p>Automatically applied when inflicted with Chilled, its' higher tier forms, and Stun.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-sleep",
+      "name": "Sleep",
+      "img": "Utility/Statuses/StatusChanges/Sleep.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Sleep",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Sleep.svg",
+        "description": "<p>FP -1, enables Health Regen.</p><p>All Regens +50%, and restores Purity at a rate of 25%/round.</p><p>33% chance to wake up and suffer Damage Taken +100% on attack.</p><p>100% chance and Damage Taken +75% on Effective Damage Taken.</p><p>33% chance to wake up each round, should Sleeping target want to. Increases by 33% each round.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-link",
+      "name": "Link",
+      "img": "Utility/Statuses/StatusChanges/Link.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Link",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Link.svg",
+        "description": "<p>Stuck adjacent to other targets with Link.</p><p>When moving, all adjacent Linked targets move together.</p><p>Move -[Number of Linked targets x2].</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-vanish",
+      "name": "Vanish",
+      "img": "Utility/Statuses/StatusChanges/Vanish.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Vanish",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Vanish.svg",
+        "description": "<p>Cannot be the Main Target of attacks.</p><p>When taking an action, moving adjacent to opponents, or being moved adjacent to by opponents, break Vanish.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-charged",
+      "name": "Charged",
+      "img": "Utility/Statuses/StatusChanges/Charged.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Charged",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/Charged.svg",
+        "description": "<p>Cost +50%, Damage Dealt +25%.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-status-changes-data-fragmentation",
+      "name": "Data Fragmentation",
+      "img": "Utility/Statuses/StatusChanges/DataFragmentation.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Data Fragmentation",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusChanges/DataFragmentation.svg",
+        "description": "<p>Damage Dealt +50%.</p><p>Increases by 10% each round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-buff",
+      "name": "Buff",
+      "img": "Utility/Statuses/GenericEffects/GenericBuff.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Buff",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericBuff.svg",
+        "description": "<p>Generic Buff.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-buff1",
+      "name": "Buff (1)",
+      "img": "Utility/Statuses/GenericEffects/GenericBuff1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Buff (1)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericBuff1.svg",
+        "description": "<p>Generic Buff. (1)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-buff2",
+      "name": "Buff (2)",
+      "img": "Utility/Statuses/GenericEffects/GenericBuff2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Buff (2)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericBuff2.svg",
+        "description": "<p>Generic Buff. (2)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-buff3",
+      "name": "Buff (3)",
+      "img": "Utility/Statuses/GenericEffects/GenericBuff3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Buff (3)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericBuff3.svg",
+        "description": "<p>Generic Buff. (3)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-debuff",
+      "name": "Debuff",
+      "img": "Utility/Statuses/GenericEffects/GenericDebuff.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Debuff",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericDebuff.svg",
+        "description": "<p>Generic Debuff.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-debuff1",
+      "name": "Debuff (1)",
+      "img": "Utility/Statuses/GenericEffects/GenericDebuff1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Debuff (1)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericDebuff1.svg",
+        "description": "<p>Generic Debuff. (1)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-debuff2",
+      "name": "Debuff (2)",
+      "img": "Utility/Statuses/GenericEffects/GenericDebuff2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Debuff (2)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericDebuff2.svg",
+        "description": "<p>Generic Debuff. (2)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-debuff3",
+      "name": "Debuff (3)",
+      "img": "Utility/Statuses/GenericEffects/GenericDebuff3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Debuff (3)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericDebuff3.svg",
+        "description": "<p>Generic Debuff. (3)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-stance",
+      "name": "Stance",
+      "img": "Utility/Statuses/GenericEffects/GenericStance.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Stance",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericStance.svg",
+        "description": "<p>Generic Stance.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-stance1",
+      "name": "Stance (1)",
+      "img": "Utility/Statuses/GenericEffects/GenericStance1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Stance (1)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericStance1.svg",
+        "description": "<p>Generic Stance. (1)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-stance2",
+      "name": "Stance (2)",
+      "img": "Utility/Statuses/GenericEffects/GenericStance2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Stance (2)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericStance2.svg",
+        "description": "<p>Generic Stance. (2)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-stance3",
+      "name": "Stance (3)",
+      "img": "Utility/Statuses/GenericEffects/GenericStance3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Stance (3)",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericStance3.svg",
+        "description": "<p>Generic Stance. (3)</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-stack",
+      "name": "Stack",
+      "img": "Utility/Statuses/GenericEffects/GenericStack.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Stack",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/GenericStack.svg",
+        "description": "<p>Generic Stack.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-stack-positive",
+      "name": "Positive Stack",
+      "img": "Utility/Statuses/GenericEffects/PositiveStack.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Positive Stack",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/PositiveStack.svg",
+        "description": "<p>Generic Positive Stack.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-generic-stack-negative",
+      "name": "Negative Stack",
+      "img": "Utility/Statuses/GenericEffects/NegativeStack.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Negative Stack",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NegativeStack.svg",
+        "description": "<p>Generic Negative Stack.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-power-up",
+      "name": "Power Up",
+      "img": "Utility/Statuses/GenericEffects/PowerUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Power Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/PowerUp.svg",
+        "description": "<p>Power Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-power-down",
+      "name": "Power Down",
+      "img": "Utility/Statuses/GenericEffects/PowerDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Power Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/PowerDown.svg",
+        "description": "<p>Power Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-basic-power-up",
+      "name": "Basic Power Up",
+      "img": "Utility/Statuses/GenericEffects/BasicPowerUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Basic Power Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/BasicPowerUp.svg",
+        "description": "<p>Basic Power Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-basic-power-down",
+      "name": "Basic Power Down",
+      "img": "Utility/Statuses/GenericEffects/BasicPowerDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Basic Power Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/BasicPowerDown.svg",
+        "description": "<p>Basic Power Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-skill-power-up",
+      "name": "Skill Power Up",
+      "img": "Utility/Statuses/GenericEffects/SkillPowerUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Skill Power Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/SkillPowerUp.svg",
+        "description": "<p>Skill Power Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-skill-power-down",
+      "name": "Skill Power Down",
+      "img": "Utility/Statuses/GenericEffects/SkillPowerDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Skill Power Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/SkillPowerDown.svg",
+        "description": "<p>Skill Power Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-power-up",
+      "name": "Next Power Up",
+      "img": "Utility/Statuses/GenericEffects/NextPowerUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Power Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextPowerUp.svg",
+        "description": "<p>Next Power Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-power-down",
+      "name": "Next Power Down",
+      "img": "Utility/Statuses/GenericEffects/NextPowerDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Power Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextPowerDown.svg",
+        "description": "<p>Next Power Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-armor-up",
+      "name": "Armor Up",
+      "img": "Utility/Statuses/GenericEffects/ArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Armor Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/ArmorUp.svg",
+        "description": "<p>Armor Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-armor-down",
+      "name": "Armor Down",
+      "img": "Utility/Statuses/GenericEffects/ArmorDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Armor Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/ArmorDown.svg",
+        "description": "<p>Armor Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-armor-negation",
+      "name": "Armor Negation",
+      "img": "Utility/Statuses/GenericEffects/ArmorNegation.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Armor Negation",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/ArmorNegation.svg",
+        "description": "<p>Armor Negation.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-armor-shred",
+      "name": "Armor Shred",
+      "img": "Utility/Statuses/GenericEffects/ArmorShred.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Armor Shred",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/ArmorShred.svg",
+        "description": "<p>Armor Shred.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-standard-armor-up",
+      "name": "Standard Armor Up",
+      "img": "Utility/Statuses/GenericEffects/StandardArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Standard Armor Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/StandardArmorUp.svg",
+        "description": "<p>Standard Armor Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-standard-armor-down",
+      "name": "Standard Armor Down",
+      "img": "Utility/Statuses/GenericEffects/StandardArmorDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Standard Armor Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/StandardArmorDown.svg",
+        "description": "<p>Standard Armor Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-standard-armor-negation",
+      "name": "Standard Armor Negation",
+      "img": "Utility/Statuses/GenericEffects/StandardArmorNegation.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Standard Armor Negation",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/StandardArmorNegation.svg",
+        "description": "<p>Standard Armor Negation.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-standard-armor-shred",
+      "name": "Standard Armor Shred",
+      "img": "Utility/Statuses/GenericEffects/StandardArmorShred.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Standard Armor Shred",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/StandardArmorShred.svg",
+        "description": "<p>Standard Armor Shred.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-prismatic-armor-up",
+      "name": "Prismatic Armor Up",
+      "img": "Utility/Statuses/GenericEffects/PrismaticArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Prismatic Armor Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/PrismaticArmorUp.svg",
+        "description": "<p>Prismatic Armor Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-prismatic-armor-down",
+      "name": "Prismatic Armor Down",
+      "img": "Utility/Statuses/GenericEffects/PrismaticArmorDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Prismatic Armor Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/PrismaticArmorDown.svg",
+        "description": "<p>Prismatic Armor Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-prismatic-armor-negation",
+      "name": "Prismatic Armor Negation",
+      "img": "Utility/Statuses/GenericEffects/PrismaticArmorNegation.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Prismatic Armor Negation",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/PrismaticArmorNegation.svg",
+        "description": "<p>Prismatic Armor Negation.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-prismatic-armor-shred",
+      "name": "Prismatic Armor Shred",
+      "img": "Utility/Statuses/GenericEffects/PrismaticArmorShred.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Prismatic Armor Shred",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/PrismaticArmorShred.svg",
+        "description": "<p>Prismatic Armor Shred.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-abnormal-armor-up",
+      "name": "Abnormal Armor Up",
+      "img": "Utility/Statuses/GenericEffects/AbnormalArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Abnormal Armor Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/AbnormalArmorUp.svg",
+        "description": "<p>Abnormal Armor Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-abnormal-armor-down",
+      "name": "Abnormal Armor Down",
+      "img": "Utility/Statuses/GenericEffects/AbnormalArmorDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Abnormal Armor Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/AbnormalArmorDown.svg",
+        "description": "<p>Abnormal Armor Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-abnormal-armor-negation",
+      "name": "Abnormal Armor Negation",
+      "img": "Utility/Statuses/GenericEffects/AbnormalArmorNegation.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Abnormal Armor Negation",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/AbnormalArmorNegation.svg",
+        "description": "<p>Abnormal Armor Negation.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-abnormal-armor-shred",
+      "name": "Abnormal Armor Shred",
+      "img": "Utility/Statuses/GenericEffects/AbnormalArmorShred.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Abnormal Armor Shred",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/AbnormalArmorShred.svg",
+        "description": "<p>Abnormal Armor Shred.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-armor-up",
+      "name": "Next Armor Up",
+      "img": "Utility/Statuses/GenericEffects/NextArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Armor Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextArmorUp.svg",
+        "description": "<p>Next Armor Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-armor-down",
+      "name": "Next Armor Down",
+      "img": "Utility/Statuses/GenericEffects/NextArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Armor Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextArmorDown.svg",
+        "description": "<p>Next Armor Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-standard-armor-up",
+      "name": "Next Standard Armor Up",
+      "img": "Utility/Statuses/GenericEffects/NextStandardArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Standard Armor Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextStandardArmorUp.svg",
+        "description": "<p>Next Standard Armor Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-standard-armor-down",
+      "name": "Next Standard Armor Down",
+      "img": "Utility/Statuses/GenericEffects/NextStandardArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Standard Armor Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextStandardArmorDown.svg",
+        "description": "<p>Next Standard Armor Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-prismatic-armor-up",
+      "name": "Next Prismatic Armor Up",
+      "img": "Utility/Statuses/GenericEffects/NextPrismaticArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Prismatic Armor Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextPrismaticArmorUp.svg",
+        "description": "<p>Next Prismatic Armor Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-prismatic-armor-down",
+      "name": "Next Prismatic Armor Down",
+      "img": "Utility/Statuses/GenericEffects/NextPrismaticArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Prismatic Armor Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextPrismaticArmorDown.svg",
+        "description": "<p>Next Prismatic Armor Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-abnormal-armor-up",
+      "name": "Next Abnormal Armor Up",
+      "img": "Utility/Statuses/GenericEffects/NextAbnormalArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Abnormal Armor Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextAbnormalArmorUp.svg",
+        "description": "<p>Next Abnormal Armor Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-next-abnormal-armor-down",
+      "name": "Next Abnormal Armor Down",
+      "img": "Utility/Statuses/GenericEffects/NextAbnormalArmorUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Next Abnormal Armor Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/NextAbnormalArmorDown.svg",
+        "description": "<p>Next Abnormal Armor Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-speed-up",
+      "name": "Speed Up",
+      "img": "Utility/Statuses/GenericEffects/SpeedUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Speed Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/SpeedUp.svg",
+        "description": "<p>Speed Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-speed-down",
+      "name": "Speed Down",
+      "img": "Utility/Statuses/GenericEffects/SpeedDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Speed Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/SpeedDown.svg",
+        "description": "<p>Speed Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-move-up",
+      "name": "Move Up",
+      "img": "Utility/Statuses/GenericEffects/MoveUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Move Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/MoveUp.svg",
+        "description": "<p>Move Up.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-move-down",
+      "name": "Move Down",
+      "img": "Utility/Statuses/GenericEffects/MoveDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Move Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/MoveDown.svg",
+        "description": "<p>Move Down.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-counter-seal",
+      "name": "Counter Seal",
+      "img": "Utility/Statuses/GenericEffects/CounterSeal.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Counter Seal",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/CounterSeal.svg",
+        "description": "<p>Counter Seal.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-reactive-seal",
+      "name": "Reactive Seal",
+      "img": "Utility/Statuses/GenericEffects/ReactiveSeal.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Reactive Seal",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/ReactiveSeal.svg",
+        "description": "<p>Reactive Seal.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-restock",
+      "name": "Restock",
+      "img": "Utility/Statuses/GenericEffects/Restock.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Restock",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/Restock.svg",
+        "description": "<p>Restock.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-generic-effects-empowered-shield",
+      "name": "Empowered Shield",
+      "img": "Utility/Statuses/GenericEffects/EmpoweredShield.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Empowered Shield",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/GenericEffects/EmpoweredShield.svg",
+        "description": "<p>Empowered Shield.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-frostburn-t1",
+      "name": "Frost Burn",
+      "img": "Utility/Statuses/SpecialEffects/FrostBurnT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Frost Burn",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/FrostBurnT1.svg",
+        "description": "<p>Deals 4 IceFire Damage/round, disables Shield Health, lowers Move by 2, and Speed by 1. (Min of 1.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-frostburn-t2",
+      "name": "Freeze Blaze",
+      "img": "Utility/Statuses/SpecialEffects/FrostBurnT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Freeze Blaze",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/FrostBurnT2.svg",
+        "description": "<p>Deals 6 IceFire Damage/round, disables Shield Health, lowers Move by 3, and Speed by 2. (Min of 1.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-frostburn-t3",
+      "name": "Frost Burn Tier 3",
+      "img": "Utility/Statuses/SpecialEffects/FrostBurnT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Frost Burn Tier 3",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/FrostBurnT3.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-frostburn-t4",
+      "name": "Frost Burn Tier 4",
+      "img": "Utility/Statuses/SpecialEffects/FrostBurnT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Frost Burn Tier 4",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/FrostBurnT4.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-frostburn-t5",
+      "name": "Frost Burn Tier 5",
+      "img": "Utility/Statuses/SpecialEffects/FrostBurnT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Frost Burn Tier 5",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/FrostBurnT5.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-acidburn-t1",
+      "name": "Acid Burn",
+      "img": "Utility/Statuses/SpecialEffects/AcidBurnT1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Acid Burn",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/AcidBurnT1.svg",
+        "description": "<p>Deals 5% of Max Health in GroundFire Damage/round, increasing by 2.5% each round.</p><p>Disables Shield Health.</p><p>Flat against bosses, not halved. (Max 15/round against bosses.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 4 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-acidburn-t2",
+      "name": "Corrosive Blaze",
+      "img": "Utility/Statuses/SpecialEffects/AcidBurnT2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Corrosive Blaze",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/AcidBurnT2.svg",
+        "description": "<p>Power -1. Deals 5% of Max Health in GroundFire Damage/round, increasing by 3% each round.</p><p>Disables Shield Health.</p><p>Flat against bosses, not halved. (Max 25/round against bosses.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 4 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-acidburn-t3",
+      "name": "Acid Burn Tier 3",
+      "img": "Utility/Statuses/SpecialEffects/AcidBurnT3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Acid Burn Tier 3",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/AcidBurnT3.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-acidburn-t4",
+      "name": "Acid Burn Tier 4",
+      "img": "Utility/Statuses/SpecialEffects/AcidBurnT4.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Acid Burn Tier 4",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/AcidBurnT4.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-acidburn-t5",
+      "name": "Acid Burn Tier 5",
+      "img": "Utility/Statuses/SpecialEffects/AcidBurnT5.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Acid Burn Tier 5",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 4,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/AcidBurnT5.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-holyburn",
+      "name": "Holy Burn",
+      "img": "Utility/Statuses/SpecialEffects/HolyBurn.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Holy Burn",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/HolyBurn.svg",
+        "description": "<p>Deals 4 Holy Damage/round, prevents dealing Effective Damage, and prevents Healing.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-quickburn",
+      "name": "Quick Burn",
+      "img": "Utility/Statuses/SpecialEffects/QuickBurn.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Quick Burn",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/QuickBurn.svg",
+        "description": "<p>When triggering a Burn Status, trigger it twice.</p><p>Second trigger always decrements duration, even if first one does not. (Max 3 additional activations/round.)</p><p>Does not take a Status Slot.</p><p>Expires when Burn Status does.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-overstatic",
+      "name": "Overstatic",
+      "img": "Utility/Statuses/SpecialEffects/Overstatic.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Overstatic",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/Overstatic.svg",
+        "description": "<p>Increases Static Status Damage by the number of times target has been hit this round, then halves this additional value next round.</p><p>Does not take a Status Slot.</p><p>Expires when Static Status does.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-blackfrail",
+      "name": "Black Frail",
+      "img": "Utility/Statuses/SpecialEffects/BlackFrail.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Black Frail",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/BlackFrail.svg",
+        "description": "<p>All hits of attacks suffer 5 Recoil Abnormal Damage.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, modifies Frail Status to trigger on \"All hits of attacks\" instead, does not take a Status Slot and expires when Frail Status does.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-grayfrail",
+      "name": "Gray Frail",
+      "img": "Utility/Statuses/SpecialEffects/GrayFrail.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Gray Frail",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/GrayFrail.svg",
+        "description": "<p>All attacks suffer 3 Recoil Abnormal Damage.</p><p>Prevents using any Unsupport Skills for duration.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, adds \"Prevents using any Unsupport Skills for duration\" to Frail Status instead, does not take a Status Slot and expires when Frail Status does.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-effects-whitefrail",
+      "name": "White Frail",
+      "img": "Utility/Statuses/SpecialEffects/WhiteFrail.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "White Frail",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialEffects/WhiteFrail.svg",
+        "description": "<p>Power +3. All attacks suffer 33% Recoil Abnormal Damage.</p><p>Prevents using any Support Skills for duration.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, adds \"Prevents using any Support Skills for duration\" to Frail Status instead, does not take a Status Slot and expires when Frail Status does.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    }
+  ]
+}
