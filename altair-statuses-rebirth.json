@@ -2134,7 +2134,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/StatusAilments/Bleed.svg",
-        "description": "<p>Prevents healing and deals the higher of Health/10 and Health Regen/2 Damage/round.</p><p>On enemies, prevents healing and drains Health at a fixed rate.</p><p>Lasts 2 rounds.</p>",
+        "description": "<p>Prevents healing and deals the higher of Health/10 and Health Regen/2 Damage/round.</p><p>On enemies, prevents healing and drains Health at a fixed rate/round.</p><p>Lasts 2 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -2167,7 +2167,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/StatusAilments/Hemorrhage.svg",
-        "description": "<p>Prevents healing and deals the higher of [2 + Health/10] and [2 + Health Regen/2] Damage/round.</p><p>On enemies, prevents healing and drains Health at a fixed rate +2.</p><p>Adds Bleed Damage/4 to all Damage Taken from attacks.</p><p>Lasts 2 rounds.</p>",
+        "description": "<p>Prevents healing and deals the higher of 2 + [Health/10] and 2 + [Health Regen/2] Damage/round.</p><p>On enemies, prevents healing and drains Health at a fixed rate +2/round.</p><p>Adds Bleed Damage/4 to all Damage Taken from attacks.</p><p>On Multihit, only applies on first hit.</p><p>Lasts 2 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -2200,7 +2200,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/StatusAilments/Drain.svg",
-        "description": "<p>Inverts Stamina/Focus regen rates. If either falls to 0, drains Health instead of that resource.</p><p>On enemies, drains Health at a different rate than Bleed instead.</p><p>Lasts 2 rounds.</p>",
+        "description": "<p>Inverts Stamina/Focus regen rates. If either falls to 0, drains Health instead of that resource.</p><p>On enemies, drains Health at a different rate/round than Bleed.</p><p>Lasts 2 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -2233,7 +2233,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/StatusAilments/Depletion.svg",
-        "description": "<p>Multiplies Stamina/Focus regen rates by 1.5x, then inverts them. If either falls to 0, drains Health instead of that resource.</p><p>On enemies, drains Health at a different rate +2 than Bleed instead.</p><p>Adds Drain Damage/3 to all Damage Taken from attacks.</p><p>Lasts 2 rounds.</p>",
+        "description": "<p>Multiplies Stamina/Focus regen rates by 1.5x, then inverts them. If either falls to 0, drains Health instead of that resource.</p><p>On enemies, drains Health at a different rate +2/round than Bleed.</p><p>Adds Drain Damage/3 ([Stamina + Focus Regen]/3] for players) to all Damage Taken.</p><p>On Multihit, only applies on first hit.</p><p>Lasts 2 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -2398,7 +2398,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/StatusAilments/Rupture.svg",
-        "description": "<p>Applied as stacks.</p><p>Increases Break Damage/Burst Damage Taken by 3.</p><p>[Players, DP] Decreases Drive Gain/increases Purity Loss by 1.</p><p>Lasts 2 rounds.</p><p>[Players] Decreases Stamina/Focus Regen by 1.</p><p>Lasts 1 round.</p>",
+        "description": "<p>Applied as stacks.</p><p>Increases Break Damage/Burst Damage Taken by 3.</p><p>[Players, DP] Decreases Drive Gain/increases Purity Loss by 1.</p><p>[Players] Decreases Stamina/Focus Regen by 1.</p><p>Lasts 1 round.</p>",
         "changes": []
       },
       "macros": null,
@@ -2563,7 +2563,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/StatusAilments/Binds.svg",
-        "description": "<p>Applied as stacks. Lowers Move by 2 per stack.</p><p>At 5 Stacks, applies Ensnare.</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "description": "<p>Applied as stacks. Lowers Move by 2 per stack.</p><p>At 5+ Stacks, applies Ensnare.</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
         "changes": []
       },
       "macros": null,
@@ -3553,7 +3553,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/GenericEffects/GenericStack.svg",
-        "description": "<p>Generic Stack.</p>",
+        "description": "<p>Generic Stack.</p><p>Applied as stacks. Decrements on Damage Taken and 1 stack per round.</p><p>Only 1 Buff and 1 Debuff type of \"Inherits all properties of Stack\" can be applied at the same time.</p><p>Not transferred by Infection.</p>",
         "changes": []
       },
       "macros": null,
@@ -3566,14 +3566,14 @@
       "hidden": false
     },
     {
-      "id": "altair-generic-effects-generic-stack-positive",
-      "name": "Positive Stack",
-      "img": "Utility/Statuses/GenericEffects/PositiveStack.svg",
+      "id": "altair-generic-effects-generic-stack-buff",
+      "name": "Buff Stack",
+      "img": "Utility/Statuses/GenericEffects/BuffStack.svg",
       "reference": "",
       "applyTrigger": null,
       "removeTrigger": null,
       "activeEffect": {
-        "name": "Positive Stack",
+        "name": "Buff Stack",
         "tint": "#ffffff",
         "disabled": false,
         "statuses": [],
@@ -3585,8 +3585,8 @@
           "startRound": null,
           "startTurn": null
         },
-        "img": "Utility/Statuses/GenericEffects/PositiveStack.svg",
-        "description": "<p>Generic Positive Stack.</p>",
+        "img": "Utility/Statuses/GenericEffects/BuffStack.svg",
+        "description": "<p>Generic Buff Stack.</p><p>Applied as stacks. Decrements on Damage Taken and 1 stack per round.</p><p>Only 1 Buff type of \"Inherits all properties of Stack\" can be applied at the same time.</p><p>Not transferred by Infection.</p>",
         "changes": []
       },
       "macros": null,
@@ -3599,14 +3599,14 @@
       "hidden": false
     },
     {
-      "id": "altair-generic-effects-generic-stack-negative",
-      "name": "Negative Stack",
-      "img": "Utility/Statuses/GenericEffects/NegativeStack.svg",
+      "id": "altair-generic-effects-generic-stack-debuff",
+      "name": "Debuff Stack",
+      "img": "Utility/Statuses/GenericEffects/DebuffStack.svg",
       "reference": "",
       "applyTrigger": null,
       "removeTrigger": null,
       "activeEffect": {
-        "name": "Negative Stack",
+        "name": "Debuff Stack",
         "tint": "#ffffff",
         "disabled": false,
         "statuses": [],
@@ -3618,8 +3618,8 @@
           "startRound": null,
           "startTurn": null
         },
-        "img": "Utility/Statuses/GenericEffects/NegativeStack.svg",
-        "description": "<p>Generic Negative Stack.</p>",
+        "img": "Utility/Statuses/GenericEffects/DebuffStack.svg",
+        "description": "<p>Generic Debuff Stack.</p><p>Applied as stacks. Decrements on Damage Taken and 1 stack per round.</p><p>Only 1 Debuff type of \"Inherits all properties of Stack\" can be applied at the same time.</p><p>Not transferred by Infection.</p>",
         "changes": []
       },
       "macros": null,
@@ -4972,7 +4972,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/FrostBurnT1.svg",
-        "description": "<p>Deals 4 IceFire Damage/round, disables Shield Health, lowers Move by 2, and Speed by 1. (Min of 1.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 3 rounds.</p>",
+        "description": "<p>Burn Status, Frost Status. (2 Tiers)</p><p>Deals 4 IceFire Damage/round, disables Shield Health, lowers Move by 2, and Speed by 1. (Min of 1.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 3 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -5005,7 +5005,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/FrostBurnT2.svg",
-        "description": "<p>Deals 6 IceFire Damage/round, disables Shield Health, lowers Move by 3, and Speed by 2. (Min of 1.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 3 rounds.</p>",
+        "description": "<p>Burn Status, Frost Status. (2 Tiers)</p><p>Deals 6 IceFire Damage/round, disables Shield Health, lowers Move by 3, and Speed by 2. (Min of 1.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 3 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -5137,7 +5137,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/AcidBurnT1.svg",
-        "description": "<p>Deals 5% of Max Health in GroundFire Damage/round, increasing by 2.5% each round.</p><p>Disables Shield Health.</p><p>Flat against bosses, not halved. (Max 15/round against bosses.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 4 rounds.</p>",
+        "description": "<p>Burn Status, Acid Status. (2 Tiers)</p><p>Deals 5% of Max Health in GroundFire Damage/round, increasing by 2.5% each round.</p><p>Disables Shield Health.</p><p>Flat against bosses, not halved. (Max 15/round against bosses.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 4 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -5170,7 +5170,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/AcidBurnT2.svg",
-        "description": "<p>Power -1. Deals 5% of Max Health in GroundFire Damage/round, increasing by 3% each round.</p><p>Disables Shield Health.</p><p>Flat against bosses, not halved. (Max 25/round against bosses.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 4 rounds.</p>",
+        "description": "<p>Burn Status, Acid Status. (2 Tiers)</p><p>Power -1. Deals 5% of Max Health in GroundFire Damage/round, increasing by 3% each round.</p><p>Disables Shield Health.</p><p>Flat against bosses, not halved. (Max 25/round against bosses.)</p><p>If resistant to only one, applies Neutrally.</p><p>If weak to at least one, applies Effectively.</p><p>Lasts 4 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -5302,7 +5302,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/HolyBurn.svg",
-        "description": "<p>Deals 4 Holy Damage/round, prevents dealing Effective Damage, and prevents Healing.</p><p>Lasts 2 rounds.</p>",
+        "description": "<p>Burn Status. (1 Tier)</p><p>Deals 4 Holy Damage/round, prevents dealing Effective Damage, and prevents Healing.</p><p>Lasts 2 rounds.</p>",
         "changes": []
       },
       "macros": null,
@@ -5335,7 +5335,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/QuickBurn.svg",
-        "description": "<p>When triggering a Burn Status, trigger it twice.</p><p>Second trigger always decrements duration, even if first one does not. (Max 3 additional activations/round.)</p><p>Does not take a Status Slot.</p><p>Expires when Burn Status does.</p>",
+        "description": "<p>Special Burn.</p><p>When triggering a Burn Status, trigger it twice.</p><p>Second trigger always decrements duration, even if first one does not. (Max 3 additional activations/round.)</p><p>Does not take a Status Slot.</p><p>Expires when Burn Status does.</p>",
         "changes": []
       },
       "macros": null,
@@ -5368,7 +5368,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/Overstatic.svg",
-        "description": "<p>Increases Static Status Damage by the number of times target has been hit this round, then halves this additional value next round.</p><p>Does not take a Status Slot.</p><p>Expires when Static Status does.</p>",
+        "description": "<p>Special Static.</p><p>Increases Static Status Damage by the number of times target has been hit this round, then halves this additional value next round.</p><p>Does not take a Status Slot.</p><p>Expires when Static Status does.</p>",
         "changes": []
       },
       "macros": null,
@@ -5401,7 +5401,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/BlackFrail.svg",
-        "description": "<p>All hits of attacks suffer 5 Recoil Abnormal Damage.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, modifies Frail Status to trigger on \"All hits of attacks\" instead, does not take a Status Slot and expires when Frail Status does.</p>",
+        "description": "<p>Frail Status. (1 Tier)</p><p>All hits of attacks suffer 5 Recoil Abnormal Damage.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, modifies Frail Status to trigger on \"All hits of attacks\" instead, does not take a Status Slot and expires when Frail Status does.</p>",
         "changes": []
       },
       "macros": null,
@@ -5434,7 +5434,7 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/GrayFrail.svg",
-        "description": "<p>All attacks suffer 3 Recoil Abnormal Damage.</p><p>Prevents using any Unsupport Skills for duration.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, adds \"Prevents using any Unsupport Skills for duration\" to Frail Status instead, does not take a Status Slot and expires when Frail Status does.</p>",
+        "description": "<p>Frail Status. (1 Tier)</p><p>All attacks suffer 3 Recoil Abnormal Damage.</p><p>Prevents using any Unsupport Skills for duration.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, adds \"Prevents using any Unsupport Skills for duration\" to Frail Status instead, does not take a Status Slot and expires when Frail Status does.</p>",
         "changes": []
       },
       "macros": null,
@@ -5467,7 +5467,799 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialEffects/WhiteFrail.svg",
-        "description": "<p>Power +3. All attacks suffer 33% Recoil Abnormal Damage.</p><p>Prevents using any Support Skills for duration.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, adds \"Prevents using any Support Skills for duration\" to Frail Status instead, does not take a Status Slot and expires when Frail Status does.</p>",
+        "description": "<p>Frail Status. (1 Tier)</p><p>Power +3. All attacks suffer 33% Recoil Abnormal Damage.</p><p>Prevents using any Support Skills for duration.</p><p>Lasts 2 rounds.</p><p>If affected has a higher tier Frail Status, adds \"Prevents using any Support Skills for duration\" to Frail Status instead, does not take a Status Slot and expires when Frail Status does.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-burningbleed",
+      "name": "Burning Bleed",
+      "img": "Utility/Statuses/SpecialAilments/BurningBleed.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Burning Bleed",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BurningBleed.svg",
+        "description": "<p>Burn Status, Bleed Status. (2 Tiers)</p><p>Prevents healing and deals the higher of Health/10 and Health Regen/2 Fire Damage/round.</p><p>On enemies, prevents healing and drains Health at a fixed rate/round in Fire Damage.</p><p>Increases Fire Damage Taken by 25%.</p><p>Lasts 2 rounds.</p><p>Does not increase Fire Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-blazingbleed",
+      "name": "Blazing Bleed",
+      "img": "Utility/Statuses/SpecialAilments/BlazingBleed.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blazing Bleed",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BlazingBleed.svg",
+        "description": "<p>Burn Status, Bleed Status. (2 Tiers)</p><p>Prevents healing and deals the higher of 2 + [Health/10] and 2 + [Health Regen/2] Fire Damage/round.</p><p>On enemies, prevents healing and drains Health at a fixed rate +2/round in Fire Damage.</p><p>Increases Fire Damage Taken by 25%.</p><p>Lasts 2 rounds.</p><p>Does not increase Fire Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-burningdrain",
+      "name": "Burning Drain",
+      "img": "Utility/Statuses/SpecialAilments/BurningDrain.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Burning Drain",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BurningDrain.svg",
+        "description": "<p>Burn Status, Drain Status. (2 Tiers)</p><p>Inverts Stamina/Focus regen rates. If either falls to 0, drains Health instead of that resource, as Fire Damage.</p><p>On enemies, drains Health at a different rate/round than Bleed, as Fire Damage.</p><p>Increases Fire Damage Taken by 25%.</p><p>Lasts 2 rounds.</p><p>Does not increase Fire Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-blazingdrain",
+      "name": "Blazing Drain",
+      "img": "Utility/Statuses/SpecialAilments/BlazingDrain.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blazing Drain",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BlazingDrain.svg",
+        "description": "<p>Burn Status, Drain Status. (2 Tiers)</p><p>Multiplies Stamina/Focus regen rates by 1.5x, then inverts them. If either falls to 0, drains Health instead of that resource, as Fire Damage.</p><p>On enemies, drains Health at a different rate +2/round than Bleed, as Fire Damage.</p><p>Increases Fire Damage Taken by 25%.</p><p>Lasts 2 rounds.</p><p>Does not increase Fire Damage Taken by Status Effects.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-bind-infusions-burningbinds",
+      "name": "Burning Binds",
+      "img": "Utility/Statuses/SpecialAilments/BindInfusions/BurningBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Burning Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindInfusions/BurningBinds.svg",
+        "description": "<p>Bind Infusion.</p><p>Applied as stacks. Lowers Move by 2 per stack.</p><p>On Stack decrement, deals Burn Damage.</p><p>At 5+ Stacks, applies Burn.</p><p>If already afflicted with a Burn Status, increases tier of Burn Status. (Once per every 5 Stacks.)</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-bind-infusions-electricbinds",
+      "name": "Electric Binds",
+      "img": "Utility/Statuses/SpecialAilments/BindInfusions/ElectricBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Electric Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindInfusions/ElectricBinds.svg",
+        "description": "<p>Bind Infusion.</p><p>Applied as stacks. Lowers Move by 2 per stack.</p><p>On Stack decrement, deals 4 Thunder Damage.</p><p>At 5+ Stacks, applies Static.</p><p>If already afflicted with a Static Status, increases tier of Static Status. (Once per every 5 Stacks.)</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-bind-infusions-thornybinds",
+      "name": "Thorny Binds",
+      "img": "Utility/Statuses/SpecialAilments/BindInfusions/ThornyBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Thorny Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindInfusions/ThornyBinds.svg",
+        "description": "<p>Bind Infusion.</p><p>Applied as stacks. Lowers Move by 2 per stack.</p><p>On Stack decrement, deals Bleed Damage/2.</p><p>At 5+ Stacks, decreases Maximum Health by 10%. (Min 5, Once per every 5 Stacks. Max 30% per target.)</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-bind-infusions-restrainingbinds",
+      "name": "Restraining Binds",
+      "img": "Utility/Statuses/SpecialAilments/BindInfusions/RestrainingBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Restraining Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindInfusions/RestrainingBinds.svg",
+        "description": "<p>Bind Infusion.</p><p>Applied as stacks. Lowers Move by 2 per stack.</p><p>For each Stack, suffer Damage Dealt -5%.</p><p>At 5+ Stacks, applies Weakened.</p><p>If already afflicted with Weakened, extend Weakened duration by 2. (Once per every 5 Stacks.)</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-bind-infusions-blightedbinds",
+      "name": "Blighted Binds",
+      "img": "Utility/Statuses/SpecialAilments/BindInfusions/BlightedBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blighted Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindInfusions/BlightedBinds.svg",
+        "description": "<p>Bind Infusion.</p><p>Applied as stacks. Lowers Move by 2 per stack.</p><p>On Stack decrement, deals 3 Abnormal Damage.</p><p>At 5+ Stacks, applies a random Status Ailment, (excluding Death) then applies Infection.</p><p>If already afflicted with Infection, extend Infection duration by 2. (Once per every 5 Stacks.)</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-bind-infusions-illusorybinds",
+      "name": "Illusory Binds",
+      "img": "Utility/Statuses/SpecialAilments/BindInfusions/IllusoryBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Illusory Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindInfusions/IllusoryBinds.svg",
+        "description": "<p>Bind Infusion.</p><p>Applied as stacks. Lowers Move by 2 per stack.</p><p>On Stack increment, increases duration of random Status by 1.</p><p>At 0 Stacks, halves duration of all Statuses, then deals 10 Absolute Damage.</p><p>If no other Statuses are applied at 0 Stacks, does not deal Absolute Damage.</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-bind-infusions-radiantbinds",
+      "name": "Radiant Binds",
+      "img": "Utility/Statuses/SpecialAilments/BindInfusions/RadiantBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Radiant Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindInfusions/RadiantBinds.svg",
+        "description": "<p>Bind Infusion.</p><p>Applied as stacks. Lowers Move by 2 per stack.</p><p>On Stack decrement, deals 3 Holy Damage.</p><p>At 3+ Stacks, also deals 3 Burst Damage on Stack decrement.</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-bind-infusions-adaptivebinds",
+      "name": "Adaptive Binds",
+      "img": "Utility/Statuses/SpecialAilments/BindInfusions/AdaptiveBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Adaptive Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindInfusions/AdaptiveBinds.svg",
+        "description": "<p>Bind Infusion.</p><p>Applied as stacks. Lowers Move by 2 per stack.</p><p>Active and incoming Bind Infusions will be combined with Adaptive Binds instead of converting Binds.</p><p>At 5+ Stacks, applies Static.</p><p>After 2 rounds, halves Bind Stacks and removes all Bind Infusions.</p><p>Stack decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-bindresistance",
+      "name": "Bind Resistance",
+      "img": "Utility/Statuses/SpecialAilments/BindResistance.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Bind Resistance",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/BindResistance.svg",
+        "description": "<p>Halves Move Penalty of Binds.</p><p>On application/when Binds are converted into Bind Infusions, blocks conversion, then removes status.</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-silverbinds",
+      "name": "Silver Binds",
+      "img": "Utility/Statuses/SpecialAilments/SilverBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Silver Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/SilverBinds.svg",
+        "description": "<p>Debuff.</p><p>Applied as stacks.</p><p>While target has Silver Binds, Binds will not decrement.</p><p>On Stack decrement, applies 1 Bind.</p><p>If target is Beast-like, applies 2 Binds on Stack decrement instead.</p><p>Decrements on Damage Taken and 1 stack per round.</p><p>Only 1 Debuff Stack can be applied at the same time.</p><p>Not transferred by Infection.</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-rupture-mutations-torrent",
+      "name": "Torrent",
+      "img": "Utility/Statuses/StatusAilments/RuptureMutations/Torrent.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Torrent",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StatusAilments/RuptureMutations/Torrent.svg",
+        "description": "<p>Rupture Mutation.</p><p>Applied as stacks.</p><p>Deals 3 Water Damage/Attack, and suffers Damage Dealt -5%.</p><p>[DP] Deals 3 Water Damage/Attack, and attacks no longer decrease Purity.</p><p>Deals 3 Water Damage/Attack, and attacks no longer deal Break Damage/Burst Damage.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-silenced",
+      "name": "Silenced",
+      "img": "Utility/Statuses/SpecialAilments/WeakenedTypes/Silenced.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Silenced",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/WeakenedTypes/Silenced.svg",
+        "description": "<p>Special Weakened.</p><p>Prevents applying Statuses and dealing Elemental/Effective Damage for 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-fear",
+      "name": "Fear",
+      "img": "Utility/Statuses/SpecialAilments/PanicTypes/Fear.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Fear",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/PanicTypes/Fear.svg",
+        "description": "<p>Special Panic.</p><p>Disables Reactive Attacks and Counterattacks.</p><p>Targets nearest ally within Basic Attack range before taking action. (Does not Move user.)</p><p>Increases Speed by 3.</p><p>Cannot Ebb, Brace, Rest, or Heavy Attack.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-frenzy",
+      "name": "Frenzy",
+      "img": "Utility/Statuses/SpecialAilments/PanicTypes/Frenzy.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Frenzy",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/PanicTypes/Frenzy.svg",
+        "description": "<p>Special Panic.</p><p>Power +1. When Skill Attacking, suffer Bleed Damage/2.</p><p>Targets nearest ally within Basic Attack range before taking action. (Does not Move user.)</p><p>Increases Speed by 3.</p><p>Cannot Ebb, Brace, Rest, or Heavy Attack.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-special-status-ailments-nightmare",
+      "name": "Nightmare",
+      "img": "Utility/Statuses/SpecialAilments/SleepTypes/Nightmare.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Nightmare",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 3,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/SleepTypes/Nightmare.svg",
+        "description": "<p>Special Sleep.</p><p>FP -1, enables and inverts Health Regen.</p><p>All Regens +50%, and decrements Purity at a rate of 25%/round.</p><p>At 0 Purity, deals Fixed Damage = 33% Max Health, then wakes target up.</p><p>On enemies, deals Drain Damage each round, and also deals Fixed Damage = 5% Max Health on the last round, then wakes target up.</p><p>33% chance to wake up and suffer Damage Taken +100% on attack.</p><p>100% chance and Damage Taken +75% on Effective Damage Taken.</p><p>33% chance to wake up each round, should Sleeping target want to. Increases by 33% each round.</p><p>Lasts 3 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-vampires-feast-hunger",
+      "name": "Hunger",
+      "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Hunger.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Hunger",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Hunger.svg",
+        "description": "<p>Vampire/Feast Status.</p><p>Area Skills deal -10% Damage for each target in area.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-vampires-feast-famine",
+      "name": "Famine",
+      "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Famine.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Famine",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Famine.svg",
+        "description": "<p>Vampire/Feast Status.</p><p>When using Area Skills, suffer Drain Damage/3 for each target in area.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-vampires-feast-thirst",
+      "name": "Thirst",
+      "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Thirst.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Thirst",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Thirst.svg",
+        "description": "<p>Vampire/Feast Status.</p><p>After using an Area Skill, divides self's Bleed Damage value by number of targets hit, then heals targets by that value.</p><p>If only 1 target hit, deals Bleed Damage +25% to self instead.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-vampires-feast-desire",
+      "name": "Desire",
+      "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Desire.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Desire",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Desire.svg",
+        "description": "<p>Vampire/Feast Status.</p><p>Increases Damage Taken from Vampires by [10 x Desire Stacks]%.</p><p>Does not take a Status Slot.</p><p>Does not decrement.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-vampires-feast-apathy",
+      "name": "Apathy",
+      "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Apathy.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Apathy",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Apathy.svg",
+        "description": "<p>Vampire/Feast Status.</p><p>Decreases Stamina/Focus Regen by the Stack.</p><p>Cannot gain Desire.</p><p>At 3+ Apathy, gain Basic Armor -1 at the start of the round.</p><p>Does not take a Status Slot.</p><p>Does not decrement.</p>",
         "changes": []
       },
       "macros": null,
