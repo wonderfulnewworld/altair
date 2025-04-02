@@ -357,7 +357,16 @@
       },
       "macros": null,
       "options": {
-        "outputChat": false
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": false,
+        "markDefeated": true,
+        "dead": false,
+        "invisible": false,
+        "blind": false,
+        "burrow": false,
+        "hover": false,
+        "fly": false
       },
       "isNew": false,
       "isChanged": false,
@@ -365,9 +374,9 @@
       "hidden": false
     },
     {
-      "id": "altair-core-death",
+      "id": "altair-core-dead",
       "name": "Dead",
-      "img": "Utility/Statuses/CoreEffects/Death.svg",
+      "img": "Utility/Statuses/CoreEffects/Dead.svg",
       "reference": "",
       "applyTrigger": null,
       "removeTrigger": null,
@@ -384,13 +393,22 @@
           "startRound": null,
           "startTurn": null
         },
-        "img": "Utility/Statuses/CoreEffects/Death.svg",
+        "img": "Utility/Statuses/CoreEffects/Dead.svg",
         "description": "<p>Cannot act.</p>",
         "changes": []
       },
       "macros": null,
       "options": {
-        "outputChat": false
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": false,
+        "markDefeated": true,
+        "dead": true,
+        "invisible": false,
+        "blind": false,
+        "burrow": false,
+        "hover": false,
+        "fly": false
       },
       "isNew": false,
       "isChanged": false,
@@ -621,7 +639,16 @@
       },
       "macros": null,
       "options": {
-        "outputChat": false
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": false,
+        "markDefeated": false,
+        "dead": false,
+        "invisible": false,
+        "blind": false,
+        "burrow": false,
+        "hover": false,
+        "fly": true
       },
       "isNew": false,
       "isChanged": false,
@@ -654,7 +681,16 @@
       },
       "macros": null,
       "options": {
-        "outputChat": false
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": false,
+        "markDefeated": false,
+        "dead": false,
+        "invisible": false,
+        "blind": false,
+        "burrow": false,
+        "hover": true,
+        "fly": false
       },
       "isNew": false,
       "isChanged": false,
@@ -683,6 +719,81 @@
         },
         "img": "Utility/Statuses/CoreEffects/Launch.svg",
         "description": "<p>Counts as Flying.</p><p>Cannot have turn passed to, Counter, or React until Launch expires.</p><p>Launch automatically expires on your turn if there is no one else the turn can be passed to.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": false,
+        "markDefeated": false,
+        "dead": false,
+        "invisible": false,
+        "blind": false,
+        "burrow": false,
+        "hover": true,
+        "fly": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-dual-wielding",
+      "name": "Dual Wielding",
+      "img": "Utility/Statuses/CoreEffects/DualWielding.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Dual Wielding",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/DualWielding.svg",
+        "description": "<p>Halves all Armor Values and self-applied sources of Damage Reduction.</p><p>Decreases Toughness >-3 to -3.</p><p>Elemental Resistances and Defensive Buffs granted by your allies are not halved.</p><p>After 1 FULL round, this effect can be removed by taking a non-Dual/Cross Wielding Action.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-core-brutish",
+      "name": "Brutish",
+      "img": "Utility/Statuses/CoreEffects/Brutish.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Brutish",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/CoreEffects/Brutish.svg",
+        "description": "<p>Disables Armor for 1 round.</p>",
         "changes": []
       },
       "macros": null,
@@ -2667,7 +2778,16 @@
       },
       "macros": null,
       "options": {
-        "outputChat": false
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": false,
+        "markDefeated": false,
+        "dead": false,
+        "invisible": false,
+        "blind": true,
+        "burrow": false,
+        "hover": false,
+        "fly": false
       },
       "isNew": false,
       "isChanged": false,
@@ -3063,7 +3183,16 @@
       },
       "macros": null,
       "options": {
-        "outputChat": false
+        "overlay": false,
+        "removeOthers": false,
+        "outputChat": false,
+        "markDefeated": false,
+        "dead": false,
+        "invisible": true,
+        "blind": false,
+        "burrow": false,
+        "hover": false,
+        "fly": false
       },
       "isNew": false,
       "isChanged": false,
@@ -4459,7 +4588,7 @@
     {
       "id": "altair-generic-effects-next-armor-down",
       "name": "Next Armor Down",
-      "img": "Utility/Statuses/GenericEffects/NextArmorUp.svg",
+      "img": "Utility/Statuses/GenericEffects/NextArmorDown.svg",
       "reference": "",
       "applyTrigger": null,
       "removeTrigger": null,
@@ -4525,7 +4654,7 @@
     {
       "id": "altair-generic-effects-next-standard-armor-down",
       "name": "Next Standard Armor Down",
-      "img": "Utility/Statuses/GenericEffects/NextStandardArmorUp.svg",
+      "img": "Utility/Statuses/GenericEffects/NextStandardArmorDown.svg",
       "reference": "",
       "applyTrigger": null,
       "removeTrigger": null,
@@ -4591,7 +4720,7 @@
     {
       "id": "altair-generic-effects-next-prismatic-armor-down",
       "name": "Next Prismatic Armor Down",
-      "img": "Utility/Statuses/GenericEffects/NextPrismaticArmorUp.svg",
+      "img": "Utility/Statuses/GenericEffects/NextPrismaticArmorDown.svg",
       "reference": "",
       "applyTrigger": null,
       "removeTrigger": null,
@@ -4657,7 +4786,7 @@
     {
       "id": "altair-generic-effects-next-abnormal-armor-down",
       "name": "Next Abnormal Armor Down",
-      "img": "Utility/Statuses/GenericEffects/NextAbnormalArmorUp.svg",
+      "img": "Utility/Statuses/GenericEffects/NextAbnormalArmorDown.svg",
       "reference": "",
       "applyTrigger": null,
       "removeTrigger": null,
@@ -4940,6 +5069,336 @@
         },
         "img": "Utility/Statuses/GenericEffects/EmpoweredShield.svg",
         "description": "<p>Empowered Shield.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-fire-resistance-up",
+      "name": "Fire Resistance Up",
+      "img": "Utility/Statuses/AffinityChanges/FireResistanceUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Fire Resistance Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/FireResistanceUp.svg",
+        "description": "<p>Base Fire Resistance is set to 25%. (Semi-Resistance)</p><p>Base Resistance increases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-fire-resistance-down",
+      "name": "Fire Resistance Down",
+      "img": "Utility/Statuses/AffinityChanges/FireResistanceDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Fire Resistance Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/FireResistanceDown.svg",
+        "description": "<p>Base Fire Resistance is set to -25%. (Semi-Weakness)</p><p>Base Resistance decreases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-ice-resistance-up",
+      "name": "Ice Resistance Up",
+      "img": "Utility/Statuses/AffinityChanges/IceResistanceUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Ice Resistance Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/IceResistanceUp.svg",
+        "description": "<p>Base Ice Resistance is set to 25%. (Semi-Resistance)</p><p>Base Resistance increases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-ice-resistance-down",
+      "name": "Ice Resistance Down",
+      "img": "Utility/Statuses/AffinityChanges/IceResistanceDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Ice Resistance Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/IceResistanceDown.svg",
+        "description": "<p>Base Ice Resistance is set to -25%. (Semi-Weakness)</p><p>Base Resistance decreases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-thunder-resistance-up",
+      "name": "Thunder Resistance Up",
+      "img": "Utility/Statuses/AffinityChanges/ThunderResistanceUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Thunder Resistance Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/ThunderResistanceUp.svg",
+        "description": "<p>Base Thunder Resistance is set to 25%. (Semi-Resistance)</p><p>Base Resistance increases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-thunder-resistance-down",
+      "name": "Thunder Resistance Down",
+      "img": "Utility/Statuses/AffinityChanges/ThunderResistanceDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Thunder Resistance Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/ThunderResistanceDown.svg",
+        "description": "<p>Base Thunder Resistance is set to -25%. (Semi-Weakness)</p><p>Base Resistance decreases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-air-resistance-up",
+      "name": "Air Resistance Up",
+      "img": "Utility/Statuses/AffinityChanges/AirResistanceUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Air Resistance Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/AirResistanceUp.svg",
+        "description": "<p>Base Air Resistance is set to 25%. (Semi-Resistance)</p><p>Base Resistance increases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-air-resistance-down",
+      "name": "Air Resistance Down",
+      "img": "Utility/Statuses/AffinityChanges/AirResistanceDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Air Resistance Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/AirResistanceDown.svg",
+        "description": "<p>Base Air Resistance is set to -25%. (Semi-Weakness)</p><p>Base Resistance decreases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-ground-resistance-up",
+      "name": "Ground Resistance Up",
+      "img": "Utility/Statuses/AffinityChanges/GroundResistanceUp.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Ground Resistance Up",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/GroundResistanceUp.svg",
+        "description": "<p>Base Ground Resistance is set to 25%. (Semi-Resistance)</p><p>Base Resistance increases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-affinity-changes-ground-resistance-down",
+      "name": "Ground Resistance Down",
+      "img": "Utility/Statuses/AffinityChanges/GroundResistanceDown.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Ground Resistance Down",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/AffinityChanges/GroundResistanceDown.svg",
+        "description": "<p>Base Ground Resistance is set to -25%. (Semi-Weakness)</p><p>Base Resistance decreases by 25% per the stack of this effect.</p><p>Calculated on the attacker's side.</p><p>Is not a Damage Taken +/-X% Effect.</p><p>Is not considered a Status.</p>",
         "changes": []
       },
       "macros": null,
@@ -5944,7 +6403,7 @@
     {
       "id": "altair-rupture-mutations-torrent",
       "name": "Torrent",
-      "img": "Utility/Statuses/StatusAilments/RuptureMutations/Torrent.svg",
+      "img": "Utility/Statuses/SpecialAilments/RuptureMutations/Torrent.svg",
       "reference": "",
       "applyTrigger": null,
       "removeTrigger": null,
@@ -5961,7 +6420,7 @@
           "startRound": null,
           "startTurn": null
         },
-        "img": "Utility/Statuses/StatusAilments/RuptureMutations/Torrent.svg",
+        "img": "Utility/Statuses/SpecialAilments/RuptureMutations/Torrent.svg",
         "description": "<p>Rupture Mutation.</p><p>Applied as stacks.</p><p>Deals 3 Water Damage/Attack, and suffers Damage Dealt -5%.</p><p>[DP] Deals 3 Water Damage/Attack, and attacks no longer decrease Purity.</p><p>Deals 3 Water Damage/Attack, and attacks no longer deal Break Damage/Burst Damage.</p><p>Lasts 2 rounds.</p>",
         "changes": []
       },
@@ -6259,7 +6718,2977 @@
           "startTurn": null
         },
         "img": "Utility/Statuses/SpecialAilments/VampiresFeast/Apathy.svg",
-        "description": "<p>Vampire/Feast Status.</p><p>Decreases Stamina/Focus Regen by the Stack.</p><p>Cannot gain Desire.</p><p>At 3+ Apathy, gain Basic Armor -1 at the start of the round.</p><p>Does not take a Status Slot.</p><p>Does not decrement.</p>",
+        "description": "<p>Vampire/Feast Status.</p><p>Decreases Stamina/Focus Regen by the Stack.<p>On enemies, deals [Stack x2] Abnormal Damage/round.</p><p>Cannot gain Desire.</p><p>At 3+ Apathy, Basic Armor -1 (Players)/Basic Damage Taken +10% (Enemies).</p><p>Does not take a Status Slot.</p><p>Does not decrement.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-weapon-effects-lethal-spikes",
+      "name": "Lethal Spikes",
+      "img": "Utility/Statuses/WeaponEffects/Shurikens-LethalSpikes.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Lethal Spikes",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/WeaponEffects/Shurikens-LethalSpikes.svg",
+        "description": "<p>Shuriken Weapon Effect.</p><p>Status Slots +1, so long as one was applied by the character who applied this Status.</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-weapon-effects-lethal-spikes-plus",
+      "name": "Lethal Spikes Plus",
+      "img": "Utility/Statuses/WeaponEffects/Kunai-LethalSpikesPlus.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Lethal Spikes Plus",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/WeaponEffects/Kunai-LethalSpikesPlus.svg",
+        "description": "<p>Kunai Weapon Effect.</p><p>Status Slots +1, so long as one was applied by the character who applied this Status.</p><p>All Statuses applied by the character who applied this effect deal 2 Abnormal Damage/round. (Use the stack of this effect to keep track of this.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-equipment-effects-light-resistance",
+      "name": "Light Resistance",
+      "img": "Utility/Statuses/EquipmentEffects/CombatVest-LightResistance.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Light Resistance",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/EquipmentEffects/CombatVest-LightResistance.svg",
+        "description": "<p>Combat Vest Effect.</p><p>Reduces first three instances of Damage Taken in encounter by 25%.</p><p>+ Increase to 33%.</p><p>++ Four instances.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-material-effects-rage",
+      "name": "Rage",
+      "img": "Utility/Statuses/MaterialEffects/WildOak-Rage.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Rage",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/MaterialEffects/WildOak-Rage.svg",
+        "description": "<p>Wild Oak Weapon Material Effect.</p><p>Upon dealing damage, increase the Stack.</p><p>Upon taking Damage, suffer [Stack x3] Abnormal Damage, then clear Rage Stacks.</p><p>Does not decrement per round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-charge-types-charge-type-a",
+      "name": "Charge [Type A]",
+      "img": "Utility/Statuses/ChargeTypes/ChargeTypeA.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Charge [Type A]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/ChargeTypes/ChargeTypeA.svg",
+        "description": "<p>Used for certain Skills.</p><p>Decrements by 1 when taking Ice Damage.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-charge-types-charge-type-b",
+      "name": "Charge [Type B]",
+      "img": "Utility/Statuses/ChargeTypes/ChargeTypeB.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Charge [Type B]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/ChargeTypes/ChargeTypeB.svg",
+        "description": "<p>Used for certain Skills.</p><p>Decrements by 1 when taking Ice Damage.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-charge-types-anticharge",
+      "name": "Anticharge",
+      "img": "Utility/Statuses/ChargeTypes/Anticharge.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Anticharge",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/ChargeTypes/Anticharge.svg",
+        "description": "<p>Used for certain Skills.</p><p>Decrements by 1 when taking Ice Damage or Resting.</p><p>Cannot decrement below 1.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-general-shift-fire",
+      "name": "Shift [Fire]",
+      "img": "Utility/Statuses/StyleEffects/Shift-Fire.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Shift [Fire]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Shift-Fire.svg",
+        "description": "<p>General Effect.</p><p>Element is shifted to Fire.</p><p>\"Horizontal\" Element expressed by the stack of this effect.</p><p>[1] Fire</p><p>[2] Magma</p><p>[3] Smoke</p><p>[4] Oil</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-general-shift-ice",
+      "name": "Shift [Ice]",
+      "img": "Utility/Statuses/StyleEffects/Shift-Ice.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Shift [Ice]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Shift-Ice.svg",
+        "description": "<p>General Effect.</p><p>Element is shifted to Ice.</p><p>\"Horizontal\" Element expressed by the stack of this effect.</p><p>[1] Ice</p><p>[2] Water</p><p>[3] Steam</p><p>[4] Snow</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-general-shift-thunder",
+      "name": "Shift [Thunder]",
+      "img": "Utility/Statuses/StyleEffects/Shift-Thunder.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Shift [Thunder]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Shift-Thunder.svg",
+        "description": "<p>General Effect.</p><p>Element is shifted to Thunder.</p><p>\"Horizontal\" Element expressed by the stack of this effect.</p><p>[1] Thunder</p><p>[2] Magnetic</p><p>[3] Energy</p><p>[4] Plasma</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-general-shift-air",
+      "name": "Shift [Air]",
+      "img": "Utility/Statuses/StyleEffects/Shift-Air.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Shift [Air]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Shift-Air.svg",
+        "description": "<p>General Effect.</p><p>Element is shifted to Air.</p><p>\"Horizontal\" Element expressed by the stack of this effect.</p><p>[1] Air</p><p>[2] Cloud</p><p>[3] Storm</p><p>[4] Leaf</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-general-shift-ground",
+      "name": "Shift [Ground]",
+      "img": "Utility/Statuses/StyleEffects/Shift-Ground.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Shift [Ground]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Shift-Ground.svg",
+        "description": "<p>General Effect.</p><p>Element is shifted to Ground.</p><p>\"Horizontal\" Element expressed by the stack of this effect.</p><p>[1] Ground</p><p>[2] Wood</p><p>[3] Metal</p><p>[4] Clay</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-warrior-reave",
+      "name": "Reave",
+      "img": "Utility/Statuses/StyleEffects/Melee/Warrior-Reave.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Reave",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/Warrior-Reave.svg",
+        "description": "<p>Reaver Style Effect.</p><p>When a skill is Reaved, it loses all additional effects beyond Base Skill Power and Damage Dealt% Modifiers, and gains a +1 Round Cooldown. (On Players, Cost +2 instead of Cooldown.)</p><p>Reaved Skills keep this effect until they are used again, and each Skill can only be Reaved once per encounter.</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-prismatic-soulconversion",
+      "name": "Soul Conversion",
+      "img": "Utility/Statuses/StyleEffects/Melee/Prismatic-SoulConversion.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Soul Conversion",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": 2,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/Prismatic-SoulConversion.svg",
+        "description": "<p>Prismatic Blader Style Effect.</p><p>Sets target's Element to user's, 2 actions.</p><p>Skill Upgrades expressed by the stack of this effect.</p><p>[1] Default Soul Conversion</p><p>[2] Resistance Conversion</p><p>[3] Weakness Conversion</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-avenger-bluechain",
+      "name": "Blue Chain",
+      "img": "Utility/Statuses/StyleEffects/Melee/Avenger-BlueChain.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blue Chain",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/Avenger-BlueChain.svg",
+        "description": "<p>Avenger Style Effect, Mark Type.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Increases Power of 0th and 1st Skills against target by 3.</p><p>[2] Increases Power of 0th and 1st Skills against target by 4.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-avenger-redchain",
+      "name": "Red Chain",
+      "img": "Utility/Statuses/StyleEffects/Melee/Avenger-RedChain.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Red Chain",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/Avenger-RedChain.svg",
+        "description": "<p>Avenger Style Effect, Mark Type.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Increases Minimum Power by Skills against target by 3. Increases Minimum Power by target by 2.</p><p>[2] Increases Minimum Power by Skills against target by 4. Increases Minimum Power by target by 3.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-ironmaiden-tether-standard",
+      "name": "Tether [Standard]",
+      "img": "Utility/Statuses/StyleEffects/Melee/IronMaiden-TetherStandard.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Tether [Standard]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/IronMaiden-TetherStandard.svg",
+        "description": "<p>Iron Maiden Style Effect, Tether Type.</p><p>Transfers 1 Standard Armor from creator to target.</p><p>Only 2 Tethers of each type can be applied to a single target at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-ironmaiden-tether-prismatic",
+      "name": "Tether [Prismatic]",
+      "img": "Utility/Statuses/StyleEffects/Melee/IronMaiden-TetherPrismatic.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Tether [Prismatic]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/IronMaiden-TetherPrismatic.svg",
+        "description": "<p>Iron Maiden Style Effect, Tether Type.</p><p>Transfers 1 Prismatic Armor from creator to target.</p><p>Only 2 Tethers of each type can be applied to a single at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-swordsaint-lightblade",
+      "name": "Blade for Light",
+      "img": "Utility/Statuses/StyleEffects/Melee/SwordSaint-LightBlade.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blade for Light",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/SwordSaint-LightBlade.svg",
+        "description": "<p>Sword Saint Style Effect.</p><p>Base resistances change to that of Light Element.</p><p>Take 25% less Damage Dealt from non-Abnormal Elements.</p><p>Take 50% less Damage Dealt from Dark.</p><p>Take neutral Damage Dealt from Holy.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-swordsaint-passion",
+      "name": "Passion",
+      "img": "Utility/Statuses/StyleEffects/Melee/SwordSaint-Passion.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Passion",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/SwordSaint-Passion.svg",
+        "description": "<p>Sword Saint Style Effect.</p><p>On Next Attack, Power +Passion/2, and applies Burn for Passion/2 rounds, then consumes all Passion.</p><p>Does not decrement.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-devilsaber-seal",
+      "name": "Seal",
+      "img": "Utility/Statuses/StyleEffects/Melee/DevilSaber-Seal.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Seal",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/DevilSaber-Seal.svg",
+        "description": "<p>Devil Saber Style Effect.</p><p>Current unsealed Seals expressed by the stack of this effect.</p><p>Seal 1: Deal Effective Damage, Suffer Effective Damage, (EX) Deal at least 15 Damage.</p><p>Seal 2: Defeat an Opponent, Ally is Defeated, An enemy suffers at least 2 Status Effects/Ailments simultaneously, (EX) Apply a Status Effect/Ailment to at least (total enemies/3) enemies (Min 1).</p><p>Seal 3: An Enemy the Devil Blader has Attacked before is Broken or Bursted, Enter Overdrive/Antidrive, Devil Blader completes a Launch-Smash combo, (EX) Devil Blader deals Level x2 Damage.</p><p>Seal 4: Devil Blader falls to 25% Health while under a Status Effect/Ailment, Devil Blader is defeated, Devil Blader has at least 2 negative Status Effects/Ailments on self at once while under 75% Health, (EX) Devil Blader deals at least 80 Damage in encounter</p><p>Does not decrement.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-demonlord-contractpride",
+      "name": "Demonic Contract: Pride",
+      "img": "Utility/Statuses/StyleEffects/Melee/DemonLord-ContractPride.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Demonic Contract: Pride",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/DemonLord-ContractPride.svg",
+        "description": "<p>Demon Lord Style Effect.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Adds Armor Curse to ally's attacks for the remainder of encounter. Target must now pay half of user's Skill Costs.</p><p>[2] Adds Armor Curse+ and Power +1 to ally's attacks for the remainder of encounter. Target must now pay half of user's Skill Costs.</p><p>Contracts are Exclusive, only one Contract of each Sin may be equipped among all characters combined in an encounter at once.</p><p>Characters cannot have more than one Contract equipped at once.</p><p>Contracts cannot be used on other characters with Contracts equipped, or Sword Saints.</p><p>Characters with Contract Effects on them gain base Weakness to Holy and base Semi-Weakness to Light, and gain Weakness to Anti-Demonic Attacks.</p><p>Lasts remainder of encounter.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-melee-demonlord-temporaldecay",
+      "name": "Temporal Decay",
+      "img": "Utility/Statuses/StyleEffects/Melee/DemonLord-TemporalDecay.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Temporal Decay",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Melee/DemonLord-TemporalDecay.svg",
+        "description": "<p>Demon Lord Style Effect.</p><p>Moves turn to the end of the round, disables ability to pass turn, and halves Move.</p><p>Forces turn to be passed to first character to act last round.</p><p>Without Popcorn, deals 3 Dark Damage/round instead of disabling ability to pass turn.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-spiritualist-soulcharge",
+      "name": "Soul Charge",
+      "img": "Utility/Statuses/StyleEffects/Martial/Spiritualist-SoulCharge.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Soul Charge",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Spiritualist-SoulCharge.svg",
+        "description": "<p>Spiritualist Charge Type.</p><p>Used for certain Skills.</p><p>Generate 1 Soul Charge for each hit of Basic Attacks.</p><p>All Spiritualists start encounter with 3 Soul Charges.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-dancer-waltz",
+      "name": "Waltz",
+      "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Waltz.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Waltz",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Waltz.svg",
+        "description": "<p>Dancer Style Effect, Dance.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Follows up any attacks by Allies within 4 spaces with a Basic Attack, limited by user's Move.</p><p>[2] Follows up any attacks by Allies within 5 spaces with a Basic Attack that deals +2 Damage, limited by user's Move.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-dancer-pasodoble",
+      "name": "Pasodoble",
+      "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Pasodoble.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Pasodoble",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Pasodoble.svg",
+        "description": "<p>Dancer Style Effect, Dance.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Redirects non-Heavy, non-Ranged Attacks on Allies within 4 spaces towards user. Evade Chance +10%.</p><p>[2] Redirects non-Heavy Attacks on Allies within 5 spaces towards user. Evade Chance +20%.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-dancer-quickstep",
+      "name": "Quickstep",
+      "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Quickstep.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Quickstep",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Quickstep.svg",
+        "description": "<p>Dancer Style Effect, Dance.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Speed +1, Move +3.</p><p>[2] Speed +2, Move +4.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-dancer-encore",
+      "name": "Encore",
+      "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Encore.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Encore",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Encore.svg",
+        "description": "<p>Dancer Style Effect, Dance.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Extends Buffs on Allies within 4 spaces by 1 round.</p><p>[2] Extends Buffs on Allies within 5 spaces by 1 round. Cures Weakened, Panic, Ensnare, Dizzy, and up to 3 stacks of Binds.</p><p>2 Round Cooldown.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-dancer-flamenco",
+      "name": "Flamenco",
+      "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Flamenco.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Flamenco",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Dancer-Flamenco.svg",
+        "description": "<p>Dancer Style Effect, Dance.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Allows adjacent allies to act after user, regardless of Speed.</p><p>[2] Allows adjacent allies to act after user, regardless of Speed, and grants Elemental Damage Dealt +25%.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-soulbreaker-smokemark",
+      "name": "Smoke Mark",
+      "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-SmokeMark.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Smoke Mark",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-SmokeMark.svg",
+        "description": "<p>Soul Breaker Style Effect, Mark Type.</p><p>Deals [Stack]% of Health in Fire Damage/round. (Max Damage: 20.)</p><p>Does not increase Damage Taken from Soul Mark Effects.</p><p>Fire Damage Taken +[3x Stack]%.</p><p>Only 10 Soul Marks of each type can be placed on a target at once, although Magnitude can go beyond this limit.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-soulbreaker-steammark",
+      "name": "Steam Mark",
+      "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-SteamMark.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Steam Mark",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-SteamMark.svg",
+        "description": "<p>Soul Breaker Style Effect, Mark Type.</p><p>Deals [Stack] Ice Break Damage/round.</p><p>Ice Damage Taken +[3x Stack]%.</p><p>Does not increase Damage Taken from Soul Mark Effects.</p><p>Only 10 Soul Marks of each type can be placed on a target at once, although Magnitude can go beyond this limit.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-soulbreaker-energymark",
+      "name": "Energy Mark",
+      "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-EnergyMark.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Energy Mark",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-EnergyMark.svg",
+        "description": "<p>Soul Breaker Style Effect, Mark Type.</p><p>All attacks suffer [Stack x3]% Recoil Thunder Damage.</p><p>Thunder Damage Taken +[3x Stack]%.</p><p>Does not increase Damage Taken from Soul Mark Effects.</p><p>Only 10 Soul Marks of each type can be placed on a target at once, although Magnitude can go beyond this limit.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-soulbreaker-stormmark",
+      "name": "Storm Mark",
+      "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-StormMark.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Storm Mark",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-StormMark.svg",
+        "description": "<p>Soul Breaker Style Effect, Mark Type.</p><p>Deals [Stack] Air Damage/round. (Max Damage: 10.)</p><p>Area Skill Size -[Stack]. (Length/Width Alternating.)</p><p>For Radial Area Skills, decreases Radius by 1 for every 2 Storm Marks.</p><p>Air Damage Taken +[3x Stack]%.</p><p>Does not increase Damage Taken from Soul Mark Effects.</p><p>Only 10 Soul Marks of each type can be placed on a target at once, although Magnitude can go beyond this limit.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-soulbreaker-metalmark",
+      "name": "Metal Mark",
+      "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-MetalMark.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Metal Mark",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/SoulBreaker-MetalMark.svg",
+        "description": "<p>Soul Breaker Style Effect, Mark Type.</p><p>All incoming Attacks deal +[Stack] Knockback. (Max Knockback: 10.)</p><p>Deals 1 Ground Break Damage on Attack for every 3 Knockback from this effect. (Max Break Damage: 15.)</p><p>Ground Damage Taken +[3x Stack]%.</p><p>Does not increase Damage Taken from Soul Mark Effects.</p><p>Only 10 Soul Marks of each type can be placed on a target at once, although Magnitude can go beyond this limit.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-trailblazer-ignition",
+      "name": "Ignition",
+      "img": "Utility/Statuses/StyleEffects/Martial/Trailblazer-Ignition.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Ignition",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Trailblazer-Ignition.svg",
+        "description": "<p>Trailblazer Charge Type.</p><p>Used for certain Skills.</p><p>Generate 1 Ignition for when taking Damage from Attacks or Bracing.</p><p>Generate 2 Ignition when Resting.</p><p>When using an attack with the Combustion Effect, add [Ignition Stacks] Power, then consume all Ignition.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-exile-instinct",
+      "name": "Instinct",
+      "img": "Utility/Statuses/StyleEffects/Martial/Exile-Instinct.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Instinct",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Exile-Instinct.svg",
+        "description": "<p>Exile Charge Type.</p><p>Used for certain Skills.</p><p>[10 + [5x Highest Armor Value] + [Damage Reduction Percents/2] + Any other sources of Evasion]/5.</p><p>At any point, 3 Instinct can be spent to add a single hit Basic Attack to the Exile's attack.</p><p>Exiles only gain half the Damage Reduction benefits of Armor Values/Damage Taken Minuses.</p><p>Without the Style Passive, Quell Flames, or Exiled Determination, Instinct no longer grants Evasion, and is only used for Basic Attacks/conditionals.</p><p>After successfully Evading, halves Instinct.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-exorcist-denial",
+      "name": "Denial",
+      "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Denial.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Denial",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Denial.svg",
+        "description": "<p>Exorcist Style Effect, Rite.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Targets who attacked user while active cannot attack anyone except user for 1 round when it wears off.</p><p>[2] Targets who attacked user while active cannot attack anyone except user for 1 round when it wears off. Armor +2, 1 round, after wearing off.</p><p>Only 3 Rites can be active at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-exorcist-restriction",
+      "name": "Restriction",
+      "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Restriction.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Restriction",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Restriction.svg",
+        "description": "<p>Exorcist Style Effect, Rite.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Targets who attacked area while active lose all non-damaging effects of Skills for 1 round when it wears off.</p><p>[2] Targets who attacked area while active lose all non-damaging effects of Skills for 1 round when it wears off. Inflicts Power -2 to targets who attacked area, 1 round, after wearing off.</p><p>Only 3 Rites can be active at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-exorcist-stagnancy",
+      "name": "Stagnancy",
+      "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Stagnancy.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Stagnancy",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Stagnancy.svg",
+        "description": "<p>Exorcist Style Effect, Rite.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Targets who attacked user while active gain 3 Binds when it wears off.</p><p>[2] Targets who attacked user while active gain 3 Binds when it wears off. Converts Binds into Restraining Binds.</p><p>Only 3 Rites can be active at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-exorcist-reduction",
+      "name": "Reduction",
+      "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Reduction.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Reduction",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Reduction.svg",
+        "description": "<p>Exorcist Style Effect, Rite.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Targets who attacked user while active suffer Power -1 for 1 round when it wears off.</p><p>[2] Targets who attacked user while active suffer Power -2 for 1 round when it wears off. Targets who attacked user cannot deal damage greater than 33% of their target's Max Health in one attack for 1 round when it wears off.</p><p>Only 3 Rites can be active at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-exorcist-repulsion",
+      "name": "Repulsion",
+      "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Repulsion.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Repulsion",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Repulsion.svg",
+        "description": "<p>Exorcist Style Effect, Rite.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Targets who attacked area while active cannot enter area for 1 round when it wears off.</p><p>[2] Targets who attacked area while active cannot enter area for 1 round when it wears off. (Does nothing if target is out of range.) Applies 2 Binds to targets who attacked area after wearing off.</p><p>Only 3 Rites can be active at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-exorcist-direction",
+      "name": "Direction",
+      "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Direction.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Direction",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Direction.svg",
+        "description": "<p>Exorcist Style Effect, Rite.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Targets who attacked user while active must move towards user for 1 round when it wears off.</p><p>[2] Targets who attacked user while active must move towards user for 1 round when it wears off. Targets who attacked user while active suffer Back Damage Taken +25%, 1 round, after wearing off.</p><p>Only 3 Rites can be active at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-martial-exorcist-reprisal",
+      "name": "Reprisal",
+      "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Reprisal.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Reprisal",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Martial/Exorcist-Reprisal.svg",
+        "description": "<p>Exorcist Style Effect, Rite.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] 33% of Damage Taken while active is dealt to last target attacked when it wears off.</p><p>[2] 33% of Damage Taken while active is dealt to last target attacked when it wears off. User heals 50% of Damage Taken while rite was active, after wearing off.</p><p>Only 3 Rites can be active at once.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-projectile-archer-mark",
+      "name": "Mark [Archer]",
+      "img": "Utility/Statuses/StyleEffects/Projectile/Archer-Mark.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Mark [Archer]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Projectile/Archer-Mark.svg",
+        "description": "<p>Archer Style Effect, Mark Type.</p><p>Mark Tier expressed by the stack of this effect.</p><p>[1] [Mark] Character who applied Mark gains Damage Dealt +20% against Marked target, and can hit them over walls. All attacks from character that applied Mark against Marked target become Accurate.</p><p>[2] [Mark+] Character who applied Marked+ gains Damage Dealt +33% against Marked+ target, and can hit them over walls. All attacks from character that applied Marked+ against Marked+ target become Accurate.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-projectile-inazuma-hyperspeed",
+      "name": "Hyperspeeed",
+      "img": "Utility/Statuses/StyleEffects/Projectile/Inazuma-Hyperspeed.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Hyperspeeed",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Projectile/Inazuma-Hyperspeed.svg",
+        "description": "<p>Inazume-Otome Charge Type.</p><p>Used for certain Skills.</p><p>Speed >5 is converted into Hyperspeed after using the Hyperspeed Skill.</p><p>At least 1 Hyperspeed is consumed every time the user attacks a target/takes damage from a target, in the following 2 ways.</p><p>Up to 3 Hyperspeed may be consumed when Attacking to add Power +[Hyperspeed Spent].</p><p>Up to 3 Hyperspeed may be consumed when taking damage from an Attack, gaining as Damage Taken -[Hyperspeed Spent x10]%.</p><p>If neither action is taken in a round, 1 Hyperspeed is converted back into normal Speed if it was not provided by a temporary buff.</p><p>At 7+ Hyperspeed, all Skill Costs -2.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-projectile-serviteur-debilitating",
+      "name": "Debilitating",
+      "img": "Utility/Statuses/StyleEffects/Projectile/Serviteur-Debilitating.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Debilitating",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Projectile/Serviteur-Debilitating.svg",
+        "description": "<p>Serviteur Style Effect.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] [Debilitating] Damage Dealt -10% and disables Reactive Attacks.</p><p>[2] [Debilitating+] Power -1, Damage Dealt -10%, and disables Reactive Attacks.</p><p>Does not take a Status Slot.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-atelier-turretmod1",
+      "name": "Turret Modifier 1",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Atelier-TurretMod1.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Turret Modifier 1",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Atelier-TurretMod1.svg",
+        "description": "<p>Metalwork Atelier Turret Modifier.</p><p>Turret type expressed by the stack of this effect.</p><p>[1] [Metalcraft Laser] Mod: Charging. Power +3, Width +2. Fires every other round.</p><p>[2] [Advanced Metalwork Turret] Mod: Precise. Armor Ignore +25%.</p><p>[3] [Advanced Metalcraft Mortar] Mod: Heated. Builds Heat. (On Mortar.)</p><p>[4] [Perfectwork Turret] Mod: Repeating. 25% chance to hit the same target twice.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-atelier-turretmod2",
+      "name": "Turret Modifier 2",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Atelier-TurretMod2.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Turret Modifier 2",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Atelier-TurretMod2.svg",
+        "description": "<p>Metalwork Atelier Turret Modifier.</p><p>Turret type expressed by the stack of this effect.</p><p>[1] [Metalcraft Laser] Mod: Binding. Applies 1 Bind.</p><p>[2] [Advanced Metalwork Turret] Mod: Greater. Power +1.</p><p>[3] [Advanced Metalcraft Mortar] Mod: Rupturing. Applies 1 Rupture.</p><p>[4] [Perfectwork Turret] Mod: Intercepting. Instead of firing normally, fires when targets enter/leave range, up to 3 times per round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-atelier-turretmod3",
+      "name": "Turret Modifier 3",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Atelier-TurretMod3.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Turret Modifier 3",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Atelier-TurretMod3.svg",
+        "description": "<p>Unused.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-specter-swift",
+      "name": "Adapt: Swift",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Specter-Swift.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Adapt: Swift",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Specter-Swift.svg",
+        "description": "<p>Specter Charge Type.</p><p>Grants different buffs depending on the stack.</p><p>[1] All Specter/Wraith Skills become Swift.</p><p>[2] All Specter/Wraith Skills become Swift and gain Early Power +1.</p><p>[3] All Specter/Wraith Skills become Instantaneous and gain Early Power +1.</p><p>[4, Wraith] All Wraith Skills become Instantaneous and gain Early Power +2.</p><p>Early Power: Gain additional Power when acting in the first half of the round.</p><p>Increases by 1 when using Adapt after using a Skill that gains an additional effect under Adapt: Swift.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-specter-suppression",
+      "name": "Adapt: Suppression",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Specter-Suppression.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Adapt: Suppression",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Specter-Suppression.svg",
+        "description": "<p>Specter Charge Type.</p><p>Grants different buffs depending on the stack.</p><p>[1] All Specter/Wraith Skills apply 1 Bind on hit.</p><p>[2] All Specter/Wraith Skills apply 1 Bind on hit and don't decrement Binds.</p><p>[3] All Specter/Wraith Skills apply 2 Binds on hit and don't decrement Binds.</p><p>[4, Wraith] All Wraith Skills apply 2 Binds on hit, don't decrement Binds, and gain Power +1 against targets with Binds.</p><p>Increases by 1 when using Adapt after using a Skill that gains an additional effect under Adapt: Suppression.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-specter-piercing",
+      "name": "Adapt: Piercing",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Specter-Piercing.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Adapt: Piercing",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Specter-Piercing.svg",
+        "description": "<p>Specter Charge Type.</p><p>Grants different buffs depending on the stack.</p><p>[1] All Specter/Wraith Skills pierce 5 spaces.</p><p>[2] All Specter/Wraith Skills pierce 8 spaces.</p><p>[3] All Specter/Wraith Skills pierce 8 spaces and gain Armor Ignore +25%.</p><p>[4, Wraith] All Wraith Skills pierce 10 spaces, gain Armor Ignore +25% and Power +1.</p><p>Increases by 1 when using Adapt after using a Skill that gains an additional effect under Adapt: Piercing.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-trickster-whimsy",
+      "name": "Whimsy",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Trickster-Whimsy.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Whimsy",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Trickster-Whimsy.svg",
+        "description": "<p>Trickster Charge Type.</p><p>Increases by 1d3 after succeeding with Whimsical Skills, or 3 after failing Whimsical Skills.</p><p>At 7 [Trickster]/10 [Adventurer] Whimsy, converts all Trickster/Adventurer Skills into their Kitsune/Vixen counterparts.</p><p>At the start of the round while a Kitsune/Vixen, decrements by 1d2.</p><p>Decrements by 2 upon failing Illusory Skills.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-demolitionist-heat",
+      "name": "Heat",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Demolitionist-Heat.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Heat",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Specter-Piercing.svg",
+        "description": "<p>Demolitionist Charge Type.</p><p>Grants different buffs depending on the stack.</p><p>[1] Size +1.</p><p>[2] Size +1, applies Burn.</p><p>[3] Size +1, Power +1, applies Burn.</p><p>[4, Firearms] Size +1, Power +1, applies Blaze.</p><p>[5, Firearms] Size +2, Power +2, applies Blaze.</p><p>[6, Heated+] Size +2, Power +2, applies Incinerate.</p><p>[7, Heated+] Size +3, Power +3, applies Incinerate.</p><p>Increases by 1 when using a Heated, Heated+ or Fire Element Skill.</p><p>Only Heated+ Skills can generate Heat beyond 5.</p><p>Decrements by 1 when Ebbing, Bracing, Resting, using a Skill with the Cooling Attribue, using an Ice/Water Skill, taking Ice/Water Damage from an Attack or Status, or standing in water/something similar.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-warden-lockbinds",
+      "name": "Locked Binds",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Warden-LockBinds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Locked Binds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Warden-LockBinds.svg",
+        "description": "<p>Warden Style Effect.</p><p>While this effect is applied, Binds no longer have an effect, but will not decrement.</p><p>Upon using a Skill that applies/converts Binds, or another Skill that Locks Binds, this effect is removed.</p><p>This effect is also removed if the target Ebbs, Braces, or Rests.</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-firearm-warden-wetrocks",
+      "name": "Wetrocks",
+      "img": "Utility/Statuses/StyleEffects/Firearm/Warden-Wetrocks.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Wetrocks",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Firearm/Warden-Wetrocks.svg",
+        "description": "<p>Warden Style Effect, Debuff Stack.</p><p>Damage Taken +[10x Stack]%.</p><p>At 7 Stacks, Standard/Prismatic Armor -10% [Enemies]/-3 [Players] for the remainder of encounter. (Once per target per encounter.)</p><p>Applied as stacks. Decrements on Damage Taken and 1 stack per round.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-tactician-balanced",
+      "name": "Field Tactics: Balanced",
+      "img": "Utility/Statuses/StyleEffects/Other/Tactician-Balanced.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Field Tactics: Balanced",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Tactician-Balanced.svg",
+        "description": "<p>Tactician Style Effect.</p><p>Grants different buffs depending on the stack. Stack determined by active party Role distribution at encounter start.</p><p>[1] Balanced</p><ul><li><p>Starlight Experience +1, Party Limited Skill Uses +1. [All]</p></li></ul><p>[2] Synchronized Unity</p><ul><li><p>Skill Mastery +1, Starlight Experience +2, Party Limited Skill Uses +2. [All]</p></li></ul><p>Party Limited Skill Uses+: Grants a singular, shared additional usage of a Limited Skill to all allies. Consumed when any ally uses a Limited Skill after running out of uses.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-tactician-attacker",
+      "name": "Field Tactics: Attacker",
+      "img": "Utility/Statuses/StyleEffects/Other/Tactician-Attacker.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Field Tactics: Attacker",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Tactician-Attacker.svg",
+        "description": "<p>Tactician Style Effect.</p><p>Grants different buffs depending on the stack. Stack determined by active party Role distribution at encounter start.</p><p>[1] Attacker Favored</p><ul><li><p>Rounds 2-4: Attacker Power +1.</p></li><li><p>Rounds 5+/5-6 [Strategist]: Attacker Damage Dealt +20%.</p></li><li><p>Round 7+ [Strategist]: Attacker Power +1, Attacker Damage Dealt +20%.</p></li></ul><p>[2] Attacker Dominated</p><ul><li><p>Rounds 2-4</p><ul><li><p>Attacker Power +1.</p></li><li><p>Defender Armor -1.</p></li><li><p>Supporter Costs +0.5.</p></li></ul></li><li><p>Rounds 5+/5-6 [Strategist]</p><ul><li><p>Attacker Power +1, Attacker Damage Dealt +20%.</p></li><li><p>Defender Damage Taken +20%.</p></li><li><p>Supporter Costs +1.</p></li></ul></li><li><p>Round 7+ [Strategist]</p><ul><li><p>Attacker Power +2, Attacker Damage +20%.</p></li><li><p>Defender Armor -1, Defender Damage Taken +20%.</p></li><li><p>Supporter Costs +1.5.</p></li></ul></li></ul><p>[3] Attacker Unity</p><ul><li><p>Rounds 2-4: Attacker Power +1, Attacker Damage Dealt +20%.</p></li><li><p>Rounds 5+/5-6 [Strategist]: Attacker Power +2, Attacker Damage Dealt +20%, Attacker Armor -1.</p></li><li><p>Round 7+ [Strategist]: Attacker Power +2, Attacker Damage Dealt +40%, Attacker Armor -1, Attacker Damage Dealt +20%.</p></li></ul>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-tactician-defender",
+      "name": "Field Tactics: Defender",
+      "img": "Utility/Statuses/StyleEffects/Other/Tactician-Defender.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Field Tactics: Defender",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Tactician-Defender.svg",
+        "description": "<p>Tactician Style Effect.</p><p>Grants different buffs depending on the stack. Stack determined by active party Role distribution at encounter start.</p><p>[1] Defender Favored</p><ul><li><p>Rounds 2-4: Defender Armor +1.</p></li><li><p>Rounds 5+/5-6 [Strategist]: Defender Damage Taken -20%.</p></li><li><p>Round 7+ [Strategist]: Defender Armor +1, Defender Damage Taken -20%.</p></li></ul><p>[2] Defender Dominated</p><ul><li><p>Rounds 2-4</p><ul><li><p>Defender Armor +1.</p></li><li><p>Attacker Power -1.</p></li><li><p>Supporter Costs +0.5.</p></li></ul></li><li><p>Rounds 5+/5-6 [Strategist]</p><ul><li><p>Defender Armor +1, Defender Damage Taken -20%.</p></li><li><p>Attacker Damage Dealt -20%.</p></li><li><p>Supporter Costs +1.</p></li></ul></li><li><p>Round 7+ [Strategist]</p><ul><li><p>Defender Armor +2, Defender Damage Taken -20%.</p></li><li><p>Attacker Power -1, Attacker Damager Dealt -20%.</p></li><li><p>Supporter Costs +1.5.</p></li></ul></li></ul><p>[3] Defender Unity</p><ul><li><p>Rounds 2-4: Defender Armor +1, Defender Damage Dealt -20%.</p></li><li><p>Rounds 5+/5-6 [Strategist]: Defender Armor +2, Defender Damage Taken -20%, Defender Power -1.</p></li><li><p>Round 7+ [Strategist]: Defender Armor +2, Defender Damage Taken -40%, Defender Power -1, Defender Damage Dealt -20%.</p></li></ul>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-tactician-supporter",
+      "name": "Field Tactics: Supporter",
+      "img": "Utility/Statuses/StyleEffects/Other/Tactician-Supporter.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Field Tactics: Supporter",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Tactician-Supporter.svg",
+        "description": "<p>Tactician Style Effect.</p><p>Grants different buffs depending on the stack. Stack determined by active party Role distribution at encounter start.</p><p>[1] Supporter Favored</p><ul><li><p>Rounds 2-4: Supporter Costs -0.5.</p></li><li><p>Rounds 5+/5-6 [Strategist]: Supporter Costs -1.</p></li><li><p>Round 7+ [Strategist]: Supporter Costs -1.5.</p></li></ul><p>[2] Supporter Dominated</p><ul><li><p>Rounds 2-4</p><ul><li><p>Supporter Costs -1.</p></li><li><p>Attacker Power -1.</p></li><li><p>Defender Armor -1.</p></li></ul></li><li><p>Rounds 5+/5-6 [Strategist]</p><ul><li><p>Supporter Costs -1.5.</p></li><li><p>Attacker Damage Dealt -20%.</p></li><li><p>Defender Damage Taken +20%.</p></li></ul></li><li><p>Round 7+ [Strategist]</p><ul><li><p>Supporter Costs -2.</p></li><li><p>Attacker Power -1, Attacker Damage Dealt -20%.</p></li><li><p>Defender Armor -1, Defender Damage Taken -20%.</p></li></ul></li></ul><p>[3] Supporter Unity</p><ul><li><p>Rounds 2-4: Supporter Costs -1.5.</p></li><li><p>Rounds 5+/5-6 [Strategist]: Supporter Costs -2, Supporter Power -1.</p></li><li><p>Round 7+ [Strategist]: Supporter Costs -2.5, Supporter Power -1, Supporter Armor +1.</p></li></ul>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-tactician-fool",
+      "name": "Field Tactics: Fool",
+      "img": "Utility/Statuses/StyleEffects/Other/Tactician-Fool.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Field Tactics: Fool",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Tactician-Fool.svg",
+        "description": "<p>Tactician Style Effect.</p><p>Grants different buffs depending on the stack. Stack determined by active party Role distribution at encounter start.</p><p>[1] Foolish</p><ul><li><p>[All] Skill Mastery +1.</p><ul><li><p>Attacker Power -1.</p></li><li><p>Defender Armor -1.</p></li><li><p>Supporter Costs +1.</p></li></ul></li></ul><p>[2] Fool's Gambit</p><ul><li><p>[All] Skill Mastery +1.</p><ul><li><p>Fool Power +1, Fool Armor +1, Fool Costs -0.5.</p></li></ul></li></ul>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-merchant-coins",
+      "name": "Coins",
+      "img": "Utility/Statuses/StyleEffects/Other/Merchant-Coins.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Coins",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Merchant-Coins.svg",
+        "description": "<p>Merchant Resource.</p><p>Used for purchase Items.</p><p>All Merchants start encounter with 3 Coins.</p><p>Coins may be distributed to allies before the encounter starts.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-teacher-guide",
+      "name": "Guide",
+      "img": "Utility/Statuses/StyleEffects/Other/Teacher-Guide.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Guide",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 1,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Teacher-Guide.svg",
+        "description": "<p>Teacher Style Effect.</p><p>Skill Tier expressed by the stack of this effect.</p><p>[1] Attacks ignore resistances of up to +50%. Immune to Status Effects.</p><p>[2] Attacks ignore resistances of up to +50%. Immune to non-Special Statuses.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-teacher-ontrack",
+      "name": "Classroom Tactics: On Track",
+      "img": "Utility/Statuses/StyleEffects/Other/Teacher-OnTrack.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Classroom Tactics: On Track",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Teacher-OnTrack.svg",
+        "description": "<p>Teacher Style Effect.</p><p>Grants different buffs depending on the stack. Stack determined by relative Level compared to active party's average Level at encounter start.</p><p>[1] On Track [Level = Average Level]</p><ul><li><p>Shooting Stars/Altair Experience +5.</p></li></ul><p>Only gives to one if both are earned in a session.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-teacher-below",
+      "name": "Classroom Tactics: Below Average/Falling Behind",
+      "img": "Utility/Statuses/StyleEffects/Other/Teacher-Below.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Classroom Tactics: Below Average/Falling Behind",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Teacher-Below.svg",
+        "description": "<p>Teacher Style Effect.</p><p>Grants different buffs depending on the stack. Stack determined by relative Level compared to active party's average Level at encounter start.</p><p>[1] Below Average [Level = Average Level -1]</p><ul><li><p>[Teacher] Generates 2 Experience/round.</p></li><li><p>[Professor] Skill Mastery +1, Generates 2 Experience/round.</p></li></ul><p>[2] Falling Behind [Level &lt; Average Level -1]</p><ul><li><p>[Teacher] Skill Mastery +1, Generates 2 Experience/round.</p></li><li><p>[Professor] Skill Mastery +2, Experience +1. Generates 2 Experience/round.</p></li></ul><p>Does not stack with other Skill Mastery increases.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-style-effects-other-teacher-above",
+      "name": "Classroom Tactics: Above Average/Exemplary!",
+      "img": "Utility/Statuses/StyleEffects/Other/Teacher-Above.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Classroom Tactics: Above Average/Exemplary!",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/StyleEffects/Other/Teacher-Above.svg",
+        "description": "<p>Teacher Style Effect.</p><p>Grants different buffs depending on the stack. Stack determined by relative Level compared to active party's average Level at encounter start.</p><p>[1] Above Average [Level = Average Level +1]</p><ul><li><p>[Teacher] Post-Encounter Skill Mastery +1. Amateur/Intermediate Skill Mastery +1.</p></li><li><p>[Professor] Post-Encounter Skill Mastery +1. Amateur/Intermediate/Advanced Skill Mastery +1.</p></li></ul><p>[2] Exemplary! [Level &gt; Average Level +1]</p><ul><li><p>[Teacher] Post-Encounter Skill Mastery +2.</p></li><li><p>[Professor] Post-Encounter Skill Mastery +2. When gaining Experience, can give it to Below Average/Falling Behind allies instead. (Cannot give to Below Average if any Falling Behind characters present.)</p></li></ul><p>Does not stack with other Skill Mastery increases.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-consumable-effects-fresa",
+      "name": "Fresa-Tonik",
+      "img": "Utility/Statuses/Consumables/Consumable-Fresa.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Fresa-Tonik",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/Consumables/Consumable-Fresa.svg",
+        "description": "<p>Consumable Effect.</p><p>Restores 1 Purity at the start of user's turn, before Overdrive/Antidrive roll.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-consumable-effects-ironframe",
+      "name": "Ironframe",
+      "img": "Utility/Statuses/Consumables/Consumable-Ironframe.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Ironframe",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/Consumables/Consumable-Ironframe.svg",
+        "description": "<p>Consumable Effect.</p><p>Knockback +3 on Attacks against Melee/Martial users.</p><p>Lasts 2 rounds.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-consumable-effects-nrg",
+      "name": "H.L.G NRG",
+      "img": "Utility/Statuses/Consumables/Consumable-NRG.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "H.L.G NRG",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/Consumables/Consumable-NRG.svg",
+        "description": "<p>Consumable Effect.</p><p>The stack of this effect increases by 1 each round.</p><p>Gain Speed equal to [Stack] each round.</p><p>If Speed ever becomes the highest, suffers Speed x2 Absolute Damage, and Stun, then removes this effect.</p><p>Cannot enter Reserve Party while this effect persists.</p><p>Does not decrement.</p><p>Lasts remainder of encounter.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-consumable-effects-thepurple",
+      "name": "The Purple",
+      "img": "Utility/Statuses/Consumables/Consumable-ThePurple.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "The Purple",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/Consumables/Consumable-ThePurple.svg",
+        "description": "<p>Consumable Effect.</p><p>Whenever Drive or Purity are gained, gain 1 extra, but lose 1 of the other.</p><p>Lasts remainder of encounter.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-personal-effects-haemorrhaged",
+      "name": "Haemorrhaged",
+      "img": "Utility/Statuses/PersonalEffects/Personal-Haemorrhaged.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Haemorrhaged",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/Consumables/Personal-Haemorrhaged.svg",
+        "description": "<p>Personal Effect.</p><p>Break/Burst Damage Taken +3 from character that applied this effect.</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-personal-effects-ironroses",
+      "name": "Iron Roses",
+      "img": "Utility/Statuses/PersonalEffects/Personal-IronRoses.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Iron Roses",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/Consumables/Personal-IronRoses.svg",
+        "description": "<p>Personal Charge Type.</p><p>Generate 1 Iron Rose for each hit of Attacks. Generation doubled in Overdrive.</p><p>When attacking in Overdrive, can consume Iron Roses to deal Break Damage equal to 2x Iron Roses consumed.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-personal-effects-magineneedles",
+      "name": "Magine Needles",
+      "img": "Utility/Statuses/PersonalEffects/Personal-MagineNeedles.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Magine Needles",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/Consumables/Personal-MagineNeedles.svg",
+        "description": "<p>Personal Consumable, Consumable Effect.</p><p>Once per round, can consume 1 Magine Needle to gain Critical Chance +(10 x [Rounds used in succession +1])%, Damage Taken +(10 x [Rounds used in succession +1])%, and Speed +[Rounds used in succession] for 1 round.</p><p>On failure to consume after consuming prior round, suffer Stun.</p><p>Upon consuming at least 1 Magine Needle, cannot enter Reserve Party until Stun expires.</p><p>Start encounter with 5 Magine Needles.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-personal-effects-ayano-mark",
+      "name": "Mark [Ayano]",
+      "img": "Utility/Statuses/PersonalEffects/Personal-AyanoMark.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Mark [Ayano]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/PersonalEffects/Personal-AyanoMark.svg",
+        "description": "<p>Personal Effect, Mark Type.</p><p>Character who applied Mark gains Damage Dealt +20% against Marked target, and can hit them over walls. All attacks from character that applied Mark against Marked target become Accurate.</p><p>Targets with this Mark can be attacked at double Projectile/Firearm range by all characters allied to the character that applied this Mark.</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-a-flamingammo",
+      "name": "Flaming Ammo",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A4A]FlamingAmmo.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Flaming Ammo",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A4A]FlamingAmmo.svg",
+        "description": "<p>Labyrinth Effect, Ammo Type.</p><p>Ammo. May be consumed on Attack.</p><p>If target does not have a Burn Status, applies Burn for 2 rounds.</p><p>If target does have a Burn Status, extends duration by 1 instead.</p><p>Cannot be Restocked.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-a-freezingammo",
+      "name": "Freezing Ammo",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A4A]FreezingAmmo.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Freezing Ammo",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A4A]FreezingAmmo.svg",
+        "description": "<p>Labyrinth Effect, Ammo Type.</p><p>Ammo. May be consumed on Attack.</p><p>If target does not have a Frost Status, applies Frostbite for 2 rounds.</p><p>If target does have a Frost Status, extends duration by 1 instead.</p><p>Cannot be Restocked.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-a-riflemanmark",
+      "name": "Mark [Rifleman]",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A6-2-1]Mark.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Mark [Rifleman]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A6-2-1]Mark.svg",
+        "description": "<p>Labyrinth Effect, Mark Type.</p><p>Characters with this Mark becomes a valid substitute target for \"Tracking Shot.\"</p><p>Only 1 Mark Type can be applied at once. (All Soul Marks count as the same Mark Type.)</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-a-dragonammo",
+      "name": "Dragon Ammo",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A7-1B]DragonAmmo.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Dragon Ammo",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A7-1B]DragonAmmo.svg",
+        "description": "<p>Labyrinth Effect, Ammo Type.</p><p>Ammo. May be consumed on Attack.</p><p>If target does not have a Burn Status, applies Blaze for 2 rounds.</p><p>If target does have a Burn Status, activates Burn Status without decrementing duration.</p><p>Cannot be Restocked.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-a-hexaammo",
+      "name": "HEXA Ammo",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A7-1B]HEXAAmmo.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "HEXA Ammo",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A7-1B]HEXAAmmo.svg",
+        "description": "<p>Labyrinth Effect, Ammo Type.</p><p>Ammo. Can only be consumed for Dead End Bullet.</p><p>Ignores Armor and gains Power equal to current round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-a-magineneedles",
+      "name": "Magine Needles [Labyrinth]",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A7-1B]MagineNeedles.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Magine Needles [Labyrinth]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteA/[A7-1B]MagineNeedles.svg",
+        "description": "<p>Labyrinth Consumable, Consumable Effect.</p><p>Once per round, can consume 1 Magine Needle to gain Critical Chance +(10 x [Rounds used in succession +1])%, Damage Taken +(10 x [Rounds used in succession +1])%, and Speed +[Rounds used in succession] for 1 round.</p><p>On failure to consume after consuming prior round, suffer 50 Break Damage.</p><p>Start encounter with 5 Magine Needles.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-wounds",
+      "name": "Wounds",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B6-1-1]Wounds.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Wounds",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B6-1-1]Wounds.svg",
+        "description": "<p>Labyrinth Effect.</p><p>Increases Bleed Damage by half the stack.</p><p>Applied as stacks, halved when afflicted Basic Attacks or Rests.</p><p>While suffering this effect, Bleed Statuses cannot be removed, but can still decrement below to 0.</p><p>Curable.</p><p>Not transferred by Infection.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-scrap",
+      "name": "Scrap",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B6-2-2]Scrap.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Scrap",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B6-2-2]Scrap.svg",
+        "description": "<p>Labyrinth Charge Type.</p><p>Used for certain Skills.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-collectedscrap",
+      "name": "Collected Scrap",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B6-2-2]CollectedScrap.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Collected Scrap",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B6-2-2]CollectedScrap.svg",
+        "description": "<p>Labyrinth Resource.</p><p>At the start of the round, target with the most Collected Scrap automatically draws Aggro from Armored Bison.</p><p>At the end of encounter, grants Total Collected Scrap/2 Fragments to party.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-effectlesstether",
+      "name": "Tether [Effectless]",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B6-2-2]EffectlessTether.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Tether [Effectless]",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B6-2-2]EffectlessTether.svg",
+        "description": "<p>Labyrinth Tether Type.</p><p>Used for certain Skills, but otherwise has no effect. Destroyed when greater than 10 spaces from creator.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-unity",
+      "name": "Unity",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-1A]Unity.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Unity",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-1A]Unity.svg",
+        "description": "<p>Labyrinth Charge Type.</p><p>Used for Pair-Up Mechanics.</p><p>When taking an action, Unity increases by 1.</p><p>When switching, Unity increases by 2. [Twice per encounter.]</p><p>When using a Heavy Attack, halve Unity.</p><p>Earlier Unity actions may be used at higher Unity.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-blooming",
+      "name": "Blooming",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-1A]Blooming.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Blooming",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-1A]Blooming.svg",
+        "description": "<p>Labyrinth Special Burn.</p><p>While suffering this effect, Burn Statuses cannot decrement below 1 or be removed.</p><p>Whenever Lan attacks, regardless of target, Flip 1 Coin.</p><ul><li><p>On Heads: Increase Burn Status duration by 1.</p></li><li><p>On Tails: Activate Burn Status.</p></li></ul><p>Then, decrement Blooming by 1.</p><p>Does not take a Status Slot.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-kingsmercy",
+      "name": "Mercy of the King",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-2B]KingsMercy.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Mercy of the King",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": 2,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-2B]KingsMercy.svg",
+        "description": "<p>Damage Dealt +25%, Break/Burst Damage Dealt +5.</p><p><i>The King offers Mercy... Do you take it?</i></p><p>Does not take a Status Slot.</p><p>Lasts 1 round.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-rockpiles",
+      "name": "Rocks",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-2B]Rocks.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Rocks",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-2B]Rocks.svg",
+        "description": "<p>Labyrinth Resource.</p><p>Used to fire the Ballista.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-woodpiles",
+      "name": "Wood",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-2B]Wood.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Wood",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-2B]Wood.svg",
+        "description": "<p>Labyrinth Resource.</p><p>Used to fire the Ballista.</p>",
+        "changes": []
+      },
+      "macros": null,
+      "options": {
+        "outputChat": false
+      },
+      "isNew": false,
+      "isChanged": false,
+      "enrichedReference": "",
+      "hidden": false
+    },
+    {
+      "id": "altair-labyrinth-effects-b-crystalshards",
+      "name": "Crystal Shards",
+      "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-2B]CrystalShards.svg",
+      "reference": "",
+      "applyTrigger": null,
+      "removeTrigger": null,
+      "activeEffect": {
+        "name": "Crystal Shards",
+        "tint": "#ffffff",
+        "disabled": false,
+        "statuses": [],
+        "duration": {
+          "seconds": null,
+          "startTime": null,
+          "rounds": null,
+          "turns": null,
+          "startRound": null,
+          "startTurn": null
+        },
+        "img": "Utility/Statuses/LabyrinthEffects/RouteB/[B7-2B]CrystalShards.svg",
+        "description": "<p>Labyrinth Resource.</p><p>Used to fire the Ballista.</p>",
         "changes": []
       },
       "macros": null,
